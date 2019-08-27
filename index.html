@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>xAPI Cohort Teams</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+    <header>
+        <!-- example 1 - using absolute position for center -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <a class="navbar-brand abs" href="#">Navbar 1</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapsingNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//codeply.com">Codeply</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myAlert" data-toggle="collapse">Link</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- example 2 - using auto margins -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Left</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//codeply.com">Codeply</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="#">Navbar 2</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Right</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- example 3 - Navbar with brand left, links on center and right that collapse into the vert mobile menu -->
+        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+            <a href="/" class="navbar-brand d-flex w-50 mr-auto">Navbar 3</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//codeply.com">Codeply</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Right</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Right</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Right</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- example 4 - contained in center example -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+                <a class="navbar-brand" href="#">Navbar 4</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample11"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarsExample11">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- example 5 left and center only with empty space right -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary flex-nowrap">
+            <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbar5">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="navbar-brand w-100">Navbar 5</span>
+            <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar5">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Codeply</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-100">
+                <!--spacer-->
+            </div>
+        </nav>
+
+        <!-- example 6 - center on mobile -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-lg-none d-block">
+                    <!-- hidden spacer to center brand on mobile --></span>
+                <a class="navbar-brand d-none d-lg-inline-block" href="#">
+                    Navbar 6
+                </a>
+                <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                    <img src="//placehold.it/40?text=LOGO" alt="logo">
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item nav-active">Our Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item">How We Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- example 7 - center on mobile 2 -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-lg-none d-block">
+                    <!-- hidden spacer to center brand on mobile --></span>
+                <a class="navbar-brand" href="#">
+                    Navbar 7
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="container">
+            <h1>Hello World!</h1>
+        </article>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="site.js">
+    </script>
+</body>
+
+</html>
