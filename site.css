@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #7a98ce;
+}
+
+.bg-primary {
+    background-color: #7a98ce !important;
+}
+
+form.bg-gray,
+div.bg-gray,
+.nav-link.active {
+    background-color: #f2f2f2!important;
+}
+
+#party {
+    padding: 10px 0 10px 3%;
+}
+
+#party h2 {
+    font-weight: bold;
+    padding    : 0;
+    margin     : 15px 0;
+    font-size  : 1.4em;
+}
+
+#party h5 {
+    font: 1.25rem Helvetica, Arial, sans-serif;
+}
+
+#party button {
+    margin: 1em 0 1em 5%;
+    border: 1px solid #ABB0B2;
+}
+
+.footer {
+    margin: 10%;
+}
