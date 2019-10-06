@@ -1,97 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>xAPI Cohort | GitHub Teams</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>xAPI Cohort | GitHub Teams</title>
 
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: gray;
-      padding: 2em;
-    }
+    <link rel="stylesheet/less" type="text/css" href="style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 
-    section {
-      margin: 0 0 1.25em;
-    }
+  </head>
 
-    h1 {
-      margin: 0 0 1em;
-    }
+  <body>
+    <main>
+      <h1>xAPI Cohort Fall 2019 <span style="font-weight: 100">| GitHub Teams</span></h1>
+      <div class="metrics">
+        <h2>Teams: <span class="metrics-value metrics-teams"></span></h2>
+        <h2>Members: <span class="metrics-value metrics-members"></span></h2>
+      </div>
+      <article class="team-list">
+        <div class="page-loading">
+          <div class="loading-indicator"></div>
+        </div>
+      </article>
+    </main>
+  </body>
 
-    h2 {
-      margin: 0 0 0.35em;
-    }
-
-    p {
-      margin: 0;
-    }
-
-    a {
-      color: steelblue;
-    }
-
-    a:visited {
-      color: purple;
-    }
-  </style>
-</head>
-
-<body>
-  <main>
-    <h1>xAPI Cohort | GitHub Teams</h1>
-    <article class="team-list">
-
-    </article>
-  </main>
-</body>
-
-<script>
-  var app = {
-    init: function () {
-      this.getData(this.showList);
-    },
-
-    getData: function (cb) {
-      var xhr = new XMLHttpRequest();
-
-      xhr.addEventListener("readystatechange", function () {
-        if (this.readyState === 4) {
-          var list = this.responseText;
-          var json = typeof list === 'string' ? JSON.parse(list) : list;
-
-          cb(json);
-        }
-      });
-
-      xhr.open("GET", "https://slack-github-teambot.mpkliewer.now.sh/api/public/github?endpoint=teams");
-
-      xhr.send();
-    },
-
-    showList: function (teamList) {
-      console.log('teamList:', teamList);
-
-      var html = '';
-      teamList.forEach(function (team) {
-        html += '<section>';
-        html += '<h2><a target="_blank" href="' + team.html_url + '">' + team.name + '</a></h2>';
-        html += '<p>' + team.description + '</p>';
-        html += '</section>';
-      });
-
-      var teamListEl = document.querySelector('.team-list');
-      teamListEl.insertAdjacentHTML('beforeend', html);
-    },
-
-  };
-
-  window.addEventListener('DOMContentLoaded', function () {
-    app.init();
-  });
-</script>
+  <script src="index.js"></script>
 
 </html>
