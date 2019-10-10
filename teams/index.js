@@ -37,9 +37,10 @@ var app = {
 			var html = '';
 			teamList.forEach(function (team) {
 				metricsMembersCount += team.members.totalCount;
+				var discussions = team.discussions.nodes;
 
-				var longDesc = app.getTeamLongDescription(team);
-				var teamUpdate = app.getTeamUpdates(team);
+				var longDesc = app.getTeamLongDescription(discussions);
+				var teamUpdate = app.getTeamUpdates(discussions);
 
 				var longDescHtml = '';
 				var teamUpdatePublishDate = 'No updates';
@@ -120,10 +121,17 @@ var app = {
 		});
 	},
 
-	getTeamUpdates: function (team) {
-		var discussions = team.discussions.nodes.reverse();
+	getTeamUpdates: function (discussions) {
+		var discussionsSorted = discussions.sort(function(a, b) {
+			var pubA = new Date(a.publishedAt);
+			var pubB = new Date(b.publishedAt);
 
-		var update = discussions.filter(function (disc) {
+			if (pubA < pubB) { return -1; }
+			if (pubA > pubB) { return 1; }
+			return 0;
+		}).reverse();
+
+		var update = discussionsSorted.filter(function (disc) {
 			var title = disc.title || '';
 			title = title.toLowerCase();
 			var hasUpdate = title.indexOf('update') > -1;
@@ -136,9 +144,7 @@ var app = {
 	},
 
 
-	getTeamLongDescription: function (team) {
-		var discussions = team.discussions.nodes.reverse();
-
+	getTeamLongDescription: function (discussions) {
 		var longDesc = discussions.filter(function (disc) {
 			return disc.isPinned;
 		})[0];
