@@ -1,0 +1,1674 @@
+[
+  {
+    "name": "#Team-Agent",
+    "description": "Using the Agent and Activity profiles to link user preferences across Articulate modules.",
+    "id": "MDQ6VGVhbTM0MjY3MzM=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-agent",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "tralliott"
+          },
+          "editor": null,
+          "title": "Welcome to Team Agent!",
+          "isPinned": true,
+          "publishedAt": "2019-09-19T14:45:20Z",
+          "updatedAt": "2019-09-19T14:45:29Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-agent/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p><strong>Describe your project.</strong><br>\nWe will be creating a set of Storyline modules in which user preferences and activities are saved in the LRS and retrieved to customize the user experience.</p>\n<p><strong>What is your project timeline?</strong><br>\nTBD</p>\n<p><strong>What resources are you using in your project?</strong><br>\nArticulate Storyline, ADL xAPI wrapper, JavaScript, GitHub, Google Slides (for prototyping).</p>\n<p><strong>What is the goal of your project?</strong><br>\nOur goal is to create a customized learning experience that adjusts to each user based on their previous choices.</p>\n<p><strong>What does the team hope to learn as a result of this project?</strong><br>\nWe will learn how to set up an LRS and use custom xAPI statements within a Storyline course.</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "login": "tralliott",
+          "name": "Tracy"
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-alexa",
+    "description": "Generating xAPI statements with Amazon's Alexa",
+    "id": "MDQ6VGVhbTM0NDkxNDU=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-alexa",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "izzy9985"
+          },
+          "editor": null,
+          "title": "Team Update: 10/3",
+          "isPinned": false,
+          "publishedAt": "2019-10-03T17:29:07Z",
+          "updatedAt": "2019-10-03T17:29:50Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-alexa/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>Accomplishments for the week</p>\n<ul>\n<li>Our team just had our meeting one hour ago</li>\n<li>We decided on our use case, which is an interactive customer support scenario</li>\n</ul>\n<p>Areas where your team may need support</p>\n<ul>\n<li>Don't know yet</li>\n<li>Potentially get a new LRS if we cannot reuse the existing one</li>\n</ul>\n<p>What you hope to accomplish in the next week</p>\n<ul>\n<li>Designing the specific interactions - perhaps having Alexa provide 3 options</li>\n<li>Zapier, Voiceflow setup</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "izzy9985"
+          },
+          "editor": {
+            "login": "bwanzer"
+          },
+          "title": "Team Description",
+          "isPinned": true,
+          "publishedAt": "2019-10-03T17:38:53Z",
+          "updatedAt": "2019-10-03T17:46:35Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-alexa/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p>Describe your project.</p>\n<ul>\n<li>We want to use Alexa in an interactive customer support scenario where Alexa acts as the customer and the learner is the representative tasked with troubleshooting the issue.</li>\n</ul>\n<p>What is your project timeline?</p>\n<ul>\n<li>Designing the interactions: 2 weeks (Oct 17)</li>\n<li>Build interactions in Voiceflow &amp; build webhooks in Zapier: 2 weeks (Oct 31)</li>\n<li>Testing and creating statements: 2 weeks (Nov 14)</li>\n</ul>\n<p>What resources are you using in your project?</p>\n<ul>\n<li>Voiceflow</li>\n<li>Zapier</li>\n<li>Amazon Developer Console</li>\n<li>LRS (probably Watershed)</li>\n</ul>\n<p>What is the goal of your project?</p>\n<ul>\n<li>Capturing xAPI statements from a learner's interaction with Amazon Alexa</li>\n<li>Gain insights into where learners are struggling</li>\n</ul>\n<p>What does the team hope to learn as a result of this project?</p>\n<ul>\n<li>Learn about Voiceflow</li>\n<li>Designing for voice interaction</li>\n<li>Build statements for non-traditional learning platforms</li>\n<li>Develop for a platform that has a low barrier of entry for learners</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "bwanzer"
+          },
+          "editor": null,
+          "title": "Team Update: 10/10",
+          "isPinned": false,
+          "publishedAt": "2019-10-09T23:05:38Z",
+          "updatedAt": "2019-10-09T23:05:38Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-alexa/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>Accomplishments for the week:</p>\n<ul>\n<li>We have decided on our customer service scenario: an internal IT team taking a call about a \"broken computer\"</li>\n<li>We figured out that we might be able to send our xAPI statement directly from the Alexa skill and won't need Zapier.</li>\n<li>Our team decided to have Alexa provide the options to respond (open-ended interactions are too complex to build in our timeline)</li>\n</ul>\n<p>Areas where your team may need support</p>\n<ul>\n<li>None right now!</li>\n</ul>\n<p>What you hope to accomplish in the next week</p>\n<ul>\n<li>Find a troubleshooting customer service workflow to base our interaction off of</li>\n<li>Build and test sending xAPI statements directly from the Alexa skill</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "bwanzer"
+          },
+          "editor": null,
+          "title": "Team Update 10/17",
+          "isPinned": false,
+          "publishedAt": "2019-10-16T22:11:10Z",
+          "updatedAt": "2019-10-16T22:11:10Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-alexa/discussions/4",
+          "number": 4,
+          "bodyHTML": "<p>Accomplishments for the week:</p>\n<ul>\n<li>Sent xAPI statements from within Voiceflow using their API block</li>\n<li>Chose an IT workflow and have begun to design the actual voice interaction</li>\n</ul>\n<p>Areas where your team may need support</p>\n<ul>\n<li>None right now!</li>\n</ul>\n<p>What you hope to accomplish in the next week</p>\n<ul>\n<li>Build a proof of concept Alexa skill to ensure the skill works and statements actually send outside of testing</li>\n<li>Complete the voice interaction script</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "bwanzer"
+          },
+          "editor": {
+            "login": "bwanzer"
+          },
+          "title": "Team Update - 10/24",
+          "isPinned": false,
+          "publishedAt": "2019-10-23T16:50:30Z",
+          "updatedAt": "2019-10-23T21:22:38Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-alexa/discussions/5",
+          "number": 5,
+          "bodyHTML": "<p>Bryan Wanzer will be giving this week's update on the call.</p>\n<p>Accomplishments for the week:</p>\n<ul>\n<li>Build out the majority of our interaction script</li>\n<li>Started to build our interaction within Voiceflow</li>\n</ul>\n<p>Areas where your team may need support</p>\n<ul>\n<li>None right now!</li>\n</ul>\n<p>What you hope to accomplish in the next week</p>\n<ul>\n<li>Finish our interaction</li>\n<li>Start to design, place and test our xAPI statements within the Alexa skill</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "kwintessential2"
+          },
+          "editor": null,
+          "title": "Team Update - 10/31",
+          "isPinned": false,
+          "publishedAt": "2019-10-31T15:08:05Z",
+          "updatedAt": "2019-10-31T15:08:05Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-alexa/discussions/6",
+          "number": 6,
+          "bodyHTML": "<p>Helena will be on mute during the call. (at work)</p>\n<p>Accomplishments for the week<br>\nDivided the interactions and set-up in Voiceflow<br>\nAdded the API blocks</p>\n<p>Next steps<br>\nQA the interactions<br>\nTest the API blocks</p>\n<p>Areas where you may need support<br>\nNone at this time</p>\n<p>What you hope to accomplish next week<br>\nWe hope the API blocks work<br>\nAll of the interactions flow easily</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 3,
+      "nodes": [
+        {
+          "login": "izzy9985",
+          "name": null
+        },
+        {
+          "login": "kwintessential2",
+          "name": null
+        },
+        {
+          "login": "bwanzer",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-atlassian-confluence",
+    "description": "Generate xAPI statements from Confluence",
+    "id": "MDQ6VGVhbTM0Mzg1NzQ=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-atlassian-confluence",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "dotmem2"
+          },
+          "editor": {
+            "login": "dotmem2"
+          },
+          "title": "Update for Week 3 (Week of 9/23/19) ",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T02:55:28Z",
+          "updatedAt": "2019-09-26T03:00:44Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-atlassian-confluence/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>• Accomplishment for the week: Lead on additional support; set up Watershed LRS for testing; successfully sent statements from another product for testing </p>\n<p>• Areas where the team needs support: More participants (anyone who's done this before) :-D </p>\n<p>• Hope to accomplish in the next week: Confirm developer support from a colleague whose core expertise is in Atlassian products</p>"
+        },
+        {
+          "author": {
+            "login": "dotmem2"
+          },
+          "editor": null,
+          "title": "About this team",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T03:00:28Z",
+          "updatedAt": "2019-09-26T03:00:28Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-atlassian-confluence/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p><strong>Project Description</strong>: This project was inspired by a shared desire to track informal learning and experiment with sending xAPI statements from our core documentation site, Atlassian Confluence.</p>\n<p><strong>Project Timeline</strong>: Duration of the Fall 2019 cohort</p>\n<p><strong>Resources Being Used in the Project</strong>: Confluence, MS Powerpoint/Keynote/Google Slides, images, video, xapi.ly</p>\n<p><strong>Project Goal</strong>: To successfully generate activity statements from a Confluence space or individual pages (including embedded multimedia)</p>\n<p><strong>What does the team hope to learn as a result of this project?</strong>: How to leverage xAPI for other web applications in the absence of native xAPI capability; how to obtain actor information from SSO authentication</p>"
+        },
+        {
+          "author": {
+            "login": "dotmem2"
+          },
+          "editor": {
+            "login": "dotmem2"
+          },
+          "title": " Update for Week 4 (Week of 9/30/19)",
+          "isPinned": false,
+          "publishedAt": "2019-10-04T00:47:33Z",
+          "updatedAt": "2019-10-04T00:52:23Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-atlassian-confluence/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>Sandra and Maria met with another developer at our organization on 9/27 to share our goals for xAPI use in Confluence. The outcome of that meeting was the creation of internal test space. We discussed possible ways for running statements on a Confluence page and ended the meeting by.</p>\n<p>This week we met again to experiment with sending commands from a standard Confluence page. We attempted the following:</p>\n<ol>\n<li>Attach three files to the page without making these objects visible:</li>\n</ol>\n<ul>\n<li>\n<p>cryptojs_v3.1.2.js</p>\n</li>\n<li>\n<p>xapi.js</p>\n</li>\n<li>\n<p>xapiwrapper.min.js</p>\n</li>\n</ul>\n<ol start=\"2\">\n<li>Applied an HTML macro and pasted code from our index.html file</li>\n</ol>\n<p><strong>Outcome</strong>: This method was not successful. The code was verified prior to testing and we were able to send statements to our LRS (Watershed). However, we figured out that we'll need to apply server-side changes our commands can be recognized and run in Confluence.</p>\n<p><strong>Call for Help</strong>: If anyone else has sent statements from Confluence or a similar system, we would appreciate your insight.</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "login": "dotmem2",
+          "name": "Maria M."
+        },
+        {
+          "login": "Anirudh-Karanth",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-beginners",
+    "description": "",
+    "id": "MDQ6VGVhbTM0NjQ1MTQ=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-beginners",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "team-beginners"
+          },
+          "editor": null,
+          "title": "#team-beginners github URL",
+          "isPinned": false,
+          "publishedAt": "2019-10-10T18:21:43Z",
+          "updatedAt": "2019-10-10T18:21:43Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-beginners/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p><a href=\"https://github.com/xapicohort/teambeginners\">https://github.com/xapicohort/teambeginners</a></p>"
+        },
+        {
+          "author": {
+            "login": "hollymacdonald"
+          },
+          "editor": null,
+          "title": "Team Beginners Update Oct 23rd, 2019",
+          "isPinned": false,
+          "publishedAt": "2019-10-24T14:00:03Z",
+          "updatedAt": "2019-10-24T14:00:03Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-beginners/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p>I'm not sure if anyone can speak to our update in cohort today, but here's where we are at:<br>\nWe are trying to find a way forward without a solid team lead. I am doing what I can (Holly). My goal with this cohort was to try to go from \"what xAPI CAN do\" to \"I know the steps involved in making it do that\". What I proposed: What about if we have each of us: take <a class=\"user-mention\" data-hovercard-type=\"user\" data-hovercard-url=\"/hovercards?user_id=3083518\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/aaltieri\">@aaltieri</a>'s course on LinkedIn Learning, read an intro article about xAPI, and (looking for a couple more items), that we then pull into an LRS?</p>\n<p><strong>Accomplishments for the week</strong></p>\n<ul>\n<li>Set up Github! (thanks to Tricia Ryan)</li>\n<li>Submitted our first update!</li>\n<li>Have outlined a potential way to develop a project</li>\n</ul>\n<p><strong>Areas where your team may need support</strong></p>\n<ul>\n<li>We might benefit from a technical coach to help us when we get stuck</li>\n</ul>\n<p><strong>What you hope to accomplish in the next week</strong></p>\n<ul>\n<li>Set up an LRS to capture our statements</li>\n<li>Confirm items to track and share plan with team</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "hollymacdonald"
+          },
+          "editor": null,
+          "title": "Team Beginners Update October 31st, 2019",
+          "isPinned": false,
+          "publishedAt": "2019-10-31T15:18:33Z",
+          "updatedAt": "2019-10-31T15:18:33Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-beginners/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>Still no real team lead, but I'm (Holly) going to keep going anyway. I will not be able to make it to the next cohort meeting (Thurs Nov 7th) as I'm organizing a conference.</p>\n<p><strong>Accomplishments for the week</strong></p>\n<ul>\n<li>Started developing a Rise course to help me make sense of the process and that might help other beginners</li>\n</ul>\n<p><strong>Areas where your team may need support</strong></p>\n<ul>\n<li>We might benefit from a technical coach to help us when we get stuck</li>\n</ul>\n<p><strong>What you hope to accomplish in the next week</strong></p>\n<ul>\n<li>Set up an LRS to capture our statements</li>\n<li>Confirm items to track and share plan with team</li>\n<li>Continue developing Rise course</li>\n</ul>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "login": "team-beginners",
+          "name": "Tricia Ryan"
+        },
+        {
+          "login": "hollymacdonald",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-captivate-jslibrary",
+    "description": "A library that listens to Captivate publish packages and reports xAP",
+    "id": "MDQ6VGVhbTM0NDAxODI=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-captivate-jslibrary",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "brianfloyd"
+          },
+          "editor": {
+            "login": "brianfloyd"
+          },
+          "title": "#team-captivate-js-library 10/1 update",
+          "isPinned": true,
+          "publishedAt": "2019-10-02T13:50:31Z",
+          "updatedAt": "2019-10-03T03:32:36Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-captivate-jslibrary/discussions/1",
+          "number": 1,
+          "bodyHTML": "<ul>\n<li>\n<p>Our repo is up and active  It includes 3 published captivate packages as examples, 1 source file folder, and the captivate file used in demo.</p>\n</li>\n<li>\n<p>We had a call this week on 10/1 walking through how to set up the wrapper, and a host of information  regarding the code base and customizability.  You can see that here:<br>\n<a href=\"https://youtu.be/VcpQhUK5ELE\" rel=\"nofollow\">conference call notes</a><br>\n(scrub to about 6 minutes in)</p>\n</li>\n<li>\n<p>Next steps, we will continue to update the code base - currently believe all navigation and video<br>\nstatements are working correctly, quizzing is next biggest update.</p>\n<pre><code>- If anyone in the cohort uses Captivate quizzing extensively or creatively, please reach out to   \n   Brian Floyd (We need guinea pigs!)\n</code></pre>\n</li>\n<li>\n<p>Will have another call in 2 weeks to answer questions and talk about next code update, and  next<br>\nsteps.  I will try to diligently document updates on repo.</p>\n</li>\n<li>\n<p>Wrapper is open and available to any adobe captivate user, and we tested during call - it can<br>\neven report to LRS from desktop so even if you don't have captivate you could run the package<br>\nlocally and look at the statements in the console. You can also play with the code and<br>\nparameter settings.</p>\n</li>\n<li>\n<p>Reach out to Brian Floyd if you need help, have any questions, or need access to LRS or any<br>\nother resources</p>\n</li>\n<li>\n<p>Please report any bugs, glitches, anomalies, and disturbances in the force on the channel with<br>\nan <a class=\"user-mention\" data-hovercard-type=\"user\" data-hovercard-url=\"/hovercards?user_id=35424713\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/brianfloyd\">@brianfloyd</a></p>\n</li>\n<li>\n<p>Next steps are to create some sharp looking LRS reporting to show the value of the incoming<br>\nxAPI data.</p>\n</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "brianfloyd"
+          },
+          "editor": {
+            "login": "brianfloyd"
+          },
+          "title": " #team-captivate-js-library 10/10  update",
+          "isPinned": false,
+          "publishedAt": "2019-10-10T13:40:12Z",
+          "updatedAt": "2019-10-10T13:40:41Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-captivate-jslibrary/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p>Won't be a able to make the call this week, but wanted to provide brief update.</p>\n<p>Made several updates  the wrapper to address a couple of bugs, most noticeably SCORM compatibility (A typo was preventing it from working).  Git repo  is up to date with the readme providing instructions how to install the wrapper into your captivate.</p>\n<p>Still looking for Captivate content users that would like to add the wrapper for testing to their content.</p>\n<p>Brian will be available Oct 17 - Nov.2 really any time to help anyone with installation, questions, or demos.</p>\n<p>Thanks to everyone who checked out the demo posted in #main....We got a bunch of statements to use for creating some good looking reporting.</p>"
+        },
+        {
+          "author": {
+            "login": "brianfloyd"
+          },
+          "editor": {
+            "login": "brianfloyd"
+          },
+          "title": "       #team-captivate-js-library 10/17 update",
+          "isPinned": false,
+          "publishedAt": "2019-10-17T15:18:05Z",
+          "updatedAt": "2019-10-17T18:49:23Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-captivate-jslibrary/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>Several updates since last call</p>\n<pre><code> Added a submit button to the email capture login screen\n Made all messages on capture email screen customizable in Params object\n Made skip email a toggle able parameter, as well as the default address it uses when skipping\n Made enter email responsive, now resizes correctly for phone, tablet and desktop\n Several folks have had success uploading the content to an LMS and reporting in\n</code></pre>\n<p>Upcoming</p>\n<pre><code>Brian will work with Patty week of 11/21 to understand why Canvas LMS is not working out of the box \n\n Last feature that needs to be refactored is Captivate Quizzing.  This reports to xAPI now,  however scoring  \\      \n needs auditing, multiple right answers and sending quiz summary.  Hopefully will knock that out the   \n weekend\n\n Starting Desktop module that will auto install captivate wrapper in published packages with                               \n very customizable params\n</code></pre>"
+        },
+        {
+          "author": {
+            "login": "brianfloyd"
+          },
+          "editor": null,
+          "title": "     #team-captivate-js-library 10/24 update",
+          "isPinned": false,
+          "publishedAt": "2019-10-24T12:42:25Z",
+          "updatedAt": "2019-10-24T12:42:25Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-captivate-jslibrary/discussions/4",
+          "number": 4,
+          "bodyHTML": "<p>Started the desktop installation app to customize the parameters including, login-info, what the wrapper will track, and what verbs and verb ID's it will use.  Also can customize parent, and activityID's.</p>\n<p>The end goal is to be able to drag and drop a captivate publish package into desktop app, and it will install the wrapper, all the dependencies and provide a UI to customize all the parameters.</p>\n<p>The wrapper itself continues to get tweaks and updates, with quizzing still being the major section that needs to be audited and updated.</p>"
+        },
+        {
+          "author": {
+            "login": "brianfloyd"
+          },
+          "editor": {
+            "login": "brianfloyd"
+          },
+          "title": "       #team-captivate-js-library 10/31 update",
+          "isPinned": false,
+          "publishedAt": "2019-10-31T16:32:57Z",
+          "updatedAt": "2019-10-31T16:42:44Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-captivate-jslibrary/discussions/5",
+          "number": 5,
+          "bodyHTML": "<p>Happy Halloween</p>\n<p>In the dog days of the cohort - meaning not much new but continual movement forward.  Here are some updates on a few different fronts:</p>\n<p>We have had a number of folks from the cohort that have successfully installed the wrapper into their captivate packages and reported to our cohort LRS, ScormCloud LRS and from ScormCloud LMS.</p>\n<p>The biggest barrier to entry right now is the manual process of installing the wrapper in each captivate publish package, as it requires you to add several files and manipulate several lines of code.  This method doesn't account well for the variability of many different publishing options.  I have mentioned the solve for this is creating a desktop app that you can drag and drop package into that will apply your preferences and spit out a ready to roll zip package for your  LMS or Server. Continued to make progress this last week - All of the preferences are now UI customizable, next step is to make the drag and drop feature work and then parse the code and insert what is needed.</p>\n<p>Attached a few screen shots in comments last week, but have included some updated looks the week.  The UI still leaves a lot to be desired (curse my limited CSS abilities!) but it is getting close to be functional.</p>\n<p>Still have not audited quizzing statements and compatibility...If anyone in the cohort heavily uses captivates native quizzing features and would be willing to share some real use cases/quizzes for compatibility and reporting expectations that would be a big help and the kick in the pants needed to stop my procrastination on this final item :)</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "login": "brianfloyd",
+          "name": "Brian Floyd"
+        },
+        {
+          "login": "mhardylab",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#Team-checky_mcchecklist",
+    "description": "Create a checklist app that sends xAPI statements to an LRS when an item is marked. ",
+    "id": "MDQ6VGVhbTM0NDAyMDg=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-checky_mcchecklist",
+    "discussions": {
+      "nodes": []
+    },
+    "members": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "login": "kwintessential2",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-dragon-stats",
+    "description": "Using xAPI to create a D&D module to introduce the learner to RPGs. ",
+    "id": "MDQ6VGVhbTM0Mzk1NjU=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-dragon-stats",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "djumeau"
+          },
+          "editor": {
+            "login": "djumeau"
+          },
+          "title": "Team Update: 2019-09-26",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T15:47:53Z",
+          "updatedAt": "2019-09-26T15:51:27Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-dragon-stats/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>Meetings with Zoom. Wednesday <a class=\"user-mention\" data-hovercard-type=\"organization\" data-hovercard-url=\"/orgs/9pm/hovercard\" href=\"https://github.com/9pm\">@9pm</a> We can consider a different time. Ping  <a class=\"user-mention\" data-hovercard-type=\"user\" data-hovercard-url=\"/hovercards?user_id=43916764\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/JonathanRock\">@JonathanRock</a></p>\n<p>Looking at the slack channel and transcripts, there were several ideas going around. One was an IoT (@anthonyalteri ?) ... that would imply an Arduino based tech. This would be a great idea to record a live session of a D&amp;D game. (Suggest to do this at the xAPI party.)</p>\n<p>Another would be using Discord. I am not familiar with this kind of development and I am not sure if there is a plugin or API that would work for this.</p>\n<p>My suggestion is to create a battle simulation between a set of characters and monsters using Storyline. Jonathan, though he got a Dungeon Master's guide from the library, we both are not D&amp;D players. (I used to play Marvel Superheroes and I currently play X-Wing tabletop miniatures games with my son.)</p>\n<p>The idea I had in mind that one person can do the design, another with the Storyline 360 file which would include a backend dungeon made in HTML5 with Zim.JS like this the screenshot (see attached image) that can communicate with Storyline. (I know how to do this.) You can move the character and once you hit a certain spot, you might get loot or an encounter a dragon. Then we can use xAPI statements like  \"hero slew dragon\".</p>\n<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/424807/65703804-5be2ac00-e053-11e9-91c1-de105f4e9957.png\"><img src=\"https://user-images.githubusercontent.com/424807/65703804-5be2ac00-e053-11e9-91c1-de105f4e9957.png\" alt=\"image\" style=\"max-width:100%;\"></a></p>\n<p>So the mandate would be where the user can select a hero (wizard, barbarian, thief, dwarf) to determine their best effectiveness against certain categories of monsters. How do we determine this with xAPI data? What kinds of activities would we need to implement? Most importantly, what kind of outcomes can we determine and what is the success criteria?</p>\n<p>Are you \"game\"? <g-emoji class=\"g-emoji\" alias=\"wink\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f609.png\">😉</g-emoji></p>"
+        },
+        {
+          "author": {
+            "login": "djumeau"
+          },
+          "editor": {
+            "login": "djumeau"
+          },
+          "title": "Weekly Online Meetups",
+          "isPinned": true,
+          "publishedAt": "2019-09-26T21:13:57Z",
+          "updatedAt": "2019-09-26T21:41:00Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-dragon-stats/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p>Proposed Day and Time:<br>\nWednesday: Noon Eastern Time<br>\nLikely through Zoom.</p>"
+        },
+        {
+          "author": {
+            "login": "JonathanRock"
+          },
+          "editor": null,
+          "title": "Update- 16 OCT 2019",
+          "isPinned": false,
+          "publishedAt": "2019-10-16T23:45:44Z",
+          "updatedAt": "2019-10-17T15:55:51Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-dragon-stats/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>xAPI Dragon Stats met at 1:00 PM.  Jonathan Rock and Irina Mylona were present.</p>\n<p>Designing a magnetic hall effect sensor enabled smart board to track Dungeons and Dragons miniature play and send statements from an arduino is possible but outside of what we can accomplish this Cohort.</p>\n<p>We decided that the learning objectives for our part of this project would be:<br>\nA: How not to suck at teamwork as part of a D&amp;D party<br>\nB: How not to suck at you your role on the party</p>\n<p>Before next week we will conduct research on what is the going advice in each of these areas using a Google Doc to track our research.</p>\n<p>We need to build:</p>\n<p>A:  A D&amp;D scenario that can be accomplished by one team in one session to test the skills needed to meet the learning objectives</p>\n<p>B:  Learning events such as a Storyline module that simulates the important decisions faced by an individual player</p>\n<p>C: A session historian app that could be used to track decisions made by players</p>\n<p>We could then collect statements running the session and compare the performance of the players, assessing impact of the learning intervention on the performance.</p>\n<p>We could use some hardcore, experienced D&amp;D players to give us insight on how not to suck as a new player.  What would you tell your cousin if she was joining your ongoing session for the first time.  Not so much rules as how to be an effective player that won't Leroy Jenkins the team.</p>"
+        },
+        {
+          "author": {
+            "login": "JonathanRock"
+          },
+          "editor": null,
+          "title": "Update 10/31/19-Week of Halloween",
+          "isPinned": false,
+          "publishedAt": "2019-10-31T15:27:28Z",
+          "updatedAt": "2019-10-31T17:04:11Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-dragon-stats/discussions/4",
+          "number": 4,
+          "bodyHTML": "<p>Team xAPI Cohort met yesterday and JRock and David Jumeau were present.</p>\n<p>Picture you have never played before and were invited to join a group this Friday to play a table top roleplaying game!  What questions would you have?</p>\n<ol>\n<li>How to be a good player with the group?</li>\n<li>How to perform my role well in the game?</li>\n</ol>\n<p>To that end we are designing and developing a Storyline intervention to show n00b's the way.  And we are simultaneously designing an adventure to test their prowess.</p>\n<p>This week David researched xAPI Profiles, JRock built a D&amp;D adventure using the 5 Room Dungeon method and Irina flexed her ID prowess with a mindmap of the knowledge points needed for the intervention.</p>\n<p>David and Jonathan decided it would be good to play the adventure as-is with an eye to how to make it an adequate test.  We'd like to run a session on Zoom and need three players.  Check out the xAPI-Dragon-Stats Slack channel for signup details.</p>\n<p>Trick or Treat!!!</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 4,
+      "nodes": [
+        {
+          "login": "djumeau",
+          "name": "David Jumeau"
+        },
+        {
+          "login": "JonathanRock",
+          "name": "Jonathan Rock"
+        },
+        {
+          "login": "magscby",
+          "name": null
+        },
+        {
+          "login": "Mylirina",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-early childhood education",
+    "description": "Early Childhood Education xAPI",
+    "id": "MDQ6VGVhbTM0MTU5MjM=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-early-childhood-education",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "jrosequist"
+          },
+          "editor": {
+            "login": "jrosequist"
+          },
+          "title": "Team Update - Template",
+          "isPinned": false,
+          "publishedAt": "2019-09-13T18:29:13Z",
+          "updatedAt": "2019-09-18T02:52:16Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-early-childhood-education/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong><br>\nSet up project in Github<br>\nPosted prototype screens</p>\n<p><strong>Areas where your team may need support</strong><br>\nWould like to integrate with other data capture solutions <a class=\"user-mention\" data-hovercard-type=\"user\" data-hovercard-url=\"/hovercards?user_id=29730634\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mattperkins\">@mattperkins</a><br>\nHow to make the most out of Github.</p>\n<p><strong>What we hope to accomplish in the next week</strong><br>\nSet up team<br>\nDetermine what each team member hopes to accomplish<br>\nSet up regular meeting times<br>\nSet up project plan/resources</p>"
+        },
+        {
+          "author": {
+            "login": "jrosequist"
+          },
+          "editor": {
+            "login": "jrosequist"
+          },
+          "title": "Team Description",
+          "isPinned": true,
+          "publishedAt": "2019-09-13T18:30:11Z",
+          "updatedAt": "2019-09-19T12:02:12Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-early-childhood-education/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p><strong>Project Description</strong><br>\nCreate a daycare app that explores the Early Childhood Education profile: <a href=\"https://registry.tincanapi.com/#profile/61\" rel=\"nofollow\">https://registry.tincanapi.com/#profile/61</a> - this profile addresses care interactions, educational interactions, milestone assessment, activities and communication.<br>\nUsing HTML5, jQuery, Javascript files based on the previous xAPI project work <a href=\"https://github.com/adlnet/xapi-jqm\">https://github.com/adlnet/xapi-jqm</a>, we will explore statements sent via checkmarks, buttons, and input boxes. A prototype is posted here: <a href=\"https://drive.google.com/open?id=16GZli_rhf7qWztw9JFnbMA_beBIjWEv8\" rel=\"nofollow\">https://drive.google.com/open?id=16GZli_rhf7qWztw9JFnbMA_beBIjWEv8</a> to get the team started.<br>\nNotes about the profile are pulled together here: <a href=\"https://docs.google.com/presentation/d/1Mp7Wn_mhvTwjvzu9HDfsdhh8kDwN6V7DfsEqDky0uPw/edit?usp=sharing\" rel=\"nofollow\">https://docs.google.com/presentation/d/1Mp7Wn_mhvTwjvzu9HDfsdhh8kDwN6V7DfsEqDky0uPw/edit?usp=sharing</a><br>\nAssociated files will be uploaded to a central location by 9/26.<br>\n<em>Perhaps the checky-mcchecklist group can help with the milestone charts or Matt Perkins' scanner solution for tagging project based learning activities or caretaker sign-in</em>.</p>\n<p><strong>Project Timeline</strong><br>\nFall 2019 - focus on getting statements (at least one for each different area or input type) - compare at least 2 LRS - come up with a design direction<br>\nFuture work will to be working more closely with the statements and objects to ensure a robust profile.</p>\n<p><strong>Resources</strong><br>\nInitially HTML5, jQuery, Javascript will be used for conceptualizing and testing.<br>\nWe will explore Github and other project team based tools.</p>\n<p><strong>Goal</strong><br>\nNew findings in brain research continue to emphasis the importance of early childhood education. xAPI will allow us to measure more at earlier stages where interventions prove most useful. Implement the profile to test with children and caregivers.</p>\n<p>Expected Learning Outcomes<br>\nUpdate skills in xAPI, HTML5, CSS, Javascript<br>\nData capture and analysis to keep parents abreast of thier child's development.</p>"
+        },
+        {
+          "author": {
+            "login": "jrosequist"
+          },
+          "editor": null,
+          "title": "Team Update 9/25/19",
+          "isPinned": false,
+          "publishedAt": "2019-09-25T20:42:49Z",
+          "updatedAt": "2019-09-25T20:42:49Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-early-childhood-education/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong><br>\n<em><strong>In process of:</strong></em></p>\n<ol>\n<li>Setting up team</li>\n<li>Determining what each team member hopes to accomplish - set up spreadsheet -<br>\nplease add name and details.<br>\n<a href=\"https://docs.google.com/spreadsheets/d/13cUpN3OK3Vgj293UB_kNYnwMtVW8R8\" rel=\"nofollow\">https://docs.google.com/spreadsheets/d/13cUpN3OK3Vgj293UB_kNYnwMtVW8R8</a><br>\nWW-a3kP3vBARA</li>\n<li>Setting up regular meeting times - please add in your availabilty<br>\n<a href=\"https://docs.google.com/spreadsheets/d/1Gx68y3ien59C9iZ4TVkUKonoh2-\" rel=\"nofollow\">https://docs.google.com/spreadsheets/d/1Gx68y3ien59C9iZ4TVkUKonoh2-</a><br>\nldxgT4Oki8FlFRoY</li>\n<li>Setting up project plan/resources - folder was set up here to collect docs until<br>\ngithub is figured out.<br>\n<a href=\"https://drive.google.com/open?id=1BWJ9_rcPfex3IkVEIGrGlzwzuu-VbWCV\" rel=\"nofollow\">https://drive.google.com/open?id=1BWJ9_rcPfex3IkVEIGrGlzwzuu-VbWCV</a></li>\n</ol>\n<p><strong><em>Areas where your team may need support</em></strong><br>\nHow to make the most out of Github.</p>\n<p><strong><em>What we hope to accomplish in the next week</em></strong><br>\nget folks to sign up and indicate what it is they hope to accomplish<br>\nSet up at LRS accounts for testing<br>\nSend through sample button to each LRS to test files</p>"
+        },
+        {
+          "author": {
+            "login": "jrosequist"
+          },
+          "editor": null,
+          "title": "Team Update 10/2/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-02T20:05:23Z",
+          "updatedAt": "2019-10-02T20:05:23Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-early-childhood-education/discussions/4",
+          "number": 4,
+          "bodyHTML": "<p><strong><em>Accomplishments for the week:</em></strong></p>\n<ul>\n<li>Set up ScormCloud and Learning Locker LRS accounts.</li>\n<li>Brandon from Watershed is workng on setting up a sandbox account for us. We should expect an email invite this week.</li>\n<li>Created \"button\" html files to test credentials for sending statements.</li>\n<li>Succe</li>\n</ul>\n<p>ssfully sent statements to ScormCloud.<br>\nProject Folder: <a href=\"https://drive.google.com/open?id=1BWJ9_rcPfex3IkVEIGrGlzwzuu-VbWCV\" rel=\"nofollow\">https://drive.google.com/open?id=1BWJ9_rcPfex3IkVEIGrGlzwzuu-VbWCV</a></p>\n<p><strong><em>Areas where we need support:</em></strong><br>\nNicole is helping us with our files as we cannot get statements to Learning Locker.</p>\n<p><strong><em>What we hope to accomplish in the next week:</em></strong><br>\nGet some team members to join!<br>\nBegin designing/coding the prototype screens based on areas of interest.</p>"
+        },
+        {
+          "author": {
+            "login": "jrosequist"
+          },
+          "editor": null,
+          "title": "Team Update  10/10/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-10T13:46:11Z",
+          "updatedAt": "2019-10-10T13:46:11Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-early-childhood-education/discussions/5",
+          "number": 5,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong></p>\n<ul>\n<li>Set up Github Respository</li>\n<li>Tested app concept in childcare setting and received valuable insights to be incorporated into development.</li>\n<li>Sent additional statements successfully to SCORMCloud</li>\n</ul>\n<p><strong>Areas where we need support:</strong></p>\n<ul>\n<li>Nicole is helping us with our files as we cannot get statements to Learning Locker.</li>\n<li>Brandon from Watershed is workng on setting up a sandbox account for us.</li>\n</ul>\n<p><strong>What we hope to accomplish in the next week</strong>:</p>\n<ul>\n<li>Populate Github Repository</li>\n<li>Continue designing/coding the prototype screens based on areas of interest.</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "jrosequist"
+          },
+          "editor": null,
+          "title": "Team Update 10/16/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-17T12:48:58Z",
+          "updatedAt": "2019-10-17T12:48:58Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-early-childhood-education/discussions/6",
+          "number": 6,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong><br>\nSet up and sent sample button statements successfully to Watershed.<br>\nSent additional statements successfully to SCORMCloud</p>\n<p><strong>Areas where we need support:</strong><br>\nStill not having luck with getting the simple button files to work in Learning Locker but am getting help from Nicole and James</p>\n<p><strong>What we hope to accomplish in the next week:</strong><br>\nPopulate Github Repository<br>\nContinue designing/coding the prototype screens based on areas of interest.</p>"
+        },
+        {
+          "author": {
+            "login": "jrosequist"
+          },
+          "editor": null,
+          "title": "Team Update 10/23/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-23T19:57:23Z",
+          "updatedAt": "2019-10-23T19:57:23Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-early-childhood-education/discussions/7",
+          "number": 7,
+          "bodyHTML": "<p>Nothing to report this week. Too busy to work on any files.</p>"
+        },
+        {
+          "author": {
+            "login": "jrosequist"
+          },
+          "editor": null,
+          "title": "Team Update 10/30/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-30T04:09:38Z",
+          "updatedAt": "2019-10-30T04:09:38Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-early-childhood-education/discussions/8",
+          "number": 8,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong><br>\nUploaded files to Github<br>\nSuccessful statements for<br>\n-changing diapers<br>\n-peeing<br>\n-pooping<br>\n-mealtimes (just drinking thus far)<br>\n-naptimes</p>\n<p><strong>Areas where we need support:</strong><br>\nWanted to do timestamps but need to learn more Javascript<br>\nStatements need work but need to learn more Javascript<br>\nAny feedback on files is greatly appreciated</p>\n<p><strong>What we hope to accomplish in the next week:</strong><br>\nLearn more Javascript<br>\nContinue to build out mealtimes<br>\nWork on statements<br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/16841842/67828306-4e34a200-faa9-11e9-8382-eb1ddfd39d20.png\"><img src=\"https://user-images.githubusercontent.com/16841842/67828306-4e34a200-faa9-11e9-8382-eb1ddfd39d20.png\" alt=\"ece_statements\" style=\"max-width:100%;\"></a></p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "login": "jrosequist",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-HTML5-tracking",
+    "description": "Exploring xAPI data activity streams on media rich HTML5 pages",
+    "id": "MDQ6VGVhbTM0NjIwMzE=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-html5-tracking",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "juliembailey"
+          },
+          "editor": null,
+          "title": "Team Update: 10/9/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-09T18:34:13Z",
+          "updatedAt": "2019-10-09T18:34:13Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-html5-tracking/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong></p>\n<ul>\n<li>Renamed our team and purpose so we could work on files outside of firewall</li>\n<li>Identified a new project to work with</li>\n<li>Drafted a data strategy to inform our selection of statements to test</li>\n<li>Started GitHub enrollments for team members</li>\n<li>Recruited colleagues to join the team</li>\n</ul>\n<p><strong>Areas where your team may need support:</strong><br>\nunknown at this time</p>\n<p><strong>What you hope to accomplish in the next week:</strong><br>\nThis week we will determine our data strategy and identify statements to experiment on the free tools provided by the cohort (thank you~)</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "login": "juliembailey",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-interactive-video",
+    "description": "Integrate xAPI into a “choose your own adventure video”. We’ll track the user’s interaction with the scenarios at the different decision points. We’ll collect data on where they clicked & branched off to.",
+    "id": "MDQ6VGVhbTM0MjgzNzY=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "AdrianeGuerreiro"
+          },
+          "editor": null,
+          "title": "Team description",
+          "isPinned": true,
+          "publishedAt": "2019-09-19T23:14:00Z",
+          "updatedAt": "2019-09-19T23:14:14Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>Integrate xAPI into a “choose your own adventure video”. We’ll track the user’s interaction with the scenarios at the different decision points. We’ll collect data on where they clicked &amp; branched off to.</p>"
+        },
+        {
+          "author": {
+            "login": "AdrianeGuerreiro"
+          },
+          "editor": null,
+          "title": "Weekly Update 10/01/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-01T19:12:53Z",
+          "updatedAt": "2019-10-01T19:12:53Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p><strong>Accomplishments so far &amp; for the week:</strong></p>\n<ul>\n<li>Created Github repository and added 2 new members</li>\n<li>Started a poll in #team-interactive-video Slack channel to establish best day/time for meetings</li>\n</ul>\n<p><strong>Areas where team may need support:</strong></p>\n<ul>\n<li>Learning as a team how statement sender and LRS interact to get the data we need</li>\n<li>Does anyone have an existing Storyline project with branching that we can use (or something created in H5P)?</li>\n</ul>\n<p><strong>What we hope to accomplish in the next week:</strong></p>\n<ul>\n<li>Obtain a dummy video file/or storyline file to use for the project</li>\n<li>Identify best time for meeting from poll results</li>\n<li>Discuss team members' strengths/interests</li>\n<li>Get a free trial for an LRS</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "smcbroom23"
+          },
+          "editor": null,
+          "title": "First Official Zoom Meeting",
+          "isPinned": false,
+          "publishedAt": "2019-10-07T18:27:55Z",
+          "updatedAt": "2019-10-07T18:27:55Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>UNTHSC INCEDO is inviting you to a scheduled Zoom meeting.</p>\n<p>Topic: UNTHSC INCEDO's Zoom Meeting<br>\nTime: Oct 9, 2019 03:00 PM Central Time (US and Canada)</p>\n<p>Join Zoom Meeting<br>\n<a href=\"https://unthsc.zoom.us/j/642703926\" rel=\"nofollow\">https://unthsc.zoom.us/j/642703926</a></p>\n<p>Meeting ID: 642 703 926</p>\n<p>One tap mobile<br>\n+16699006833,,642703926# US (San Jose)<br>\n+16465588656,,642703926# US (New York)</p>\n<p>Dial by your location<br>\n+1 669 900 6833 US (San Jose)<br>\n+1 646 558 8656 US (New York)<br>\nMeeting ID: 642 703 926<br>\nFind your local number: <a href=\"https://zoom.us/u/ab5QJaScxl\" rel=\"nofollow\">https://zoom.us/u/ab5QJaScxl</a></p>"
+        },
+        {
+          "author": {
+            "login": "AdrianeGuerreiro"
+          },
+          "editor": null,
+          "title": "Repository",
+          "isPinned": false,
+          "publishedAt": "2019-10-08T18:20:27Z",
+          "updatedAt": "2019-10-08T18:20:27Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video/discussions/4",
+          "number": 4,
+          "bodyHTML": "<p>Hi Team - I created a repository for our group but it still shows \"0\" repositories. When I went to add it to the team it didn't work. Can someone help with this?</p>"
+        },
+        {
+          "author": {
+            "login": "AdrianeGuerreiro"
+          },
+          "editor": null,
+          "title": "Storyline file ",
+          "isPinned": false,
+          "publishedAt": "2019-10-08T23:40:51Z",
+          "updatedAt": "2019-10-08T23:40:51Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video/discussions/5",
+          "number": 5,
+          "bodyHTML": "<p>Hi all, I tried to upload the Storyline file into Github but there's a 25 MB limit. I placed the .Story file in box.</p>\n<p>If we decide to use this one you can access it here:  <a href=\"https://ucsf.box.com/s/q2qv9kpdt0qylneu607bz0gnx5itsgan\" rel=\"nofollow\">https://ucsf.box.com/s/q2qv9kpdt0qylneu607bz0gnx5itsgan</a></p>\n<p>Let me know if anyone has problems accessing the file. Talk to you all tomorrow at our meeting.</p>"
+        },
+        {
+          "author": {
+            "login": "smcbroom23"
+          },
+          "editor": null,
+          "title": "Interactive CPR Video (UK)",
+          "isPinned": false,
+          "publishedAt": "2019-10-09T14:23:32Z",
+          "updatedAt": "2019-10-09T14:23:32Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video/discussions/6",
+          "number": 6,
+          "bodyHTML": "<p>It would be cool to track learner data from something like this... <a href=\"https://life-saver.org.uk/\" rel=\"nofollow\">https://life-saver.org.uk/</a></p>"
+        },
+        {
+          "author": {
+            "login": "Jrucker4"
+          },
+          "editor": {
+            "login": "Jrucker4"
+          },
+          "title": "Weekly Update 10/10/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-10T18:03:06Z",
+          "updatedAt": "2019-10-10T18:04:57Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video/discussions/7",
+          "number": 7,
+          "bodyHTML": "<p><strong>Accomplishments so far &amp; for the week:</strong></p>\n<p>Discussed ideas and resources for project on Github.<br>\nHeld team meeting and discussed what type of video to build/use.<br>\nStarted a draft script/outline for the video; so far we plan to create an orientation-type video on getting started with xAPI cohort and how to have a successful project. We will include decision points and branching based on the learner's selections.</p>\n<p><strong>Areas where team may need support:</strong></p>\n<p>(Continued from last week) Learning as a team how statement sender and LRS interact to get the data we need</p>\n<p><strong>What we hope to accomplish in the next week:</strong></p>\n<p>All team members create individual SCORMCloud accounts<br>\nCreate shared Watershed LRS and xAPI.ly accounts<br>\nFinalize a storyboard and script; assign roles and start developing video</p>"
+        },
+        {
+          "author": {
+            "login": "smcbroom23"
+          },
+          "editor": null,
+          "title": "Tomorrow's Zoom Invite 10/16/2019",
+          "isPinned": false,
+          "publishedAt": "2019-10-16T02:24:44Z",
+          "updatedAt": "2019-10-16T02:24:44Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video/discussions/8",
+          "number": 8,
+          "bodyHTML": "<p>UNTHSC INCEDO is inviting you to a scheduled Zoom meeting.</p>\n<p>Topic: UNTHSC INCEDO's Personal Meeting Room</p>\n<p>Join Zoom Meeting<br>\n<a href=\"https://unthsc.zoom.us/j/3328074823\" rel=\"nofollow\">https://unthsc.zoom.us/j/3328074823</a></p>\n<p>Meeting ID: 332 807 4823</p>\n<p>One tap mobile<br>\n+16699006833,,3328074823# US (San Jose)<br>\n+16465588656,,3328074823# US (New York)</p>\n<p>Dial by your location<br>\n+1 669 900 6833 US (San Jose)<br>\n+1 646 558 8656 US (New York)<br>\nMeeting ID: 332 807 4823<br>\nFind your local number: <a href=\"https://zoom.us/u/ab5QJaScxl\" rel=\"nofollow\">https://zoom.us/u/ab5QJaScxl</a></p>"
+        },
+        {
+          "author": {
+            "login": "smcbroom23"
+          },
+          "editor": null,
+          "title": "Meeting Notes for 10/16/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-16T20:40:38Z",
+          "updatedAt": "2019-10-16T20:40:38Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video/discussions/9",
+          "number": 9,
+          "bodyHTML": "<p>I forgot to hit record on the Zoom Meeting so here are the key points we talked about, the plan for initial testing and next steps.</p>\n<p>What Was Discussed:</p>\n<ul>\n<li>\n<p>Matt Hardy introduced himself and would like to take the role of a reviewer for any content created.</p>\n</li>\n<li>\n<p>How to design the video (All video with cue points, variables, buttons and slides)</p>\n</li>\n<li>\n<p>Discussed using already made youtube tutorial videos to speed up the process.</p>\n</li>\n<li>\n<p>Tom and Stephen will create two 1 min video projects with one branching point to allow the group to start testing an xAPI statement. Tom will create in Captivate and Stephen in Storyline 360. The goal is to start implementing xAPI and testing the statements and retrieving them in the LRS.</p>\n</li>\n<li>\n<p>Next meeting we will take the projects and use xapi.ly to create the statements and add them to the projects. Then we will upload the zip files to SCORMCloud and test the files to see if we can retrieve the xAPI files.</p>\n</li>\n<li>\n<p>After we have the first smaller project completed with xAPI statements working we can build out the other interactions.</p>\n</li>\n<li>\n<p>I thought maybe a badge system to show the learner that they have completed each piece of being a true xAPI cohort participant.</p>\n</li>\n</ul>\n<p>Let us know any thoughts the team has on what was discussed and the plan going forward.</p>\n<p>HAVE A GREAT WEEK!</p>"
+        },
+        {
+          "author": {
+            "login": "AdrianeGuerreiro"
+          },
+          "editor": null,
+          "title": "Past Video Cohort",
+          "isPinned": false,
+          "publishedAt": "2019-10-18T00:50:36Z",
+          "updatedAt": "2019-10-18T00:50:36Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-interactive-video/discussions/10",
+          "number": 10,
+          "bodyHTML": "<p>Can we use any of the resources Jason Haag provided from his similar past project?</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 8,
+      "nodes": [
+        {
+          "login": "Jrucker4",
+          "name": null
+        },
+        {
+          "login": "tommyvoy",
+          "name": null
+        },
+        {
+          "login": "AdrianeGuerreiro",
+          "name": null
+        },
+        {
+          "login": "cz2day",
+          "name": null
+        },
+        {
+          "login": "smcbroom23",
+          "name": null
+        },
+        {
+          "login": "NMiNiKiR",
+          "name": null
+        },
+        {
+          "login": "ChristinaCortese",
+          "name": null
+        },
+        {
+          "login": "mhardylab",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-LLamasoft",
+    "description": "work, work, work...",
+    "id": "MDQ6VGVhbTM0Mzk2MjE=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-llamasoft",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "llamaliketheanimal"
+          },
+          "editor": {
+            "login": "llamaliketheanimal"
+          },
+          "title": "Team Description",
+          "isPinned": true,
+          "publishedAt": "2019-09-26T16:41:00Z",
+          "updatedAt": "2019-09-26T17:21:42Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-llamasoft/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>Hey there. You found the team-LLamasoft page. Welcome!</p>\n<p>We are a group of employees that all work in the LX team at LLamasoft. We have been looking at and using xAPI for the last few years. We had a few ideas that we were interested in working with as a part of the cohort and this year seemed like a great time to take the plunge.</p>\n<p>The project that we are developing is a survey app that is built using a rapid elearning tool. We envision that this app could be used while presenting to get feedback from the audience.</p>\n<p>This means that the app will:</p>\n<ul>\n<li>Handle multiple select survey questions</li>\n<li>Handle single select survey questions</li>\n<li>Allow audience members to submit questions</li>\n<li>Send all interactions statements and text entry to an LRS</li>\n<li>Create a unique ID for each individual to group a session by</li>\n<li>Allow for submission of an email address by users to receive additional resources and communication after the session</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "llamaliketheanimal"
+          },
+          "editor": {
+            "login": "llamaliketheanimal"
+          },
+          "title": "Team Update: 9/25/19",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T16:48:47Z",
+          "updatedAt": "2019-10-03T12:51:44Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-llamasoft/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p>We have been able to build a prototype of the app. We have done this in Storyline 2.</p>\n<p>We attempted to build it in Storyline 3, but it would not send any text entry submissions to the LRS. After MUCH research and testing, we found that in the developer tools that the scripts we being skipped over. Andrew commented in the #discuss-storyline slack channel about this.</p>\n<p>Using the exact same code, we were able to build this in Storyline 2, and it now works.</p>\n<p>We are hoping to test the app in the upcoming week.<br>\nWe are also considering on using dominKnow ONE to build another version of the app for the comparison</p>"
+        },
+        {
+          "author": {
+            "login": "llamaliketheanimal"
+          },
+          "editor": {
+            "login": "llamaliketheanimal"
+          },
+          "title": "Team Update: 10/3/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-03T12:51:28Z",
+          "updatedAt": "2019-10-03T12:53:51Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-llamasoft/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>The group was able to meet to talk about the revisions we hope to make to the POC (Proof of Concept) before it is tested again.</p>\n<ul>\n<li>Lock in answers to the survey questions</li>\n<li>Change the verbs to survey questions and submit a question sections<br>\n-This will make reporting easier</li>\n<li>Revise the flow so easier to navigate</li>\n</ul>\n<p>We are hoping to have these updates made by next week so we can continue testing.</p>"
+        },
+        {
+          "author": {
+            "login": "llamaliketheanimal"
+          },
+          "editor": null,
+          "title": "Team Update: 10/10/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-10T17:37:45Z",
+          "updatedAt": "2019-10-10T17:37:45Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-llamasoft/discussions/4",
+          "number": 4,
+          "bodyHTML": "<p>No update for the week. The LLamasoft team is in full DevLearn Prep mode. Hope to see you all there!</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "login": "llamaliketheanimal",
+          "name": "LLama Like the Animal"
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-microsoft-teams",
+    "description": "Pulling xAPI data from Microsoft Teams",
+    "id": "MDQ6VGVhbTM0MzQzOTE=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-microsoft-teams",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "leah-kruger"
+          },
+          "editor": null,
+          "title": "Welcome to Team Microsoft Teams! ",
+          "isPinned": false,
+          "publishedAt": "2019-09-24T15:05:44Z",
+          "updatedAt": "2019-09-24T15:05:44Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-microsoft-teams/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>Hi all - welcome to <strong>Team Microsoft Teams</strong> (catchy, isn't it?)</p>\n<p>The purpose of this team is to see if we can <strong>extract data from Microsoft Teams to track learner's social engagement</strong>. There are a few of us from IDEXX who would like to use Teams in our leadership development programs, to bring a more social / Facebook-y element to learning, but we're open to other use cases too.<br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/55750516/65524082-3884f900-debb-11e9-8330-90935472eb11.jpg\"><img src=\"https://user-images.githubusercontent.com/55750516/65524082-3884f900-debb-11e9-8330-90935472eb11.jpg\" alt=\"microsoft-teams\" style=\"max-width:100%;\"></a></p>\n<p>We're fairly new to the world of xAPI, so absolutely open to all suggestions and ideas (APIs, etc). Hope you'll all join in on the fun and exploration!</p>\n<ul>\n<li>Leah, Sandra and Kailey</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "leah-kruger"
+          },
+          "editor": null,
+          "title": "9/25/19 Team Update",
+          "isPinned": false,
+          "publishedAt": "2019-09-25T18:11:41Z",
+          "updatedAt": "2019-09-25T18:11:41Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-microsoft-teams/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p><strong>Accomplishments for the week</strong></p>\n<ul>\n<li>Created a GitHub team, woo hoo!</li>\n<li>Met with the team to share introductions and potential use cases</li>\n<li>Set up an external Microsoft Teams site for us to use as a sandbox for this project</li>\n</ul>\n<p><strong>Areas where your team may need support</strong></p>\n<ul>\n<li>Finding out what data we can pull out of Microsoft Teams and how to best access it</li>\n</ul>\n<p><strong>What you hope to accomplish in the next week</strong></p>\n<ul>\n<li>Narrow down some potential statements of what we want to measure</li>\n<li>Investigate what reporting Teams offers inherently</li>\n<li>Investigate what data we can pull from Teams</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "leah-kruger"
+          },
+          "editor": null,
+          "title": "10/2/19 Team Update",
+          "isPinned": false,
+          "publishedAt": "2019-10-02T17:20:52Z",
+          "updatedAt": "2019-10-02T17:20:52Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-microsoft-teams/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p><strong>Accomplishments for the week</strong></p>\n<ul>\n<li>Oliver solved our entire use case - thanks Oliver! Successfully sent and retrieved an xAPI statement on someone posting in Teams, using Microsoft Flow and Watershed.</li>\n</ul>\n<p><strong>Areas where your team may need support</strong></p>\n<ul>\n<li>We'd like to set up a team Watershed account to practice with</li>\n</ul>\n<p><strong>What you hope to accomplish in the next week</strong></p>\n<ul>\n<li>Trying to figure out if we can capture replies to posts, or just original posts in Teams</li>\n<li>Determine what variables we can use from Teams - can we use the login as the actor? can we use the message text as the description?</li>\n<li>Figure out how we summarize this data into something useful</li>\n<li>Learn about Microsoft Flow and how to use it</li>\n<li>Have Oliver walk us through the steps he took to set this up (see: <a href=\"https://oliverpincus.com/learning-and-performance/xapi/can-we-use-xapi-to-track-actions-in-microsoft-teams/\" rel=\"nofollow\">https://oliverpincus.com/learning-and-performance/xapi/can-we-use-xapi-to-track-actions-in-microsoft-teams/</a>)</li>\n</ul>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 7,
+      "nodes": [
+        {
+          "login": "opincus",
+          "name": "Oliver Pincus"
+        },
+        {
+          "login": "Anirudh-Karanth",
+          "name": null
+        },
+        {
+          "login": "bwanzer",
+          "name": null
+        },
+        {
+          "login": "leah-kruger",
+          "name": null
+        },
+        {
+          "login": "kaileynovikov",
+          "name": null
+        },
+        {
+          "login": "stalbot207",
+          "name": null
+        },
+        {
+          "login": "EMaxwell2",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-online-labs",
+    "description": "This team will explore design and implementation of an xAPI profile for online laboratories",
+    "id": "MDQ6VGVhbTM0NDkzOTQ=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-online-labs",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "felizr"
+          },
+          "editor": null,
+          "title": "Online labs context xAPI Vocabulary",
+          "isPinned": false,
+          "publishedAt": "2019-10-02T18:25:30Z",
+          "updatedAt": "2019-10-02T18:25:30Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-online-labs/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>First task is to explore all the vocabulary used to define a set of interactions in the context of online labs, this includes interactions between: user - lab experiment, user - platform (lab host), user - educational content, lab experiment - platform, etc.</p>"
+        },
+        {
+          "author": {
+            "login": "catazazusues"
+          },
+          "editor": {
+            "login": "felizr"
+          },
+          "title": "Profile definition for online labs",
+          "isPinned": false,
+          "publishedAt": "2019-10-24T03:04:20Z",
+          "updatedAt": "2019-10-31T18:46:20Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-online-labs/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p>Online labs are used in educational context. This required us to define different roles from where the xAPI statements are generated. Our initial roles definition includes:<br>\nStudent<br>\nTeacher<br>\nLab Administrator<br>\nLab platform Manager<br>\nLab experiment (System)<br>\nLab platform</p>\n<p>The following list presents some of the entities that are reported in the xAPI statements and can change according to the context or domain of the event (objects):<br>\nLab experiment<br>\nLab activities<br>\nLab experiment component<br>\nLab session<br>\nLab schedule<br>\nLab user interface</p>\n<p>Additionally we started with the analysis, selection and proposition of a set of verbs that are commonly use during Online lab interactions. Student role xAPI verbs used to report interactions with the Lab (Work in progress):<br>\naccessed<br>\nprogrammed<br>\ncollected<br>\nmeasured<br>\ninteracted<br>\nobserved<br>\nperformed</p>\n<p>We created an LRS using SCORM cloud and sent successfully statements using the java script API provided by xapi.com.</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "login": "felizr",
+          "name": "Luis Felipe Zapata Rivera"
+        },
+        {
+          "login": "catazazusues",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#Team-Pebl",
+    "description": "Tracking learner interaction with EPubs and Pebl",
+    "id": "MDQ6VGVhbTM0MzgwMTc=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-pebl",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "khaydensafdie"
+          },
+          "editor": {
+            "login": "khaydensafdie"
+          },
+          "title": "Team Description",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T03:02:44Z",
+          "updatedAt": "2019-09-26T03:02:50Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pebl/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p><strong>Describe your project</strong><br>\nTeam-PeBL will explore the functionality of PeBL to deliver and track technical training. Our goal is to create an ebook that reports learner interaction, including assignment submission, to an LRS. For additional meta goodness, the interactive ebook will teach how to create an interactive ebook using PeBL.</p>\n<p><strong>What is your project timeline?</strong><br>\nWe expect to complete a working prototype of the ebook published and connected to an LRS in Fall 2019.</p>\n<p><strong>What resources are you using in your project?</strong><br>\nWe are using all available PeBL resources, provided by Judy Katz. As an open source tool, PeBL can be used by all team members along with their notepad app of choice. We will us PeBL for hosting along with an separately-hosted LRS to store statements sent by the ebook.</p>\n<p><strong>What is the goal of your project?</strong><br>\nThe ultimate goal of the project is to use statements sent by PeBL to track completed PeBL ebook submissions to determine the effectiveness of the resource.</p>\n<p><strong>What does the team hope to learn as a result of this project?</strong><br>\nWe hope to learn 1) how to use PeBL as a tool to create interactive ebooks and send xAPI statements and 2) explore the use of xAPI to track training interactions and associated real-world actions.</p>"
+        },
+        {
+          "author": {
+            "login": "khaydensafdie"
+          },
+          "editor": null,
+          "title": "Weekly Update: 9/25",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T03:10:16Z",
+          "updatedAt": "2019-09-26T03:10:16Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pebl/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong></p>\n<ul>\n<li>Held our first team meeting</li>\n<li>Decided on an approach (to be solidified next Monday)</li>\n</ul>\n<p><strong>Areas where your team may need support</strong><br>\nAs we are mostly all new to PeBL, we will be learning this tool together as a team. We have the support we need on this from Judy, but it's worth calling out and remembering how new we are to the tool.</p>\n<p><strong>What we hope to accomplish in the next week</strong></p>\n<ul>\n<li>Finalize our goal</li>\n<li>Identify team members and available time</li>\n<li>Discuss team member strengths/interests to support an effective division of work</li>\n<li>Explore PeBL on our own and as a group to become more comfortable with the tool</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "gaulc"
+          },
+          "editor": null,
+          "title": "Potentially Helpful Links",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T22:48:29Z",
+          "updatedAt": "2019-09-26T22:48:29Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pebl/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>Markdown to html: <a href=\"https://daringfireball.net/projects/markdown/dingus\" rel=\"nofollow\">https://daringfireball.net/projects/markdown/dingus</a><br>\nCalibre: <a href=\"https://calibre-ebook.com/\" rel=\"nofollow\">https://calibre-ebook.com/</a><br>\nxAPI into Storyline (where I got the xAPI info I used): <a href=\"https://www.linkedin.com/pulse/send-xapi-statements-from-storyline-5-short-videos-milloway-msit/\" rel=\"nofollow\">https://www.linkedin.com/pulse/send-xapi-statements-from-storyline-5-short-videos-milloway-msit/</a><br>\nHelpful background on epubs: <a href=\"http://epubsecrets.com/epub-the-language-of-ebooks-a-primer.php\" rel=\"nofollow\">http://epubsecrets.com/epub-the-language-of-ebooks-a-primer.php</a></p>"
+        },
+        {
+          "author": {
+            "login": "khaydensafdie"
+          },
+          "editor": null,
+          "title": "Weekly Update: 10/3",
+          "isPinned": false,
+          "publishedAt": "2019-10-03T16:34:10Z",
+          "updatedAt": "2019-10-03T16:34:10Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pebl/discussions/4",
+          "number": 4,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong></p>\n<ul>\n<li>Individually worked on downloading and installing the tool, tracking each step in the process.</li>\n<li>Met to review and make recommendations for PeBL's xAPI reporting.</li>\n<li>Developed a rough project timeline.</li>\n<li>Solidified our goal: MVP: We track learner submission of a PeBL e-book. BVP [Better Viable Product]: We analyze submission based on competency framework and report results via xAPI</li>\n</ul>\n<p><strong>What we hope to accomplish in the next week:</strong></p>\n<ul>\n<li>Solidify project timeline and roles</li>\n<li>Compare the journey maps we created during our individualized testing to determine the instructional objectives for the learning product that we are developing</li>\n<li>Draft the first section of content</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "jdyktz"
+          },
+          "editor": null,
+          "title": "Links and info for the xAPI sub-project",
+          "isPinned": false,
+          "publishedAt": "2019-10-03T17:21:59Z",
+          "updatedAt": "2019-10-03T17:21:59Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pebl/discussions/5",
+          "number": 5,
+          "bodyHTML": "<p><a href=\"https://docs.google.com/spreadsheets/d/1TxWZpq0fmowubgdB1Co9Zv6meRaQGtCfGJsOYJTBVHY/edit#gid=0\" rel=\"nofollow\">PeBL xAPI Review</a> - Breakdown of PeBL features, what xAPI they report, and our suggestions<br>\n...based on Judy's <a href=\"https://docs.google.com/document/d/1krA16QedKbezLtrwyXCB090CCXTRkyIqnO8WCgZMTOc/edit?usp=sharing\" rel=\"nofollow\">log</a> of testing features in <a href=\"https://reader.peblproject.org/?epub=epub_content%2Fbookshelf%2Fepub3-mgig.epub&amp;goto=epubcfi(/6/10!/4%5BMaking_Good_Instructors_Great-18%5D/2%5B_idContainer1693%5D/2%5B_idParaDest-18%5D/2/2%5B_idTextAnchor021%5D)\" rel=\"nofollow\">the MGIG book</a><br>\n<a href=\"https://lrs.peblproject.com/organisation/59f1742c36822628edbf087f/data/source\" rel=\"nofollow\">Eduworks' LRS</a><br>\n<a href=\"https://peblproject.org/definitions.html\" rel=\"nofollow\">PeBL verb definitions from the spec</a><br>\n<a href=\"https://xapi.com/statements-101/\" rel=\"nofollow\">xAPI Statements 101</a><br>\n<a href=\"https://adlnet.github.io/xapi-lab/\" rel=\"nofollow\">xAPI Lab Statement Manipulation and Response</a></p>"
+        },
+        {
+          "author": {
+            "login": "jdyktz"
+          },
+          "editor": {
+            "login": "jdyktz"
+          },
+          "title": "Weekly Update: 10/10",
+          "isPinned": false,
+          "publishedAt": "2019-10-10T17:56:04Z",
+          "updatedAt": "2019-10-10T18:00:23Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pebl/discussions/6",
+          "number": 6,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong></p>\n<p>Completed recommendations for PeBL's xAPI reporting -- also devoted our regular team call to this sub-project</p>\n<p><strong>What we hope to accomplish in the next week:</strong></p>\n<p>Get back to the main project of developing the process for creating a PeBL book<br>\nLook at example books<br>\nReview development work on the xAPI sub-project</p>"
+        },
+        {
+          "author": {
+            "login": "khaydensafdie"
+          },
+          "editor": null,
+          "title": "Weekly Update: 10/17",
+          "isPinned": false,
+          "publishedAt": "2019-10-17T15:16:31Z",
+          "updatedAt": "2019-10-17T15:16:31Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pebl/discussions/7",
+          "number": 7,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong><br>\nCreated an <a href=\"https://app.mural.co/t/motivf2327/m/motivf2327/1571075587742/6f8e9d19fee2863881f8021a04d7da4ca4b016b5\" rel=\"nofollow\">outline of objectives for our ebook</a>.</p>\n<p><strong>What we hope to accomplish in the next week:</strong><br>\nAssign individual chunks and start working on the storyboard<br>\nSolidify our approach to the extensions objectives</p>"
+        },
+        {
+          "author": {
+            "login": "khaydensafdie"
+          },
+          "editor": null,
+          "title": "Weekly Update: 10/31",
+          "isPinned": false,
+          "publishedAt": "2019-10-31T14:26:14Z",
+          "updatedAt": "2019-10-31T14:26:14Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pebl/discussions/8",
+          "number": 8,
+          "bodyHTML": "<p><strong>Accomplishments for the week:</strong><br>\nCreated a storyboard and assigned out sections</p>\n<p><strong>What we hope to accomplish in the next week:</strong><br>\nBegin individual work on the storyboard<br>\nUse sample code to incorporate into the storyboard</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 3,
+      "nodes": [
+        {
+          "login": "kwintessential2",
+          "name": null
+        },
+        {
+          "login": "jdyktz",
+          "name": "Judy Katz"
+        },
+        {
+          "login": "gaulc",
+          "name": "Cassandra Gaul"
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-pollev",
+    "description": "Generate xAPI statements from PollEv activities",
+    "id": "MDQ6VGVhbTM0Mzg1NDU=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-pollev",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "dotmem2"
+          },
+          "editor": {
+            "login": "dotmem2"
+          },
+          "title": "Update for Week 3 (Week of 9/23/19)",
+          "isPinned": true,
+          "publishedAt": "2019-09-26T02:37:30Z",
+          "updatedAt": "2019-09-26T02:46:13Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pollev/discussions/1",
+          "number": 1,
+          "bodyHTML": "<ul>\n<li>\n<p>Accomplishment for the week: Set up Watershed LRS for testing; successfully sent statements from another product for testing</p>\n</li>\n<li>\n<p>Areas where the team needs support: More participants (anyone who's done this before) :-D</p>\n</li>\n<li>\n<p>Hope to accomplish in the next week: Set up a recurring meeting time, figure out a way to access Poll Everywhere or at least confirm with the vendor whether this capability exists</p>\n</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "dotmem2"
+          },
+          "editor": null,
+          "title": "About this team",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T02:59:21Z",
+          "updatedAt": "2019-09-26T02:59:21Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pollev/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p><strong>Project Description</strong>: This project was inspired by a shared desire to experiment with sending xAPI statements from a popular interactive polling application, Poll Everywhere.</p>\n<p><strong>Project Timeline</strong>: Duration of the Fall 2019 cohort</p>\n<p><strong>Resources Being Used in the Project</strong>: Poll Everywhere, MS Powerpoint/Keynote/Google Slides, xapi.ly</p>\n<p><strong>Project Goal</strong>: To successfully generate activity statements from an interactive polling activity; ideally be able to report activity back into an LMS transcript (optional)</p>\n<p><strong>What does the team hope to learn as a result of this project?</strong>: How to leverage xAPI for other web applications in the absence of native xAPI capability</p>"
+        },
+        {
+          "author": {
+            "login": "dotmem2"
+          },
+          "editor": {
+            "login": "dotmem2"
+          },
+          "title": "Update for Week 4 (Week of 9/30/19) ",
+          "isPinned": false,
+          "publishedAt": "2019-10-04T00:07:10Z",
+          "updatedAt": "2019-10-04T00:07:44Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-pollev/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>The team reached out to the vendor last week. On 9/29, we were informed by the vendor that their API was sunset as of 10/1/2019.</p>\n<p>Team members will remain a part of the cohort but will turn their attention to other projects. While this is sad news for this initiative, this experience underscores key parts of any xAPI project:</p>\n<ul>\n<li>document your learning ecosystem</li>\n<li>assess your vendors</li>\n<li>if you're experimenting, take a targeted, measured approach.</li>\n</ul>\n<p>If any have questions, please reach out to Maria M. or Patty L. for details.</p>\n<p>This will be the last post for this group, unless we hear otherwise from the vendor.</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 2,
+      "nodes": [
+        {
+          "login": "dotmem2",
+          "name": "Maria M."
+        },
+        {
+          "login": "pattyluna",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-query-lrs",
+    "description": "Fall 2019 xAPI Cohort",
+    "id": "MDQ6VGVhbTM0Mjc5NDA=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-query-lrs",
+    "discussions": {
+      "nodes": []
+    },
+    "members": {
+      "totalCount": 3,
+      "nodes": [
+        {
+          "login": "eozkeskin",
+          "name": "E. Emre ÖZKESKİN"
+        },
+        {
+          "login": "austinrut",
+          "name": null
+        },
+        {
+          "login": "jeremyasantos",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#Team-Scavenger Hunt",
+    "description": "#team-scavenger-hunt",
+    "id": "MDQ6VGVhbTM0Mjc4MDI=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-scavenger-hunt",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "tshroyer2"
+          },
+          "editor": {
+            "login": "tshroyer2"
+          },
+          "title": "Team Update: 9/26/19",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T01:37:02Z",
+          "updatedAt": "2019-09-26T01:37:48Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-scavenger-hunt/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p><strong>Accomplishments:</strong><br>\n• Set up LRS in AWS<br>\n• Developed and <a href=\"https://www.youtube.com/watch?v=9Uzr8qNMsbU&amp;feature=youtu.be\" rel=\"nofollow\">recorded xAPI overview</a><br>\n• Created Google Form and an assigned QR code<br>\n• Developed cards on GitHub board</p>\n<p><strong>Areas where your team may need support:</strong><br>\n• Anyone with experience with Wordpress xAPI plug-ins (found about 7 that I’m looking at now, but looks like only 1 may end up working, but it leverages H5P, which I’ve not used before and need to read more on)</p>\n<p><strong>What you hope to accomplish in the next week:</strong><br>\n• Tweaks to overall process (confirm specific user experience)<br>\n• Develop xAPI statements for Google Form data<br>\n• Learn more about H5P and associated Wordpress xAPI plug-ins</p>"
+        },
+        {
+          "author": {
+            "login": "tshroyer2"
+          },
+          "editor": null,
+          "title": "Team Update: 10/03/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-03T00:05:07Z",
+          "updatedAt": "2019-10-03T00:05:07Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-scavenger-hunt/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p>Accomplishments:<br>\n• Found an article with insight on xAPI plug-ins for Wordpress and printed it out</p>\n<p>Areas where your team may need support:<br>\n• Can anyone give me a few more hours in the day?</p>\n<p>What you hope to accomplish in the next week:<br>\n• Be able to reach out and try to test out some of the xAPI plug-ins from the article found<br>\nAdd a brief and description for my GitHub team here</p>"
+        },
+        {
+          "author": {
+            "login": "tshroyer2"
+          },
+          "editor": null,
+          "title": "Team Update: 10/30/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-30T15:54:50Z",
+          "updatedAt": "2019-10-30T15:54:50Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-scavenger-hunt/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>Accomplishments:<br>\n• Met with Brady on Monday (10/28) to learn more about the Wordpress plug-in that his team from the spring cohort developed. He provided me with the plug-in details to test.</p>\n<p>Areas where your team may need support:<br>\n• None at this time, but expect to have a need in a couple weeks where people walk through a simple process to help me populate data</p>\n<p>What you hope to accomplish in the next week:<br>\n• Import the plug-in to my word-press site and test the types of statements I want to use<br>\n• Prepare the Google Form and QR Code for end users<br>\n• Prepare instructions for end users on what I'm looking for them to do</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 1,
+      "nodes": [
+        {
+          "login": "tshroyer2",
+          "name": "Tracy S."
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-Storyline-LMS-UL",
+    "description": "This is a team for those that use Storyline and the LMS titled UL, myLearning, and/or LearnShare",
+    "id": "MDQ6VGVhbTM0MjQyMjQ=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-storyline-lms-ul",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "sbildst1"
+          },
+          "editor": null,
+          "title": "9/19 Status",
+          "isPinned": true,
+          "publishedAt": "2019-09-18T19:19:49Z",
+          "updatedAt": "2019-09-19T20:08:29Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-storyline-lms-ul/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>Project Description:  Add appropriate code to a live and fully functioning Storyline course to capture learner activity on video, quiz, and other clickable objects within the LMS titled UL/myLearning/Learnshare.<br>\nTasks 1) Sent a poll to group to determine who is Storyline user, UL/myLearning/LearnShare users, GitHub proficiency.<br>\nTask 2) Trying to find an already developed course to add xAPI code to that includes a quiz, video, and other clickable objects.<br>\nTask 3) Figure out how team can work on same file or another feasible plan of action to accomplish goals.</p>"
+        },
+        {
+          "author": {
+            "login": "sbildst1"
+          },
+          "editor": {
+            "login": "sbildst1"
+          },
+          "title": "9/25 Status",
+          "isPinned": false,
+          "publishedAt": "2019-09-25T18:23:27Z",
+          "updatedAt": "2019-09-25T18:24:33Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-storyline-lms-ul/discussions/2",
+          "number": 2,
+          "bodyHTML": "<ol>\n<li>Slack poll sent to determine best day/time to hold team meetings.</li>\n<li>Agenda would be to assign tasks for adding code, publishing, testing, running report, etc., and status on past weeks activities.</li>\n<li>Materials for project ready for use:  Access to a version of UL/Learnshare for testing and reporting.  Access to xAPI.ly and other sources for obtaining code.  Complete Storyline file with multiple trackable objects and media.</li>\n</ol>\n<p>Would estimate that team work can being next week.</p>"
+        },
+        {
+          "author": {
+            "login": "sbildst1"
+          },
+          "editor": null,
+          "title": "10/2 Status",
+          "isPinned": false,
+          "publishedAt": "2019-10-02T20:23:21Z",
+          "updatedAt": "2019-10-02T20:23:21Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-storyline-lms-ul/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>First team meeting being held Thurs AM to delegate tasks and define timeline for multiple stages of work.  These are the items we have in place to start work:<br>\n-Agenda  for 10/3 Team meeting has been shared to the channel<br>\n-Zoom link in Pinned items (recording will be shared)<br>\n-Storyline file<br>\n-Setup for Learnshare/UL access<br>\n-xAPI.ly access<br>\n-Sample document of workflow for reference</p>"
+        },
+        {
+          "author": {
+            "login": "sbildst1"
+          },
+          "editor": null,
+          "title": "10/17/19 Status",
+          "isPinned": false,
+          "publishedAt": "2019-10-17T13:18:05Z",
+          "updatedAt": "2019-10-17T13:18:05Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-storyline-lms-ul/discussions/4",
+          "number": 4,
+          "bodyHTML": "<p>Please be advised that  I'm closing this channel due to other business priorities and lack off interested in this topic. I think my choice of project was too specific with the UL/Learnshare/myLearning LMS for the general group's interests.  Thanks so much to those who joined and participated.  Good luck to everyone with their xAPI quest!!!</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 9,
+      "nodes": [
+        {
+          "login": "alenaar",
+          "name": null
+        },
+        {
+          "login": "Anirudh-Karanth",
+          "name": null
+        },
+        {
+          "login": "sbildst1",
+          "name": null
+        },
+        {
+          "login": "ParichayaK",
+          "name": "Parichaya"
+        },
+        {
+          "login": "JohnForman6",
+          "name": null
+        },
+        {
+          "login": "cnilsen12249",
+          "name": null
+        },
+        {
+          "login": "esteller22",
+          "name": null
+        },
+        {
+          "login": "cz2day",
+          "name": null
+        },
+        {
+          "login": "Mylirina",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-unity3D-sandbox",
+    "description": "Fall 2019 Cohort for xAPI in Unity3D",
+    "id": "MDQ6VGVhbTM0MzgxNDE=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-unity3d-sandbox",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "teamunitygame"
+          },
+          "editor": null,
+          "title": "Team Description",
+          "isPinned": true,
+          "publishedAt": "2019-09-25T21:30:42Z",
+          "updatedAt": "2019-09-25T21:30:46Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-unity3d-sandbox/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>Description: This project will focus on the use of Unity3D to generate statements using the GBLxAPI framework</p>\n<ol>\n<li><strong>Phase One</strong> is based on \"getting started\" with the framework authored by Stuart Claggett with Dig-It Games. Success =statements in your LRS of choice.</li>\n<li><strong>Phase Two</strong> is based on creating custom interactions using the basic Unity3D tools that leverage the framework to send purposeful statements based on the 3D Scene.</li>\n<li><strong>Phase Three</strong> is focused on creating a shared library of interactive elements called \"asset bundles\" that can be shared within an xAPI enabled Unity3D scene</li>\n</ol>\n<p>What this means is that once we have a Unity3D scene up-and-running with GBLxAPI, you are free to \"play in the sandbox\" and create simple (or complex)  interactive elements that you can share with others through GitHub.</p>\n<p><strong>What is your project timeline?</strong><br>\nWe will develop a timeline based on the duration of the Fall Cohort. Specific scene assets may take on a lifecycle of their own as branches of development.</p>\n<p><strong>What resources are you using in your project?</strong><br>\nUnity3D minimum version (TBD) -Note: We may pick a current version and stick with it to avoid upgrade conflicts. (even though it is tempting to update Unity3D every time!).<br>\nOther Assets, such as 3rd party Add-ins, may be considered but should be packaged or noted where required.  Use Free 3D assets or design/build based on your level of interest.</p>\n<p><strong>What is the goal of your project?</strong><br>\nThe goal is to build an extensible platform on top of Unity3D that allows creative builders of all skill levels to work towards an emerging standard of interactive 3D content that conforms to xAPI specifications.</p>\n<p><strong>What does the team hope to learn as a result of this project?</strong><br>\nWe hope to learn that while Unity3D has a steep learning curve, it is possible to achieve very interactive results by starting with a shared repository of elements.</p>"
+        },
+        {
+          "author": {
+            "login": "teamunitygame"
+          },
+          "editor": null,
+          "title": "Team Update - Week of 9/26/19",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T19:46:14Z",
+          "updatedAt": "2019-09-26T19:46:14Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-unity3d-sandbox/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p><strong>-  Accomplishments for the week</strong></p>\n<ol>\n<li>\n<ul>\n<li>The GitHub repo has been set up, and members are beginning to join.</li>\n</ul>\n</li>\n<li>\n<ul>\n<li>A WebEx Meeting space has been set up, and will be scheduled to occur based on team availability</li>\n</ul>\n</li>\n</ol>\n<p><strong>-  Areas where your team may need support</strong></p>\n<p>Would like to set up a new OpenSource or hosted Learning Locker</p>\n<p><strong>- What you hope to accomplish in the next week</strong></p>\n<ul>\n<li>\n<p>Update the GitHub Repo with the base code for a Sandbox Scene in Unity3D</p>\n</li>\n<li>\n<p>Get input from the team on specific interactions to focus on and track.</p>\n</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "teamunitygame"
+          },
+          "editor": {
+            "login": "teamunitygame"
+          },
+          "title": "Team Update  - Week of 9/20/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-01T20:53:23Z",
+          "updatedAt": "2019-10-02T21:36:42Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-unity3d-sandbox/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p><strong>-Accomplishments for the week</strong></p>\n<ul>\n<li>Our first WebEx session occurred, where we discussed objectives and next steps.</li>\n<li>Foundation: We decided that Learning Locker Open Source was going to be our installed LRS of choice</li>\n<li>We determined that Unity 2019.x (latest version) would be a good requirement to stay current</li>\n<li>We discussed creating a basic scene in Unity3D with GBLxapi, then allow team members to create their own Branch to demonstrate a reusable content methodology (via GitHub)<br>\n--This will allow us to explore different builds that all come from a standard xAPI enabled starting point using the GBLxAPI framework<br>\n--  Scene Building: We discussed how our focus would be on a library of eLearning interactions that could be applied to any 3D model or scenario, such as drag and drop, step based activities, and free-exploration.<br>\n--Script - random selection of cards, bouncing ball (start with simple interactions).<br>\n--Ux: We discussed how it might be a good objective to get data back from the LRS into the Ui for the learner to get feedback on interactions with the scene. (Nice to have, valuable). LRS as the datasource.<br>\n--Admins would always have access to LRS Dashboards or external data analytics, but in the scene, xAPI data could be invaluable to the learner.<br>\n--Looking at Postman for QA testing of LRS</li>\n</ul>\n<p><strong>--Areas where your team may need support?</strong><br>\n-- We may need support with installation of Open Source LL, since we want to learn how to do this activity to support ongoing development. EDIT: OpenSource LL installed on AWS! Now comparing to Enterprise LL with Journeys, with thanks to the LL team for supporting this Cohort and team instance.<br>\n--We may need some support on how to leverage GitHub for basic co-authoring and pull of branched changes.</p>\n<p>--What we hope to accomplish in the next week?<br>\n#1- Learning Locker Open Source - COMPLETE<br>\n#2- Basic Unity3D scene with GBLxAPI installed<br>\n#3- GitHub repository with starter Scene</p>"
+        },
+        {
+          "author": {
+            "login": "teamunitygame"
+          },
+          "editor": null,
+          "title": "Team Update- Week of 10/10/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-10T03:10:21Z",
+          "updatedAt": "2019-10-10T03:10:21Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-unity3d-sandbox/discussions/4",
+          "number": 4,
+          "bodyHTML": "<p><strong>-Accomplishments for the Week</strong></p>\n<ul>\n<li>WebEx Session #2: Reviewed \"Mindmap\" diagram of full project scope</li>\n<li>Set up Unity3D Sandbox Scene with GBLxAPI installed</li>\n<li>Connected Sandbox to OpenSource LL LRS<br>\n-Team is exploring other LRS platforms for scalability: LL Enterprise, Watershed</li>\n</ul>\n<p><strong>Areas for Support:</strong><br>\n-May reach out to GBLxAPI to learn about advanced use of Q&amp;A (Quiz) building</p>\n<p><strong>Plans for next week;</strong></p>\n<ul>\n<li>Upload base Unity3D scene to GitHub Repo and test shared 3D asset packages</li>\n<li>Our next \"Hackathon\" session on 10/14 or 10/15 8pm will start in the Unity3D scene and begin building custom interactive objects.</li>\n</ul>"
+        },
+        {
+          "author": {
+            "login": "teamunitygame"
+          },
+          "editor": null,
+          "title": "Team Update - Week of 10/17/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-17T17:40:32Z",
+          "updatedAt": "2019-10-17T17:40:32Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-unity3d-sandbox/discussions/5",
+          "number": 5,
+          "bodyHTML": "<p><strong>Accomplishments for the week</strong></p>\n<ul>\n<li>Conducted \"hackathon session\" in Unity3D<br>\n-Published the \"base code\" for a GBLxAPI Unity3D scene into GitHub<br>\n-Individually downloaded and used to create \"sandbox\" experiments.<br>\n-Using storedPlayerPrefs to capture \"Actor\" info for return of player</li>\n<li>Implementing Physics code (Unity3D) to detect collisions that generate xAPI statements</li>\n<li>Base scene can be configured with any LRS of choice in your local working copy</li>\n</ul>\n<p><strong>Plans for Next Week</strong><br>\n-Conduct another live Unity3D \"hackathon\" session PM hours<br>\n-Continue to build out GameObject behaviors that can be shared in a Sandbox scene<br>\n--Upload shared assets to GitHub</p>"
+        },
+        {
+          "author": {
+            "login": "teamunitygame"
+          },
+          "editor": {
+            "login": "teamunitygame"
+          },
+          "title": "Team Update - Week of 10/24/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-24T18:07:16Z",
+          "updatedAt": "2019-10-24T18:40:04Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-unity3d-sandbox/discussions/6",
+          "number": 6,
+          "bodyHTML": "<p><strong>Accomplishments for the Week</strong></p>\n<ul>\n<li>\n<p>Working on a Navigation Component to be able to move between 3D scene objectives.</p>\n</li>\n<li>\n<p>tested ProBuilder, a 3D modeling tool in Unity3D</p>\n</li>\n</ul>\n<p><strong>Plans for next week</strong><br>\n-Finish Navigation, begin building a 3D workspace</p>\n<p>-begin working on step by step activity menu</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 3,
+      "nodes": [
+        {
+          "login": "jayleone",
+          "name": null
+        },
+        {
+          "login": "teamunitygame",
+          "name": "ericview"
+        },
+        {
+          "login": "mhardylab",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-Vimeo-and-xapi",
+    "description": "Capture learning data from Vimeo to understand video parts that are played, skipped, rewatched, or even multitasking. Slack channel: #team-vimeo_and_xapi",
+    "id": "MDQ6VGVhbTM0MzQ2MjA=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-vimeo-and-xapi",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "carolinemeyer"
+          },
+          "editor": null,
+          "title": "Team Brief",
+          "isPinned": true,
+          "publishedAt": "2019-09-25T21:22:24Z",
+          "updatedAt": "2019-10-01T18:18:36Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-vimeo-and-xapi/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>Hi All - Welcome to team Vimeo and xAPI!</p>\n<p><strong>Goal:</strong><br>\nOur goal is to capture learning data from Vimeo to understand video parts that are played, skipped, rewatched, or even user multitasking.</p>\n<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/55753256/65640049-6fd8d000-dfb7-11e9-81f2-dbbc614b35e9.png\"><img src=\"https://user-images.githubusercontent.com/55753256/65640049-6fd8d000-dfb7-11e9-81f2-dbbc614b35e9.png\" alt=\"image\" style=\"max-width:100%;\"></a></p>\n<p><strong>Resources:</strong><br>\nWe will use our Vimeo account as a statement sender, and Learning Locker Open Source as a statement receiver.<br>\nWe'll meet every Wednesday at 3pm ET via Zoom.</p>\n<p><strong>What we hope to learn:</strong><br>\n• How to send xAPI statements<br>\n• The breadth of data that can be collected and the value it adds<br>\n• What can or can't be done and the skills required<br>\n• How an LRS works and the value it adds</p>\n<p>Feel free to reach out with any question!</p>\n<p>Jessica and Caroline</p>"
+        },
+        {
+          "author": {
+            "login": "carolinemeyer"
+          },
+          "editor": null,
+          "title": "9/25/19 Team Update",
+          "isPinned": false,
+          "publishedAt": "2019-09-25T21:33:34Z",
+          "updatedAt": "2019-09-25T21:33:34Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-vimeo-and-xapi/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p><strong>Accomplishments for the week</strong><br>\n• Created the Slack Team<br>\n• Created a GitHub team<br>\n• Set up Learning Locker Open Source LRS<br>\n• Defined the time and day of the week for the team meeting</p>\n<p><strong>Areas where the team may need support</strong><br>\n• Finding out what data we can pull out of Vimeo and how to best access it</p>\n<p><strong>What we hope to accomplish in the next week</strong><br>\n• Getting used to sending statements to Learning Locker (LL) by using a source we know how to pull data from (Articulate Rise)<br>\n• Investigate how statements are sent from similar tools, like YouTube<br>\n• Clearly define what we want to track and the verbs we should use</p>"
+        },
+        {
+          "author": {
+            "login": "carolinemeyer"
+          },
+          "editor": null,
+          "title": "10/03/19 Team Update",
+          "isPinned": false,
+          "publishedAt": "2019-10-03T14:54:48Z",
+          "updatedAt": "2019-10-03T14:54:48Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-vimeo-and-xapi/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p><strong>Accomplishments for the week</strong><br>\n• Sent first statements from Articulate Rise to Learning Locker for testing<br>\n• Found resources on how to use xAPI for JWPlayer, YouTube, and Vimeo<br>\n• Listed what we want to track and compared the verbs against the registry of existing xAPI verbs</p>\n<p><strong>Areas where the team may need support</strong><br>\n• How to best access Vimeo data</p>\n<p><strong>What we hope to accomplish in the next week</strong><br>\n• Get more clarity on how to access Vimeo data</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 4,
+      "nodes": [
+        {
+          "login": "bradyriordan",
+          "name": null
+        },
+        {
+          "login": "carolinemeyer",
+          "name": null
+        },
+        {
+          "login": "JessicaEule",
+          "name": null
+        },
+        {
+          "login": "NMiNiKiR",
+          "name": null
+        }
+      ]
+    }
+  },
+  {
+    "name": "#team-wordpress-and-learndash-and-xapi",
+    "description": "Passing xAPI statements through WP/Learndash instance.",
+    "id": "MDQ6VGVhbTM0MzgxODE=",
+    "url": "https://github.com/orgs/xapicohort/teams/team-wordpress-and-learndash-and-xapi",
+    "discussions": {
+      "nodes": [
+        {
+          "author": {
+            "login": "RMedley"
+          },
+          "editor": null,
+          "title": "Team Description",
+          "isPinned": false,
+          "publishedAt": "2019-09-26T20:33:48Z",
+          "updatedAt": "2019-09-26T20:33:48Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-wordpress-and-learndash-and-xapi/discussions/1",
+          "number": 1,
+          "bodyHTML": "<p>It seems we may be having trouble setting up a meeting and getting started. So let's start working on independent schedules and see how we can get this rolling.  In this discussion, write up a reply describing our team (intention, purpose, goals...). I will then compile our words into one statement.</p>"
+        },
+        {
+          "author": {
+            "login": "PatriciaStitson"
+          },
+          "editor": null,
+          "title": "Starting Point",
+          "isPinned": true,
+          "publishedAt": "2019-10-02T03:18:50Z",
+          "updatedAt": "2019-10-02T03:18:53Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-wordpress-and-learndash-and-xapi/discussions/2",
+          "number": 2,
+          "bodyHTML": "<p>Hi all,</p>\n<p>I have finally got the LRS set up and the xAPI.ly is in the works.  It would be helpful if you all would let me know who wants to:<br>\na.  get a key for the LRS so we can set up a way for you to send statements from your authoring tool of choice.  These can be published on your LMS or mine<br>\nb.  get on the team for the xAPI.ly so that you can start generating statements for yourself</p>\n<p>My plan of action:</p>\n<ul>\n<li>Get my own course with a statement or two uploaded to the LMS and tested.</li>\n</ul>\n<p>NOTE:  I think it is awesome if we want to all experiment in our own environments and then come together to present our findings.  There is not any reason I can see towards forcing this as a HS level 'group' project.  BUT - if we need to circle the horses around one effort or another that is also a possibility?</p>"
+        },
+        {
+          "author": {
+            "login": "xapijess"
+          },
+          "editor": null,
+          "title": "Update: 10/17/19",
+          "isPinned": false,
+          "publishedAt": "2019-10-17T15:59:38Z",
+          "updatedAt": "2019-10-17T15:59:38Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-wordpress-and-learndash-and-xapi/discussions/3",
+          "number": 3,
+          "bodyHTML": "<p>From Tim Murphy:  This is what I finally got around to doing last week-</p>\n<p>Overview<br>\n·        Created account with Veracity lrs. using the free demo account.</p>\n<p>·        Quick tested from HTML5 page to LRS</p>\n<p>·        Created sample Rise course</p>\n<p>·        Tracked Rise pages</p>\n<p>Details</p>\n<ol>\n<li>Quick Test</li>\n</ol>\n<p>I did a quick test using buttons on my page <a href=\"http://a1tim.com/pdf/timtest003.html\" rel=\"nofollow\">http://a1tim.com/pdf/timtest003.html</a></p>\n<p>This is the functionality:</p>\n<p>a. Quick check to see the statements appearing in LRS</p>\n<p>b. Attempt to track changes in page anchor and #</p>\n<p>I got the basic code for this page from some LRS site. I forget which one. All copyrights recognised!</p>\n<ol start=\"2\">\n<li>Sample Rise course</li>\n</ol>\n<p>I did most of my work on live courses for my company. I cannot make those publicly available, so I have placed a demo course online to show cohort &amp; team what is happening.</p>\n<p><a href=\"http://a1tim.com/tim_visual_001/#/\" rel=\"nofollow\">http://a1tim.com/tim_visual_001/#/</a></p>\n<ol start=\"3\">\n<li>Track Rise pages</li>\n</ol>\n<p>I edited my course index.html to include xapi code. It sends statements to Veracity LRS.</p>\n<p>I added IF statements to track various page components of the Rise course.</p>\n<p>I have modified the code to use javascript variable stores for Actor, Verb, Object to allow quicker coding of each course.</p>\n<p>Sources: Original page source code thanks to Veracity samples and melmilloway at GitHub</p>\n<p>Fails<br>\nI was unable to track learner interactions with Rise page elements: accordion, tabs. Does anyone have a fix for this?</p>\n<p>My Next Steps<br>\n·        Track Learner</p>\n<p>Try to track learner interactions with accordion, tabs and other interactive Rise course elements</p>\n<p>Try to see how learner is using the embedded YouTube video and other course video</p>\n<p>·        Experiment with more of the xAPI</p>\n<pre><code>           Timestamp the events\n\n           Code video starts and stops\n</code></pre>\n<p>·        WordPress</p>\n<p>See if it all works within WordPress</p>\n<p>Use the 'account' definition for Actor to get their LMS login</p>"
+        },
+        {
+          "author": {
+            "login": "a1tim"
+          },
+          "editor": null,
+          "title": "Update October 31, 2019",
+          "isPinned": false,
+          "publishedAt": "2019-10-31T15:59:28Z",
+          "updatedAt": "2019-10-31T15:59:28Z",
+          "url": "https://github.com/orgs/xapicohort/teams/team-wordpress-and-learndash-and-xapi/discussions/4",
+          "number": 4,
+          "bodyHTML": "<p>Installed Learn-dash &amp; Grassblade xapi connector to WordPress. I know - it does not look like much work done! However it does set me up for next week when I will be able to:</p>\n<ul>\n<li>configure the system,</li>\n<li>upload a Rise course,</li>\n<li>amend index,html</li>\n<li>test data sent to Veracity</li>\n</ul>\n<p>Also done this week was a continuation of statement sends to Veracity from Rise, including experimentation with statement types.</p>"
+        }
+      ]
+    },
+    "members": {
+      "totalCount": 4,
+      "nodes": [
+        {
+          "login": "izzy9985",
+          "name": null
+        },
+        {
+          "login": "PatriciaStitson",
+          "name": null
+        },
+        {
+          "login": "a1tim",
+          "name": "Tim Murphy"
+        },
+        {
+          "login": "RMedley",
+          "name": "Dr. Robin Medley"
+        }
+      ]
+    }
+  }
+]

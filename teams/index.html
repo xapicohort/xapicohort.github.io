@@ -13,17 +13,36 @@
   </head>
 
   <body>
-    <main>
+    <header>
       <h1>xAPI Cohort Fall 2019 <span style="font-weight: 100">| GitHub Teams</span></h1>
       <div class="metrics">
         <h2>Teams: <span class="metrics-value metrics-teams"></span></h2>
         <h2>Members: <span class="metrics-value metrics-members"></span></h2>
       </div>
-      <article class="team-list">
-        <div class="page-loading">
-          <div class="loading-indicator"></div>
-        </div>
-      </article>
+
+      <div class="view-switcher">
+        <span class="view-switcher-btn master-detail-switch">Master / Detail View</span>
+        <span class="view-switcher-btn long-list-switch">Long List View</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-loading">
+        <div class="loading-indicator"></div>
+      </div>
+
+      <div class="team-choice-container">
+        <article class="team-choice-list-wrapper">
+
+        </article>
+
+        <article class="team-list">
+
+        </article>
+      </div>
+
+
+
     </main>
   </body>
 
