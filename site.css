@@ -16,6 +16,14 @@ div.bg-gray,
     background-color: #f2f2f2!important;
 }
 
+#mc-embedded-subscribe {
+    margin: 1em 8% 1em 5%;
+}
+
+#party-register {
+    margin-left: 1em;
+}
+
 #party {
     padding: 10px 0 10px 3%;
 }
@@ -38,4 +46,8 @@ div.bg-gray,
 
 .footer {
     margin: 10%;
+}
+
+.nav-link {
+    border: none !important;
 }
