@@ -1,13 +1,24 @@
 #party-banner {
-    background-repeat: no-repeat;
-    background-image : url("http://www.torrancelearning.com/wp-content/uploads/2016/03/xapi-party-2015.jpg");
-    background-size: cover;
+    position           : absolute;
+    background-repeat  : no-repeat;
+    background-image   : url("http://www.torrancelearning.com/wp-content/uploads/2016/03/xapi-party-2015.jpg");
+    background-size    : cover;
     background-position: center center;
-    height: 250px;
-    color: white;
+    height             : 300px;
+    color              : white;
+    padding-top        : 12rem;
+    padding-left       : 75px;
+}
+
+#party-content-wrapper {
+    position  : absolute;
+    margin-top: 20rem;
 }
 
 #party-content {
-    margin-top: 50px;
     padding-left: 50px;
+}
+
+#party-registration {
+    margin-bottom: 3rem;
 }

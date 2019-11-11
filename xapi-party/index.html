@@ -25,7 +25,7 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-primary">
             <a class="navbar-brand abs" href="/">
-                <h1 class="text-white">xAPI Party</h1>
+                <h1 class="text-white">xAPI Cohort</h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -52,14 +52,14 @@
     </header>
 
     <div id="party-banner" class="w-100">
-        <div class="pl-5 h-75">
+        <div class="h-75">
             <h4 class="text-white"><strong>xAPI Party</strong></h4>
             <h6>Friday, December 13, 2019</h6>
         </div>
     </div>
 
-    <div class="w-100 row">
-        <div id="party-content" class="col-md-9">
+    <div id="party-content-wrapper" class="w-100 row mb-5">
+        <div id="party-content" class="col-md-8">
             <h3>It's time for a party!</h3>
             <p>The xAPI Party is a gathering of tinkerers, explorers, strategic thinkers and people getting stuff done
                 with the Experience API. It’s a day filled with case studies, how-to sessions, demos and networking.
@@ -67,8 +67,8 @@
             <p>As you may know, xAPI is the up-and-coming spec for tracking learning and performance. While it’s
                 rewarding to be at the forefront of xAPI’s implementation, there’s still so much to learn and so much
                 yet to be decided by the industry. We find meeting with other curious trailblazers helps all involved.
-                That’s why we host the 12-week learning-by-doing-in-teams-on-projects <a
-                    href="/">xAPI Learning Cohort</a> every spring
+                That’s why we host the 12-week learning-by-doing-in-teams-on-projects <a href="/">xAPI Learning
+                    Cohort</a> every spring
                 and fall. Folks from a diverse group of organizations, with a range of xAPI experience, form themselves
                 into teams to explore a variety of use cases. And then we celebrate all that work with a Party.</p>
             <p>We had sessions for the novice and the expert, for the tech-proficient and the tech-reluctant, and
@@ -77,13 +77,22 @@
             <p>You can attend the xAPI Party live or virtually, and registration is free. You do not need to have
                 participated in the Cohort to join the Party, and vice versa.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 ml-4">
             <h4>Upcoming dates:</h4>
-            <div class="p-3 bg-light">
+            <div id="party-registration" class="p-3 bg-light">
                 <h6><strong>The next xAPI Party:</strong></h6>
                 <h6>Friday, December 13, 2019</h6>
-                <input type="button" class="btn">
+                <a href="https://xapi-party-dec-2019.eventbrite.com/" target="_blank">
+                    <span>REGISTER HERE</span>
+                    <i class="fa fa-caret-right button-icon-right"></i>
+                </a>
             </div>
+            <!-- <a href="https://twitter.com/intent/tweet?hashtags=xAPIParty%2C&amp;original_referer=http%3A%2F%2Fwww.torrancelearning.com%2Fxapi-party%2F&amp;ref_src=twsrc%5Etfw&amp;tw_p=tweetbutton"
+                class="btn" id="b"><i></i><span class="label" id="l">Tweet <b>#xAPIParty</b></span>
+            </a> -->
+            <a href="https://twitter.com/search?q=%23xAPIParty" class="ml-3" target="_blank" rel="noopener noreferrer">
+                See the conversation on Twitter <i class="fa fa-chevron-right"></i>
+            </a>
         </div>
     </div>
 
