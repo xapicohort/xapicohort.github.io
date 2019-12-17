@@ -12,7 +12,7 @@ var app = {
                 cb(json);
             }
         });
-        xhr.open("GET", "https://slack-github-teambot.mpkliewer.now.sh/api/public/github?endpoint=teams");
+        xhr.open("GET", "https://slack-github-teambot.now.sh/api/public/github?endpoint=teams");
         // xhr.open("GET", "http://localhost:3000/api/public/github?endpoint=teams");
         xhr.send();
     },
