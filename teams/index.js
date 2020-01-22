@@ -1,22 +1,46 @@
 var app = {
     init: function () {
+        this.query = this.parseQuery();
+        var _a = this.query.season, season = _a === void 0 ? 'current' : _a;
+        this.season = season;
         this.getData(this.buildList.bind(this));
     },
     metricsMembersCount: 0,
+    parseQuery: function (fullQuery) {
+        fullQuery = fullQuery || window.location.search || window.location.href || '';
+        if (!fullQuery) {
+            return;
+        }
+        var query = {};
+        var queryString = fullQuery.split('?')[1];
+        if (!queryString) {
+            return query;
+        }
+        ;
+        var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+        for (var i = 0; i < pairs.length; i++) {
+            var pair = pairs[i].split('=');
+            query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+        }
+        return query;
+    },
     getData: function (cb) {
         var xhr = new XMLHttpRequest();
         xhr.addEventListener("readystatechange", function () {
             if (this.readyState === 4) {
-                var list = this.responseText;
-                var json = typeof list === 'string' ? JSON.parse(list) : list;
-                cb(json);
+                var githubData = this.responseText;
+                var data = typeof githubData === 'string' ? JSON.parse(githubData) : githubData;
+                cb(data);
             }
         });
-        xhr.open("GET", "https://slack-github-teambot.now.sh/api/public/github?endpoint=teams");
-        // xhr.open("GET", "http://localhost:3000/api/public/github?endpoint=teams");
+        xhr.open("GET", "https://slack-github-teambot.now.sh/api/public/github?endpoint=teams&season=" + this.season);
+        // xhr.open("GET", "http://localhost:3000/api/public/github?endpoint=teams&season=" + this.season);
         xhr.send();
     },
-    buildList: function (teamList) {
+    buildList: function (githubData) {
+        var _a = githubData.name, name = _a === void 0 ? '' : _a, _b = githubData.teamList, teamList = _b === void 0 ? [] : _b;
+        var teamNameEl = document.querySelector('.cohort-season-name');
+        teamNameEl ? teamNameEl.innerHTML = name : null;
         console.log('teamList:', teamList);
         var metricsTeamsEl = document.querySelector('.metrics-teams');
         if (metricsTeamsEl) {
@@ -26,9 +50,14 @@ var app = {
             var name = team.name, id = team.id;
             var classAttribute = index === 0 ? 'selected' : '';
             return "\n\t\t\t\t<li class=\"team-choice " + classAttribute + "\" data-id=\"" + id + "\">" + name + "</li>\n\t\t\t";
-        }).join('');
+        }).join('').trim();
         var teamChoiceHtml = "\n\t\t\t<ul class=\"team-choice-list\">" + teamChoices + "</ul>\n\t\t";
-        var teamHtml = teamList.map(this.createListItem).join('');
+        var teamHtml = teamList.map(this.createListItem).join('').trim();
+        if (!teamList.length) {
+            var noTeamsHtml = '<div class="no-team-choices">No Teams Available</div>';
+            teamChoiceHtml = noTeamsHtml;
+            teamHtml = noTeamsHtml;
+        }
         this.showList(teamChoiceHtml, teamHtml);
     },
     createListItem: function (team, index) {

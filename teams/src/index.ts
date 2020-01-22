@@ -1,29 +1,53 @@
 const app = {
 	init() {
+		this.query = this.parseQuery();
+		const { season = 'current' } = this.query;
+
+		this.season = season;
+
 		this.getData(this.buildList.bind(this));
 	},
 
 	metricsMembersCount: 0,
+
+	parseQuery(fullQuery) {
+		fullQuery = fullQuery || window.location.search || window.location.href || '';
+		if (!fullQuery) { return; }
+		var query = {};
+		var queryString = fullQuery.split('?')[1];
+		if (!queryString) { return query };
+		var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+		for (var i = 0; i < pairs.length; i++) {
+			var pair = pairs[i].split('=');
+			query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+		}
+		return query;
+	},
 
 	getData(cb: any) {
 		const xhr = new XMLHttpRequest();
 
 		xhr.addEventListener("readystatechange", function () {
 			if (this.readyState === 4) {
-				const list = this.responseText;
-				const json = typeof list === 'string' ? JSON.parse(list) : list;
+				const githubData = this.responseText;
+				const data = typeof githubData === 'string' ? JSON.parse(githubData) : githubData;
 
-				cb(json);
+				cb(data);
 			}
 		});
 
-		xhr.open("GET", "https://slack-github-teambot.now.sh/api/public/github?endpoint=teams");
-		// xhr.open("GET", "http://localhost:3000/api/public/github?endpoint=teams");
+		xhr.open("GET", "https://slack-github-teambot.now.sh/api/public/github?endpoint=teams&season=" + this.season);
+		// xhr.open("GET", "http://localhost:3000/api/public/github?endpoint=teams&season=" + this.season);
 
 		xhr.send();
 	},
 
-	buildList(teamList: any[]) {
+	buildList(githubData: any) {
+		let { name = '', teamList = [] } = githubData;
+
+		const teamNameEl: any = document.querySelector('.cohort-season-name');
+		teamNameEl ? teamNameEl.innerHTML = name : null;
+
 		console.log('teamList:', teamList);
 
 		const metricsTeamsEl: any = document.querySelector('.metrics-teams');
@@ -32,7 +56,7 @@ const app = {
 			metricsTeamsEl.innerHTML = teamList.length;
 		}
 
-		const teamChoices = teamList.map((team, index) => {
+		let teamChoices = teamList.map((team: any, index: number) => {
 			const { name, id } = team;
 
 			const classAttribute = index === 0 ? 'selected' : '';
@@ -40,13 +64,19 @@ const app = {
 			return `
 				<li class="team-choice ${classAttribute}" data-id="${id}">${name}</li>
 			`;
-		}).join('');
+		}).join('').trim();
 
-		const teamChoiceHtml = `
+		let teamChoiceHtml = `
 			<ul class="team-choice-list">${teamChoices}</ul>
 		`;
 
-		const teamHtml = teamList.map(this.createListItem).join('');
+		let teamHtml = teamList.map(this.createListItem).join('').trim();
+
+		if (!teamList.length) {
+			const noTeamsHtml = '<div class="no-team-choices">No Teams Available</div>';
+			teamChoiceHtml = noTeamsHtml;
+			teamHtml = noTeamsHtml;
+		}
 
 		this.showList(teamChoiceHtml, teamHtml);
 	},
