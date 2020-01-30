@@ -38,7 +38,14 @@ var app = {
         xhr.send();
     },
     buildList: function (githubData) {
-        var _a = githubData.name, name = _a === void 0 ? '' : _a, _b = githubData.teamList, teamList = _b === void 0 ? [] : _b;
+        var _a = githubData.name, name = _a === void 0 ? '' : _a, avatarUrl = githubData.avatarUrl, _b = githubData.teamList, teamList = _b === void 0 ? [] : _b;
+        var logo = document.querySelector('.github-team-logo') || {};
+        if (avatarUrl) {
+            logo.src = avatarUrl;
+        }
+        else {
+            logo.remove();
+        }
         var teamNameEl = document.querySelector('.cohort-season-name');
         teamNameEl ? teamNameEl.innerHTML = name : null;
         console.log('teamList:', teamList);

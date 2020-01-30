@@ -43,7 +43,15 @@ const app = {
 	},
 
 	buildList(githubData: any) {
-		let { name = '', teamList = [] } = githubData;
+		let { name = '', avatarUrl, teamList = [] } = githubData;
+
+		const logo: any = document.querySelector('.github-team-logo') || {};
+
+		if (avatarUrl) {
+			logo.src = avatarUrl;
+		} else {
+			logo.remove();
+		}
 
 		const teamNameEl: any = document.querySelector('.cohort-season-name');
 		teamNameEl ? teamNameEl.innerHTML = name : null;
