@@ -84,7 +84,7 @@ nav.navbar {
 	background-color: #7a98ce !important;
 }
 
-.bg-primary:hover {
+.btn.bg-primary:hover {
 	background-color: #7a98ce !important;
 	opacity: 0.8;
 }
