@@ -1,53 +1,244 @@
+body {
+	max-width: 960px;
+	margin   : 0 auto;
+	color    : #5a5a5a;
+}
+
+header {
+	position: fixed;
+	z-index : 1;
+	top     : 0;
+	left    : 0;
+	right   : 0;
+}
+
 h1,
 h2,
 h3,
 h4,
-h5 {
-    color: #7a98ce;
+h5,
+h6 {
+	color: #7a98ce;
 }
 
+nav.navbar {
+	padding: 0 1em;
+}
+
+.navbar .navbar-collapse {
+	background: rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+	.navbar-brand {
+		height: 65px;
+	}
+
+	.navbar-title {
+		display: none;
+	}
+
+
+}
+
+.navbar-toggler {
+	margin-right: 0.75em;
+	border      : none;
+}
+
+.home-page-title {
+	text-align: center;
+	font-size : 1.5em;
+	color     : #83c1df;
+	margin    : 0;
+}
+
+
+@media (min-width: 768px) {
+	.home-page-title {
+		font-size: 2.5em;
+	}
+
+	.navbar .navbar-collapse {
+		background: inherit;
+	}
+}
+
+.navbar-brand {
+	/* margin-left: 0.75em; */
+	height        : 80px;
+	font-size     : 1.75em;
+	display       : flex;
+	align-items   : center;
+}
+
+.navbar-brand img {
+	height       : calc(100% - 0.5em);
+	background   : white;
+	border-radius: 8px;
+	margin-right : 0.75em;
+}
+
+
 .bg-primary {
-    background-color: #7a98ce !important;
+	background-color: #7a98ce !important;
+}
+
+.bg-primary:hover {
+	background-color: #7a98ce !important;
+	opacity: 0.8;
+}
+
+main.container {
+	margin : 80px auto;
+	padding: 3em 1em 1em;
+}
+
+#mc_embed_signup form {
+	padding                   : 1.5em;
+	border-bottom-left-radius : 6px;
+	border-bottom-right-radius: 6px;
+}
+
+#mc_embed_signup h2 {
+	margin: 0 0 0.25em 0;
+}
+
+#mc_embed_signup .mc-field-group {
+	width         : 100%;
+	padding-bottom: 1em;
+}
+
+#mc_embed_signup .mc-field-group label {
+	font-size: 0.8em;
+}
+
+#mc_embed_signup .indicates-required {
+	text-align: left;
+	opacity   : 0.7;
+}
+
+#mc_embed_signup input {
+	border: 1px solid #d6d6d6;
+}
+
+#mc-embedded-subscribe.btn-cohort-reg-submit {
+	text-transform: uppercase;
+	background: #7a98ce;
+	color : white;
+	width : 100%;
+	margin: 0.5em 0 0;
 }
 
 form.bg-gray,
 div.bg-gray,
 .nav-link.active {
-    background-color: #f2f2f2 !important;
+	background-color      : #f2f2f2 !important;
+	/* background         : rgba(0, 0, 0, 0.07) !important; */
+}
+
+.sidebar-tabs.nav-tabs .nav-item.show .nav-link,
+.sidebar-tabs.nav-tabs .nav-link.active {
+	color: gray;
+}
+
+.sidebar-tabs .nav-item:first-of-type a {
+	border-top-left-radius: 6px;
+}
+
+.sidebar-tabs .nav-item:last-of-type a {
+	border-top-right-radius: 6px;
+}
+
+.sidebar-tabs a:not(.active) {
+	color: #7a98ce;
+}
+
+.sidebar-tabs a.disabled {
+	opacity: 0.5;
+}
+
+.form-info {
+	color        : gray;
+	margin-bottom: 0.5em;
+}
+
+.anchor-btn {
+	display        : inline-block;
+	text-decoration: none;
+	background     : #7a98ce;
+	color          : white;
+	/* padding        : 0.7em 1.1em; */
+	border-radius  : 6px;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.anchor-btn:hover {
+	color          : white;
+	text-decoration: none;
+}
+
+button:hover,
+.anchor-btn:hover {
+	opacity: 0.8;
 }
 
 #mc-embedded-subscribe {
-    margin: 1em 8% 1em 5%;
+	margin: 1em 8% 1em 5%;
 }
 
 #party-register {
-    margin-left: 1em;
+	margin-left: 1em;
 }
 
-#party {
-    padding: 10px 0 10px 3%;
+.party-link-panel {
+	/* padding   : 10px 0 10px 3%; */
+	padding      : 1.5em;
+	border-radius: 6px;
 }
 
-#party h2 {
-    font-weight: bold;
-    padding    : 0;
-    margin     : 15px 0;
-    font-size  : 1.4em;
+.party-link-panel h2 {
+	font-weight: bold;
+	padding    : 0;
+	margin     : 15px 0;
+	font-size  : 1.4em;
 }
 
-#party h5 {
-    font: 1.25rem Helvetica, Arial, sans-serif;
+.party-link-panel h5 {
+	font: 1.25rem Helvetica, Arial, sans-serif;
 }
 
-#party button {
-    margin: 1em 0 1em 5%;
-    border: 1px solid #ABB0B2;
+.party-link-panel button {
+	margin: 1em 0 1em 5%;
+	border: 1px solid #ABB0B2;
 }
 
-.footer {
-    margin: 10%;
+a.party-registration {
+	color: #7a98ce;
 }
+
+.party-link-panel .date,
+.party-registration .date {
+	color        : #7a98ce;
+	font-weight  : bold;
+	margin-bottom: 0.75em;
+}
+
+.party-link-panel .date {
+	margin-bottom: 1em;
+}
+
+
+/* .footer {
+	margin: 10%;
+} */
 
 .nav-link {
-    border: none !important;
+	border: none !important;
+}
+
+a .button-icon-right {
+	color: inherit;
 }

@@ -1,24 +1,99 @@
-#party-banner {
-    position           : absolute;
-    background-repeat  : no-repeat;
-    background-image   : url("http://www.torrancelearning.com/wp-content/uploads/2016/03/xapi-party-2015.jpg");
-    background-size    : cover;
-    background-position: center center;
-    height             : 300px;
-    color              : white;
-    padding-top        : 12rem;
-    padding-left       : 75px;
+/* body {
+	max-width: 960px;
+	margin   : 0 auto;
+}
+
+header {
+	position: fixed;
+	top     : 0;
+	left    : 0;
+	right   : 0;
+} */
+
+.party-banner {
+	position: fixed;
+	z-index : 1;
+	top     : 0;
+	left    : 0;
+	right   : 0;
+	/* opacity: 0.8; */
+
+	/* position              : absolute; */
+	background-repeat        : no-repeat;
+	background-image         : url("http://www.torrancelearning.com/wp-content/uploads/2016/03/xapi-party-2015.jpg");
+	background-size          : cover;
+	background-position      : center center;
+	height                   : 150px;
+	color                    : white;
+	/* padding-top           : 12rem;
+    padding-left          : 75px; */
+	margin-top               : 80px;
+}
+
+.party-banner-text-container {
+	margin : 0 auto;
+	padding: 0 2em;
+	height : 100%;
+}
+
+
+/* @media (min-width: 600px) {
+	.party-banner {
+		height: 150px;
+	}
+} */
+
+.party-banner-text {
+	position: absolute;
+	bottom  : 40px;
+}
+
+.party-banner-text a {
+	text-decoration: underline;
+	font-weight    : 300;
+	color          : white;
+	opacity        : 0.8;
+}
+
+.party-banner-text a:hover {
+	opacity: 1;
 }
 
 #party-content-wrapper {
-    position  : absolute;
-    margin-top: 20rem;
+	margin-top   : 230px;
+	padding-top  : 2em;
+	/* position  : absolute; */
+	/* margin-top: 20rem; */
 }
 
-#party-content {
+/* #party-content {
     padding-left: 50px;
+} */
+
+.party-registration {
+	background      : rgba(0, 0, 0, 0.07);
+	/* border       : 1px solid lightgray; */
+	border-radius   : 6px;
+	margin          : 1rem 0;
+	padding         : 1.25em 1.5em;
 }
 
-#party-registration {
-    margin-bottom: 3rem;
+.party-registration .title {
+	margin-bottom: 0.25em;
+	font-weight  : 300;
+}
+
+
+@media (min-width: 992px) {
+	.party-banner {
+		height: 300px;
+	}
+
+	.party-banner-text-container {
+		max-width: 960px;
+	}
+
+	#party-content-wrapper {
+		margin-top: 380px;
+	}
 }

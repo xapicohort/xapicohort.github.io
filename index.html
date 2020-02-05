@@ -1,253 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>xAPI Cohort</title>
+		<title>xAPI Cohort</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="site.css">
-</head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="site.css">
+	</head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <a class="navbar-brand abs" href="/">
-                <h1 class="text-white">xAPI Cohort</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="collapsingNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-center" href="" target="_blank"></a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-center" href="/xapi-party">xAPI Party</a>
-                    </li>
-                    <li class="nav-item d-none">
-                        <a class="nav-link text-center" href="https://www.torrancelearning.com/xapi-cohort/"
-                            target="_blank">xAPI
-                            Cohort<br>@TorranceLearning</a>
-                    </li>
-                    <li class="nav-item d-none">
-                        <a class="nav-link text-center" href="" data-target="#testModal"
-                            data-toggle="modal">Team<br>Overview</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+	<body class="home-page">
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+				<a class="navbar-brand abs" href="/">
+					<img src="xapi-cohort-logo.png" alt="xAPI Cohort Logo">
+					<span class="text-white navbar-title">xAPI Learning Cohort</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse" id="collapsingNavbar">
+					<!-- <ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link text-center" href="" target="_blank"></a>
+						</li>
+					</ul> -->
+					<ul class="navbar-nav ml-auto">
+						<!-- <li class="nav-item">
+							<a class="nav-link text-center" href="/">Home</a>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link text-center" href="/xapi-party">xAPI Party</a>
+						</li>
+						<!-- <li class="nav-item d-none">
+							<a class="nav-link text-center" href="https://www.torrancelearning.com/xapi-cohort/" target="_blank">xAPI
+								Cohort<br>@TorranceLearning</a>
+						</li>
+						<li class="nav-item d-none">
+							<a class="nav-link text-center" href="" data-target="#testModal" data-toggle="modal">Team<br>Overview</a>
+						</li> -->
+					</ul>
+				</div>
+			</nav>
+		</header>
 
-    <div class="modal" id="testModal">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="spinner-border text-primary mx-auto"></div>
-            </div>
-        </div>
-    </div>
+		<div class="modal" id="testModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="spinner-border text-primary mx-auto"></div>
+				</div>
+			</div>
+		</div>
 
-    <main class="container row mt-3 ml-auto mr-auto">
-        <article class="col-sm-8">
-            <h2>Learn xAPI by doing xAPI</h2>
-            <img src="xapi-cohort-logo.png" class="img-fluid w-75 mx-auto d-block" />
-            <p>The xAPI Learning Cohort is a free, vendor-neutral, 12-week learning-by-doing project-based team learning
-                experience about the Experience API. (Yep, you read that right – free!) It’s an opportunity for those
-                who are brand new to xAPI and those who are looking to experiment with it to learn from each other and
-                from the work itself.</p>
-            <p>Participants form teams based on shared interests and work together on an xAPI project. Each cohort
-                features some predefined projects so you can jump right into something that sounds interesting and of
-                course you can come with your own project idea and gather a team around you to get moving (or bring your
-                team!). Past projects have included an onboarding checklist that leverages the Internet of Things (IoT),
-                a game that tracks user clicks as a way to identify UX gaps, and exploration of LMS-LRS
-                interoperability.</p>
-            <p>xAPI Learning Cohorts run twice a year in spring and fall “semesters” with weekly all-group web meetings
-                on <b>Thursdays 2pm US Eastern Time</b> chock-full of introductory information, practical how-tos, and
-                high-level discussions of the implications for our industry. Teams work on real-life projects that
-                interest them and set their own meeting and working schedules. Oh, and it’s ok to just hang out on the
-                sidelines and observe the action if taking on a team project is too much right now. It’s also ok to
-                participate on more than one project team during a Cohort session.</p>
-            <p>The #1 question we get about the Learning Cohort is, “What if I can’t make it to the weekly web sessions
-                on Thursdays?” No worries! We record them all and send them out via Twitter and via email to registered
-                participants, so register even if all you want is to get the weekly web session recordings
-                hand-delivered to your inbox.</p>
-            <p>Best of all, the Cohort is FREE, virtual (so anyone anywhere in the world can participate), and
-                tool/platform agnostic. Each Cohort concludes with an <a href="/xapi-party">xAPI Party</a> (it’s a
-                conference,
-                really, but Party sounds like a lot more fun) hosted by TorranceLearning where Cohort teams present
-                their work along with other presentation topics. You can attend the xAPI Party live or virtually. You do
-                not need to have participated in the Cohort to join the Party, and vice versa.</p>
-            <h2>Who sponsors this?</h2>
-            <p>TorranceLearning has hosted the xAPI Learning Cohorts since the Fall 2015 Cohort, following the model set
-                forth by ADL's community-building efforts. Our commitment to providing a free, vendor-neutral space for
-                learning about xAPI continues to present day, hosting two 12-week Cohorts and two free day-long
-                conferences each year as well as this site. </p>
-        </article>
-        <div class="col-sm-4">
-            <h2 class="text-center">Sign-up now!</h2>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item w-50 d-none">
-                    <a class="nav-link text-center" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                        aria-controls="home" aria-selected="true">Current Cohort</a>
-                </li>
-                <li class="nav-item w-50">
-                    <a class="nav-link text-center active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                        aria-controls="profile" aria-selected="true" disabled>Current Cohort</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade d-none" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <!-- Begin Mailchimp Signup Form -->
-                    <style type="text/css">
-                        #mc_embed_signup {
-                            background: #fff;
-                            clear: left;
-                            font: 14px Helvetica, Arial, sans-serif;
-                        }
+		<main class="container row">
+			<article class="col-lg-7">
+				<h2 class="home-page-title">Learn xAPI by doing xAPI</h2>
+				<img src="xapi-cohort-logo.png" class="img-fluid w-75 mx-auto d-block" />
+				<p>The xAPI Learning Cohort is a free, vendor-neutral, 12-week learning-by-doing project-based team learning
+					experience about the Experience API. (Yep, you read that right – free!) It’s an opportunity for
+					those
+					who are brand new to xAPI and those who are looking to experiment with it to learn from each other
+					and
+					from the work itself.</p>
+				<p>Participants form teams based on shared interests and work together on an xAPI project. Each cohort
+					features some predefined projects so you can jump right into something that sounds interesting and
+					of
+					course you can come with your own project idea and gather a team around you to get moving (or bring
+					your
+					team!). Past projects have included an onboarding checklist that leverages the Internet of Things
+					(IoT),
+					a game that tracks user clicks as a way to identify UX gaps, and exploration of LMS-LRS
+					interoperability.</p>
+				<p>xAPI Learning Cohorts run twice a year in spring and fall “semesters” with weekly all-group web
+					meetings
+					on <b>Thursdays 2pm US Eastern Time</b> chock-full of introductory information, practical how-tos,
+					and
+					high-level discussions of the implications for our industry. Teams work on real-life projects that
+					interest them and set their own meeting and working schedules. Oh, and it’s ok to just hang out on
+					the
+					sidelines and observe the action if taking on a team project is too much right now. It’s also ok to
+					participate on more than one project team during a Cohort session.</p>
+				<p>The #1 question we get about the Learning Cohort is, “What if I can’t make it to the weekly web
+					sessions
+					on Thursdays?” No worries! We record them all and send them out via Twitter and via email to
+					registered
+					participants, so register even if all you want is to get the weekly web session recordings
+					hand-delivered to your inbox.</p>
+				<p>Best of all, the Cohort is FREE, virtual (so anyone anywhere in the world can participate), and
+					tool/platform agnostic. Each Cohort concludes with an <a href="/xapi-party">xAPI Party</a> (it’s a
+					conference,
+					really, but Party sounds like a lot more fun) hosted by TorranceLearning where Cohort teams present
+					their work along with other presentation topics. You can attend the xAPI Party live or virtually.
+					You do
+					not need to have participated in the Cohort to join the Party, and vice versa.</p>
+				<h2>Who sponsors this?</h2>
+				<p>TorranceLearning has hosted the xAPI Learning Cohorts since the Fall 2015 Cohort, following the model
+					set
+					forth by ADL's community-building efforts. Our commitment to providing a free, vendor-neutral space
+					for
+					learning about xAPI continues to present day, hosting two 12-week Cohorts and two free day-long
+					conferences each year as well as this site. </p>
+			</article>
+			<div class="col-lg-5">
+				<h3 class="mb-4">Sign-up now!</h3>
+				<ul class="nav nav-tabs font-weight-bold text-uppercase sidebar-tabs" id="sidebarTab" role="tablist">
+					<li class="nav-item w-50">
+						<a class="nav-link text-center active" id="current-tab" data-toggle="tab" href="#current" role="tab"
+							aria-controls="current" aria-selected="true">Current</a>
+					</li>
 
-                        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block. 
-                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                    </style>
-                    <div id="mc_embed_signup">
-                        <form
-                            action="https://slack.us1.list-manage.com/subscribe/post?u=7593b84ab509bd7c8778aab41&amp;id=e572d74d1f"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate bg-gray" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll">
-                                <h2>Fall 2019</h2>
-                                <h2>12-week xAPI Learning Cohort</h2>
-                                <h5>Starts Sept 5, 2019</h5>
-                                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                                <div class="mc-field-group">
-                                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                                    </label>
-                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                                </div>
-                                <div class="mc-field-group">
-                                    <label for="mce-FNAME">First Name </label>
-                                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                                </div>
-                                <div class="mc-field-group">
-                                    <label for="mce-LNAME">Last Name </label>
-                                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                                </div>
-                                <div id="mce-responses" class="clear">
-                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                        name="b_7593b84ab509bd7c8778aab41_e572d74d1f" tabindex="-1" value=""></div>
-                                <div class="clear">
-                                    <!-- <input type="submit" value="SUBMIT COHORT REGISTRATION" name="subscribe"
+					<li class="nav-item w-50">
+						<!-- <a class="nav-link text-center disabled">Upcoming (TBD)</a> -->
+						
+						<a class="nav-link text-center disabled" id="next-tab" data-toggle="tab" href="#next" role="tab" aria-controls="next"
+							aria-selected="true">Upcoming (TBD)</a>
+					</li>
+				</ul>
+
+				<div class="tab-content" id="sidebarTabContent">
+					<div class="tab-pane fade show active" id="current" role="tabpanel" aria-labelledby="current-tab">
+						<!-- Begin Mailchimp Signup Form -->
+
+						<div id="mc_embed_signup">
+							<form
+								action="https://slack.us1.list-manage.com/subscribe/post?u=7593b84ab509bd7c8778aab41&amp;id=6c59069233"
+								method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate bg-gray"
+								target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll">
+									<h2>Spring 2020</h2>
+									<div class="form-info">
+										<div class="font-weight-bold">12-week xAPI Learning Cohort</div>
+										<div>First session - Jan 30, 2020</div>
+									</div>
+
+									<div class="indicates-required"><span class="asterisk">*</span> indicates required
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+										</label>
+										<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-FNAME">First Name </label>
+										<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-LNAME">Last Name </label>
+										<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+									</div>
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div>
+									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div style="position: absolute; left: -5000px;" aria-hidden="true">
+										<input type="text" name="b_7593b84ab509bd7c8778aab41_6c59069233" tabindex="-1" value="">
+									</div>
+									<div class="clear">
+										<!-- <input type="submit" value="SUBMIT COHORT REGISTRATION" name="subscribe"
                                         id="mc-embedded-subscribe" class="btn btn-dark bg-primary"> -->
-                                    <button type="submit" value="SUBMIT COHORT REGISTRATION" name="subscribe"
-                                        id="mc-embedded-subscribe" class="btn btn-dark bg-primary">SUBMIT COHORT
-                                        REGISTRATION</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+										<button type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe"
+											class="btn btn-cohort-reg-submit">Sign up for Cohort</button>
+									</div>
+								</div>
+							</form>
+						</div>
 
-                    <!--End mc_embed_signup-->
-                </div>
-                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <!-- Begin Mailchimp Signup Form -->
-                    <style type="text/css">
-                        #mc_embed_signup {
-                            background: #fff;
-                            clear: left;
-                            font: 14px Helvetica, Arial, sans-serif;
-                        }
+						<!--End mc_embed_signup-->
+					</div>
 
-                        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	                        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                    </style>
-                    <div id="mc_embed_signup">
-                        <form
-                            action="https://slack.us1.list-manage.com/subscribe/post?u=7593b84ab509bd7c8778aab41&amp;id=6c59069233"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate bg-gray" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll">
-                                <h2>Spring 2020</h2>
-                                <h2>12-week xAPI Learning Cohort</h2>
-                                <h5>Starts Jan 30, 2020</h5>
-                                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                                <div class="mc-field-group">
-                                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                                    </label>
-                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                                </div>
-                                <div class="mc-field-group">
-                                    <label for="mce-FNAME">First Name </label>
-                                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                                </div>
-                                <div class="mc-field-group">
-                                    <label for="mce-LNAME">Last Name </label>
-                                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                                </div>
-                                <div id="mce-responses" class="clear">
-                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                    <input type="text" name="b_7593b84ab509bd7c8778aab41_6c59069233" tabindex="-1"
-                                        value="">
-                                </div>
-                                <div class="clear">
-                                    <!-- <input type="submit" value="SUBMIT COHORT REGISTRATION" name="subscribe"
-                                        id="mc-embedded-subscribe" class="btn btn-dark bg-primary"> -->
-                                    <button type="submit" value="SUBMIT COHORT REGISTRATION" name="subscribe"
-                                        id="mc-embedded-subscribe" class="btn btn-dark bg-primary">SUBMIT COHORT
-                                        REGISTRATION</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+					<div class="tab-pane fade d-none" id="next" role="tabpanel" aria-labelledby="next-tab"></div>
+				</div>
 
-                    <!--End mc_embed_signup-->
-                </div>
-            </div>
-            <div class="bg-gray mt-3 d-none" id="party">
-                <a href="/xapi-party">
-                    <h2>xAPI Party (1-day Conference)</h2>
-                </a>
-                <!-- <h5>Next party TBD</h5> -->
-                <a href="https://xapi-party-dec-2019.eventbrite.com/" id="party-register"
-                    class="btn btn-dark disabled bg-primary mx-auto" target="_blank">
-                    <span>Coming Soon</span>
-                    <!-- <i class="fa fa-caret-right button-icon-right"></i> -->
-                </a>
-            </div>
-        </div>
-    </main>
+				<div class="bg-gray mt-3 party-link-panel">
+					<h2 class="mb-1 mt-0"><a style="color:inherit" href="/xapi-party">xAPI Party</a></h2>
+					<div class="date">Thursday, May 7, 2020</div>
 
-    <footer class="footer"></footer>
+					<a class="btn anchor-btn"
+						href="https://www.eventbrite.com/e/spring-2020-xapi-party-at-torrancelearning-tickets-93130563021"
+						target="_blank">
+						<span>Register for Party</span>&nbsp;&nbsp;
+						<i class="fa fa-caret-right button-icon-right"></i>
+					</a>
+				</div>
+			</div>
+		</main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script
-        type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
-    <script src="site.js"></script>
-</body>
+		<footer class="footer"></footer>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+		<script
+			type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+		<script src="site.js"></script>
+	</body>
 
 </html>
