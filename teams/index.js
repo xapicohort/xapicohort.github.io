@@ -49,6 +49,19 @@ var app = {
         var teamNameEl = document.querySelector('.cohort-season-name');
         teamNameEl ? teamNameEl.innerHTML = name : null;
         console.log('teamList:', teamList);
+        teamList.sort(function (a, b) {
+            var aName = a.name ? a.name.toLowerCase() : '';
+            var bName = b.name ? b.name.toLowerCase() : '';
+            if (aName > bName) {
+                return 1;
+            }
+            ;
+            if (aName < bName) {
+                return -1;
+            }
+            ;
+            return 0;
+        });
         var metricsTeamsEl = document.querySelector('.metrics-teams');
         if (metricsTeamsEl) {
             metricsTeamsEl.innerHTML = teamList.length;

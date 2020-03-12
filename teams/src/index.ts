@@ -58,6 +58,15 @@ const app = {
 
 		console.log('teamList:', teamList);
 
+		teamList.sort((a: any, b: any) => {
+			const aName = a.name ? a.name.toLowerCase() : '';
+			const bName = b.name ? b.name.toLowerCase() : '';
+		
+			if (aName > bName) { return 1 };
+			if (aName < bName) { return -1 };
+			return 0;
+		});
+
 		const metricsTeamsEl: any = document.querySelector('.metrics-teams');
 
 		if (metricsTeamsEl) {
