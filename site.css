@@ -242,3 +242,25 @@ a.party-registration {
 a .button-icon-right {
 	color: inherit;
 }
+
+._form_15 > form {
+	margin-top: 0!important;
+	padding: 0!important;
+}
+
+.tab-pane {
+	padding: 0.5em 1em 1em 1em;
+}
+
+.tab-content,
+.tab-content > * {
+	background: #f2f2f2;
+}
+
+._field-wrapper input {
+	padding: 6px!important;
+}
+
+#_form_5F29AEA9EC69E_ {
+	background: #f2f2f2!important;
+}
