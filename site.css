@@ -1,7 +1,7 @@
 body {
-	max-width: 960px;
-	margin   : 0 auto;
-	color    : #5a5a5a;
+	/* max-width: 960px; */
+	margin: 0 auto;
+	color : #5a5a5a;
 }
 
 header {
@@ -10,6 +10,9 @@ header {
 	top     : 0;
 	left    : 0;
 	right   : 0;
+
+	height    : 80px;
+	background: #405782;
 }
 
 h1,
@@ -21,6 +24,18 @@ h6 {
 	color: #7a98ce;
 }
 
+.navbar-logo {
+	height             : 50px;
+	width              : 90px;
+	margin             : 0 0.75em;
+	background-image   : url(xapi-cohort-logo.png);
+	background-repeat  : no-repeat;
+	background-size    : contain;
+	background-color   : white;
+	background-position: center;
+	border-radius      : 5px;
+}
+
 nav.navbar {
 	padding: 0 1em;
 }
@@ -28,6 +43,38 @@ nav.navbar {
 .navbar .navbar-collapse {
 	background: rgba(0, 0, 0, 0.15);
 }
+
+.navbar-title {
+	font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color        : rgb(255, 255, 255, 0.90);
+	padding      : 0.5em 1em;
+	font-size    : 1.1em;
+	border-bottom: 1px solid transparent;
+	transition   : all 0.4s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+	color        : white;
+	border-bottom: 1px solid white;
+	background   : rgba(255, 255, 255, 0.075);
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+	color        : white;
+	border-bottom: 1px solid white;
+	background   : rgba(255, 255, 255, 0.075);
+}
+
+/* .nav-link {
+	border: none !important;
+} */
 
 @media (max-width: 600px) {
 	.navbar-brand {
@@ -37,8 +84,6 @@ nav.navbar {
 	.navbar-title {
 		display: none;
 	}
-
-
 }
 
 .navbar-toggler {
@@ -47,16 +92,17 @@ nav.navbar {
 }
 
 .home-page-title {
-	text-align: center;
-	font-size : 1.5em;
-	color     : #83c1df;
-	margin    : 0;
+	text-align   : center;
+	font-size    : 1.5em;
+	font-weight  : bold;
+	color        : #7a98ce;
+	margin-bottom: 0.8em;
 }
 
 
 @media (min-width: 768px) {
 	.home-page-title {
-		font-size: 2.5em;
+		font-size: 2.1em;
 	}
 
 	.navbar .navbar-collapse {
@@ -66,27 +112,37 @@ nav.navbar {
 
 .navbar-brand {
 	/* margin-left: 0.75em; */
-	height        : 80px;
-	font-size     : 1.75em;
-	display       : flex;
-	align-items   : center;
+	height     : 80px;
+	font-size  : 1.75em;
+	display    : flex;
+	align-items: center;
+
+	margin-right: 1.25em;
 }
 
 .navbar-brand img {
-	height       : calc(100% - 0.5em);
+	height       : calc(90% - 0.5em);
 	background   : white;
 	border-radius: 8px;
 	margin-right : 0.75em;
 }
 
+#sidebarTabContent form {
+	background: transparent !important;
+}
+
+#sidebarTabContent input[type="text"] {
+	border: none !important;
+}
+
 
 .bg-primary {
-	background-color: #7a98ce !important;
+	background-color: #405782 !important;
 }
 
 .btn.bg-primary:hover {
-	background-color: #7a98ce !important;
-	opacity: 0.8;
+	background-color: #405782 !important;
+	opacity         : 0.8;
 }
 
 main.container {
@@ -94,7 +150,12 @@ main.container {
 	padding: 3em 1em 1em;
 }
 
-#mc_embed_signup form {
+.home-logo {
+	margin-top   : -20px;
+	margin-bottom: -20px;
+}
+
+/* #mc_embed_signup form {
 	padding                   : 1.5em;
 	border-bottom-left-radius : 6px;
 	border-bottom-right-radius: 6px;
@@ -124,22 +185,23 @@ main.container {
 
 #mc-embedded-subscribe.btn-cohort-reg-submit {
 	text-transform: uppercase;
-	background: #7a98ce;
-	color : white;
-	width : 100%;
-	margin: 0.5em 0 0;
-}
+	background    : #7a98ce;
+	color         : white;
+	width         : 100%;
+	margin        : 0.5em 0 0;
+} */
 
 form.bg-gray,
 div.bg-gray,
-.nav-link.active {
+.sidebar-tabs.nav-tabs .nav-link.active {
 	background-color      : #f2f2f2 !important;
 	/* background         : rgba(0, 0, 0, 0.07) !important; */
 }
 
 .sidebar-tabs.nav-tabs .nav-item.show .nav-link,
 .sidebar-tabs.nav-tabs .nav-link.active {
-	color: gray;
+	color       : gray;
+	border-color: transparent;
 }
 
 .sidebar-tabs .nav-item:first-of-type a {
@@ -164,15 +226,24 @@ div.bg-gray,
 }
 
 .anchor-btn {
-	display        : inline-block;
-	text-decoration: none;
-	background     : #7a98ce;
-	color          : white;
-	/* padding        : 0.7em 1.1em; */
-	border-radius  : 6px;
-	width: 100%;
-	text-align: center;
-	text-transform: uppercase;
+	display              : inline-block;
+	text-decoration      : none;
+	/* background        : #7a98ce; */
+	background           : #405782;
+	color                : white;
+	/* padding           : 0.7em 1.1em; */
+	border-radius        : 6px;
+	width                : 100%;
+	text-align           : center;
+	text-transform       : uppercase;
+
+	font-weight: bold;
+
+	/* to match ActiveCampaign button */
+	font-size    : 14px;
+	border-radius: 4px;
+	padding      : 10px;
+
 }
 
 .anchor-btn:hover {
@@ -199,6 +270,7 @@ button:hover,
 	border-radius: 6px;
 }
 
+.tab-content h2,
 .party-link-panel h2 {
 	font-weight: bold;
 	padding    : 0;
@@ -221,7 +293,7 @@ a.party-registration {
 
 .party-link-panel .date,
 .party-registration .date {
-	color        : #7a98ce;
+	/* color        : #7a98ce; */
 	font-weight  : bold;
 	margin-bottom: 0.75em;
 }
@@ -235,32 +307,29 @@ a.party-registration {
 	margin: 10%;
 } */
 
-.nav-link {
-	border: none !important;
-}
-
 a .button-icon-right {
 	color: inherit;
 }
 
-._form_15 > form {
-	margin-top: 0!important;
-	padding: 0!important;
+._form_15>form {
+	margin-top: 0 !important;
+	padding   : 0 !important;
 }
 
 .tab-pane {
-	padding: 0.5em 1em 1em 1em;
+	/* padding: 0.5em 1em 1em 1em; */
+	padding: 1.5em;
 }
 
 .tab-content,
-.tab-content > * {
+.tab-content>* {
 	background: #f2f2f2;
 }
 
 ._field-wrapper input {
-	padding: 6px!important;
+	padding: 6px !important;
 }
 
 #_form_5F29AEA9EC69E_ {
-	background: #f2f2f2!important;
+	background: #f2f2f2 !important;
 }

@@ -7,38 +7,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>xAPI Cohort | GitHub Teams</title>
 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../site.css">
+
     <link rel="stylesheet/less" type="text/css" href="style.less">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 
   </head>
 
   <body>
-    <header>
+    <header></header>
+
+    <div class="teams-header">
       <article>
         <section class="header-title-container">
-          <img src="" alt="GitHub Team Logo" class="github-team-logo">
-          <h1>xAPI Cohort <span class="cohort-season-name"></span> <span style="font-weight: 100">| GitHub Teams</span>
-          </h1>
+          <div class="container row">
+            <div class="d-flex justify-content-start align-items-center">
+              <img src="" alt="GitHub Team Logo" class="github-team-logo">
+              <h3><span class="cohort-season-name"></span> <span style="font-weight: 100">| GitHub Teams</span>
+              </h3>
+            </div>
+
+          </div>
         </section>
 
+
         <section class="metrics-container">
-          <div class="metrics">
-            <h2>Teams: <span class="metrics-value metrics-teams"></span></h2>
-            <h2>Members: <span class="metrics-value metrics-members"></span></h2>
+          <div class="container row">
+            <div class="d-flex justify-content-start align-items-center">
+              <div class="metrics">
+                <h2>Teams: <span class="metrics-value metrics-teams"></span></h2>
+                <h2>Members: <span class="metrics-value metrics-members"></span></h2>
+              </div>
+
+              <div class="view-switcher">
+                <span class="view-switcher-btn master-detail-switch">Master / Detail View</span>
+                <span class="view-switcher-btn long-list-switch">Long List View</span>
+              </div>
+            </div>
+
           </div>
 
-          <div class="view-switcher">
-            <span class="view-switcher-btn master-detail-switch">Master / Detail View</span>
-            <span class="view-switcher-btn long-list-switch">Long List View</span>
-          </div>
         </section>
 
 
       </article>
 
-    </header>
+    </div>
 
-    <main>
+    <main class="container">
       <div class="page-loading">
         <div class="loading-indicator"></div>
       </div>
@@ -58,6 +80,7 @@
     </main>
   </body>
 
+  <script src="../site.js"></script>
   <script src="index.js"></script>
 
 </html>

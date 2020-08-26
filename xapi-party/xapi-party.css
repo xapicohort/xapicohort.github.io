@@ -11,11 +11,11 @@ header {
 } */
 
 .party-banner {
-	position: fixed;
-	z-index : 1;
-	top     : 0;
-	left    : 0;
-	right   : 0;
+	position  : fixed;
+	z-index   : 1;
+	top       : 0;
+	left      : 0;
+	right     : 0;
 	/* opacity: 0.8; */
 
 	/* position              : absolute; */
@@ -53,6 +53,7 @@ header {
 	font-weight    : 300;
 	color          : white;
 	opacity        : 0.8;
+	padding        : 0;
 }
 
 .party-banner-text a:hover {

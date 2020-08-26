@@ -176,7 +176,6 @@ const app = {
 			</section>
 		`;
 
-
 		return html;
 	},
 
