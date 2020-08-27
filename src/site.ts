@@ -10,10 +10,10 @@ const site = {
 			href: '/',
 		},
 
-		// {
-		// 	text: 'Videos',
-		// 	href: '/videos',
-		// },
+		{
+			text: 'Videos',
+			href: '/videos',
+		},
 
 		{
 			text: 'GitHub Teams',

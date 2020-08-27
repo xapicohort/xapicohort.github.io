@@ -14,7 +14,10 @@
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-		<link rel="stylesheet" href="site.css">
+		<!-- <link rel="stylesheet" href="site.css"> -->
+		<link rel="stylesheet/less" type="text/css" href="site.less">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
 	</head>
 
 	<body class="home-page">
@@ -79,7 +82,8 @@
 					learning about xAPI continues to present day, hosting two 12-week Cohorts and two free day-long
 					conferences each year as well as this site. </p>
 			</article>
-			<div class="col-lg-5">
+
+			<article class="col-lg-5">
 				<h4 class="mb-3">Sign up now!</h4>
 				<ul class="nav nav-tabs font-weight-bold text-uppercase sidebar-tabs" id="sidebarTab" role="tablist">
 					<li class="nav-item w-50">
@@ -95,7 +99,7 @@
 					</li>
 				</ul>
 
-				<div class="tab-content" id="sidebarTabContent">
+				<section class="tab-content" id="sidebarTabContent">
 					<div class="tab-pane show active" id="current" role="tabpanel" aria-labelledby="current-tab">
 						<!-- <h2>Fall 2020</h2> -->
 						<h2 class="mb-1 mt-0">
@@ -114,9 +118,9 @@
 					<div class="tab-pane" id="next" role="tabpanel" aria-labelledby="next-tab">
 						<h5>Check back later for the next xAPI Cohort sign-up!</h5>
 					</div>
-				</div>
+				</section>
 
-				<div class="bg-gray mt-3 party-link-panel">
+				<section class="bg-gray mt-3 sidebar-panel">
 					<h2 class="mb-1 mt-0">
 						<a style="color:inherit" href="/xapi-party">xAPI Party</a>
 					</h2>
@@ -131,8 +135,35 @@
 						</a>
 					</div>
 
-				</div>
-			</div>
+				</section>
+
+				<section class="sidebar-info bg-gray mt-3 sidebar-panel">
+					<div>Follow the <a target="_blank" href="https://twitter.com/xapignome">xAPI Gnome</a> on Twitter for updates
+						about the xAPI Cohort and resources throughout the semester.</div>
+
+					<div class="twitter-container">
+						<a class="twitter-timeline" href="https://twitter.com/xAPIGnome?ref_src=twsrc%5Etfw">Tweets by xAPIGnome</a>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+
+				</section>
+
+				<section class="sidebar-info bg-gray mt-3 sidebar-panel pb-3">
+					<div>
+						Join the conversation with hashtag <a target="_blank" href="https://twitter.com/search?q=xapicohort">#xAPICohort</a>
+					</div>
+
+					<div class="mt-2">
+						<a href="https://twitter.com/intent/tweet?button_hashtag=xAPICohort&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-url="https://xapicohort.com" data-related="xapignome" data-show-count="false">Tweet #xAPICohort</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>					
+					</div>
+
+				</section>
+
+				<section class="sidebar-info bg-gray mt-3 sidebar-panel">
+					Questions and comments can be sent to <a
+						href="mailto:xapicohort@torrancelearning.com">xapicohort@torrancelearning.com</a>
+				</section>
+			</article>
 		</main>
 
 		<footer class="footer"></footer>

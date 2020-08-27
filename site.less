@@ -24,6 +24,12 @@ h6 {
 	color: #7a98ce;
 }
 
+a {
+	color             : #51a2c9;
+	font-weight       : 600;
+	// text-decoration: underline;
+}
+
 .navbar-logo {
 	height             : 50px;
 	width              : 90px;
@@ -53,6 +59,7 @@ nav.navbar {
 	padding      : 0.5em 1em;
 	font-size    : 1.1em;
 	border-bottom: 1px solid transparent;
+	opacity      : 0.8;
 	transition   : all 0.4s ease;
 }
 
@@ -60,7 +67,8 @@ nav.navbar {
 .navbar-dark .navbar-nav .nav-link:hover {
 	color        : white;
 	border-bottom: 1px solid white;
-	background   : rgba(255, 255, 255, 0.075);
+	background   : rgba(255, 255, 255, 0.14);
+	opacity      : 1;
 }
 
 .navbar-dark .navbar-nav .active>.nav-link,
@@ -70,6 +78,8 @@ nav.navbar {
 	color        : white;
 	border-bottom: 1px solid white;
 	background   : rgba(255, 255, 255, 0.075);
+	opacity      : 1;
+
 }
 
 /* .nav-link {
@@ -191,10 +201,9 @@ main.container {
 	margin        : 0.5em 0 0;
 } */
 
-form.bg-gray,
-div.bg-gray,
+.bg-gray,
 .sidebar-tabs.nav-tabs .nav-link.active {
-	background-color      : #f2f2f2 !important;
+	background-color      : #e9e9e9 !important;
 	/* background         : rgba(0, 0, 0, 0.07) !important; */
 }
 
@@ -264,25 +273,25 @@ button:hover,
 	margin-left: 1em;
 }
 
-.party-link-panel {
+.sidebar-panel {
 	/* padding   : 10px 0 10px 3%; */
 	padding      : 1.5em;
 	border-radius: 6px;
 }
 
 .tab-content h2,
-.party-link-panel h2 {
+.sidebar-panel h2 {
 	font-weight: bold;
 	padding    : 0;
 	margin     : 15px 0;
 	font-size  : 1.4em;
 }
 
-.party-link-panel h5 {
+.sidebar-panel h5 {
 	font: 1.25rem Helvetica, Arial, sans-serif;
 }
 
-.party-link-panel button {
+.sidebar-panel button {
 	margin: 1em 0 1em 5%;
 	border: 1px solid #ABB0B2;
 }
@@ -291,16 +300,26 @@ a.party-registration {
 	color: #7a98ce;
 }
 
-.party-link-panel .date,
+.sidebar-panel .date,
 .party-registration .date {
 	/* color        : #7a98ce; */
 	font-weight  : bold;
 	margin-bottom: 0.75em;
 }
 
-.party-link-panel .date {
+.sidebar-panel .date {
 	margin-bottom: 1em;
 }
+
+.sidebar-info {
+	.twitter-container {
+		max-height: 500px;
+		overflow-y: auto;
+		margin-top: 1em;
+	}
+}
+
+
 
 
 /* .footer {
@@ -323,7 +342,7 @@ a .button-icon-right {
 
 .tab-content,
 .tab-content>* {
-	background: #f2f2f2;
+	background: #e9e9e9;
 }
 
 ._field-wrapper input {
@@ -331,5 +350,45 @@ a .button-icon-right {
 }
 
 #_form_5F29AEA9EC69E_ {
-	background: #f2f2f2 !important;
+	background: #e9e9e9 !important;
+}
+
+.page-videos {
+	article {
+		margin-bottom: 2em;
+	}
+
+	.video-container {
+		display: flex;
+	}
+
+	section {
+		margin-bottom: 1em;
+		margin-right : 2em;
+
+		iframe {
+			min-width : 500px;
+			min-height: 281px;
+
+			box-shadow: -6px 6px 13px rgba(0, 0, 0, 0.31);
+
+			@media (max-width: 600px) {
+				min-width : auto;
+				min-height: auto;
+			}
+		}
+	}
+
+	h2 {
+		font-size     : 1.5em;
+		border-bottom : 3px dotted;
+		padding-bottom: 0.3em;
+		margin-bottom : 0.7em;
+	}
+
+	h3 {
+		font-size     : 1.2em;
+		text-transform: uppercase;
+		opacity       : 0.8;
+	}
 }
