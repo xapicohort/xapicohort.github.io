@@ -5,12 +5,14 @@ const app = {
 
 		this.season = season;
 
+		this.updateSeasonDropdown();
+
 		this.getData(this.buildList.bind(this));
 	},
 
 	metricsMembersCount: 0,
 
-	parseQuery(fullQuery) {
+	parseQuery(fullQuery?: any) {
 		fullQuery = fullQuery || window.location.search || window.location.href || '';
 		if (!fullQuery) { return; }
 		var query = {};
@@ -22,6 +24,30 @@ const app = {
 			query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
 		}
 		return query;
+	},
+
+	updateSeasonDropdown() {
+		var seasonSelectEl: any = document.querySelector('#season-select');
+
+		if (!seasonSelectEl) { return; }
+
+		const { children = [] } = seasonSelectEl || {};
+
+		for (let opt = 0; opt < children.length; opt++) {
+			const optionEl: any = children[opt];
+
+			optionEl.removeAttribute('selected');
+			optionEl.selected = false;
+
+			if (optionEl.value === this.season) {
+				optionEl.selected = true;
+			}
+		}
+
+		seasonSelectEl.addEventListener('change', function() {
+			window.location.search = '?season=' + this.value;
+		});
+
 	},
 
 	getData(cb: any) {
@@ -61,7 +87,7 @@ const app = {
 		teamList.sort((a: any, b: any) => {
 			const aName = a.name ? a.name.toLowerCase() : '';
 			const bName = b.name ? b.name.toLowerCase() : '';
-		
+
 			if (aName > bName) { return 1 };
 			if (aName < bName) { return -1 };
 			return 0;

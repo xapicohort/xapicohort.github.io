@@ -3,6 +3,7 @@ var app = {
         this.query = this.parseQuery();
         var _a = this.query.season, season = _a === void 0 ? 'current' : _a;
         this.season = season;
+        this.updateSeasonDropdown();
         this.getData(this.buildList.bind(this));
     },
     metricsMembersCount: 0,
@@ -23,6 +24,24 @@ var app = {
             query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
         }
         return query;
+    },
+    updateSeasonDropdown: function () {
+        var seasonSelectEl = document.querySelector('#season-select');
+        if (!seasonSelectEl) {
+            return;
+        }
+        var _a = (seasonSelectEl || {}).children, children = _a === void 0 ? [] : _a;
+        for (var opt = 0; opt < children.length; opt++) {
+            var optionEl = children[opt];
+            optionEl.removeAttribute('selected');
+            optionEl.selected = false;
+            if (optionEl.value === this.season) {
+                optionEl.selected = true;
+            }
+        }
+        seasonSelectEl.addEventListener('change', function () {
+            window.location.search = '?season=' + this.value;
+        });
     },
     getData: function (cb) {
         var xhr = new XMLHttpRequest();

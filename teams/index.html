@@ -13,49 +13,48 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="../site.css"> -->
-
-		<link rel="stylesheet/less" type="text/css" href="../site.less">
+    <link rel="stylesheet/less" type="text/css" href="../site.less">
     <link rel="stylesheet/less" type="text/css" href="teams.less">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 
   </head>
 
-  <body>
+  <body class="page-teams">
     <header></header>
 
     <div class="teams-header">
       <article>
         <section class="header-title-container">
-          <div class="container row">
+          <div class="container row justify-content-between">
             <div class="d-flex justify-content-start align-items-center">
               <img src="" alt="GitHub Team Logo" class="github-team-logo">
               <h3><span class="cohort-season-name"></span> <span style="font-weight: 100">| GitHub Teams</span>
               </h3>
+
             </div>
+
+            <section class="metrics-container">
+              <div class="d-flex justify-content-start align-items-center">
+                <div class="view-switcher">
+                  <span class="view-switcher-btn master-detail-switch">Master / Detail View</span>
+                  <span class="view-switcher-btn long-list-switch">Long List View</span>
+                </div>
+                <div class="metrics">
+                  <h2>Teams: <span class="metrics-value metrics-teams"></span></h2>
+                  <h2>Members: <span class="metrics-value metrics-members"></span></h2>
+                </div>
+
+                <select name="season-select" id="season-select" class="season-select">
+                  <option value="current" selected>Fall 2020 (Current)</option>
+                  <option value="spring-2020">Spring 2020</option>
+                  <option value="fall-2019">Fall 2019</option>
+                </select>
+
+              </div>
+            </section>
 
           </div>
         </section>
-
-
-        <section class="metrics-container">
-          <div class="container row">
-            <div class="d-flex justify-content-start align-items-center">
-              <div class="metrics">
-                <h2>Teams: <span class="metrics-value metrics-teams"></span></h2>
-                <h2>Members: <span class="metrics-value metrics-members"></span></h2>
-              </div>
-
-              <div class="view-switcher">
-                <span class="view-switcher-btn master-detail-switch">Master / Detail View</span>
-                <span class="view-switcher-btn long-list-switch">Long List View</span>
-              </div>
-            </div>
-
-          </div>
-
-        </section>
-
 
       </article>
 
@@ -67,16 +66,9 @@
       </div>
 
       <div class="team-choice-container">
-        <article class="team-choice-list-wrapper">
-
-        </article>
-
-        <article class="team-list">
-
-        </article>
+        <article class="team-choice-list-wrapper"></article>
+        <article class="team-list"></article>
       </div>
-
-
 
     </main>
   </body>

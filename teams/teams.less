@@ -51,10 +51,10 @@ main,
 	}
 }
 
-.metrics-container {
-	padding   : 0.5em 3em;
-	background: #cacaca;
-}
+// .metrics-container {
+// 	padding   : 0.5em 3em;
+// 	background: #cacaca;
+// }
 
 .header-title-container,
 .metrics-container {
@@ -63,14 +63,21 @@ main,
 	justify-content: center;
 }
 
-main.container {
-	// margin-top:~"calc((@{logo-height} * 2) + 50px)";
+.page-teams {
+	main.container {
+		// margin-top:~"calc((@{logo-height} * 2) + 50px)";
 
-	margin-top: 180px;
+		// margin-top: 180px;
 
-	// .long-list-display & {
-	// 	max-width: 960px;
-	// }
+		margin-top: (@logo-height * 2);
+		padding   : 1em;
+
+
+		// .long-list-display & {
+		// 	max-width: 960px;
+		// }
+	}
+
 }
 
 h1,
@@ -78,11 +85,30 @@ h1,
 	margin: 0;
 }
 
+.season-select {
+	margin-left  : 1em;
+	border       : 1px solid darkgray;
+	color        : gray;
+	padding      : 0.5em 0.4em;
+	border-radius: 3px;
+
+	&:focus {
+		outline: none;
+		border-width: 2px;
+	}
+}
+
 .metrics {
-	border    : 1px solid lightgray;
-	padding   : 0.5em 1em;
-	display   : inline-block;
-	background: #f5f5f5;
+	border     : 1px solid lightgray;
+	padding    : 0.5em 1em;
+	background : white;
+	background: rgba(255, 255, 255, 0.71);
+
+	margin-left: 1em;
+
+	&-container {
+		padding: 0 2em;
+	}
 
 	h2 {
 		display: inline-block;
@@ -104,14 +130,13 @@ h1,
 }
 
 .view-switcher {
-	display        : inline-block;
-	margin-left    : 1em;
-	text-decoration: underline;
-	color          : steelblue;
-	cursor         : pointer;
-	opacity        : 0.7;
-	text-transform : uppercase;
-	font-size      : 0.8em;
+	// margin-left    : 1em;
+	text-decoration   : underline;
+	color             : steelblue;
+	cursor            : pointer;
+	opacity           : 0.7;
+	text-transform    : uppercase;
+	font-size         : 0.8em;
 
 	.master-detail-switch {
 		display: none;
