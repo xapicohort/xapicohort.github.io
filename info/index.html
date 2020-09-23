@@ -9,31 +9,250 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/05a5461881.js" crossorigin="anonymous"></script>
 
-		<!-- <link rel="stylesheet" href="../site.css"> -->
+		<!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+
 		<link rel="stylesheet/less" type="text/css" href="../site.less">
 		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
 
-		<style>
-			iframe {
-				width: 100%;
-				height: calc(100vh - 80px);
-				outline: none;
-				border: none;
-			}
-		</style>
-
 	</head>
 
-	<body>
+	<body class="page-info">
 		<header></header>
 
-		<iframe
-			src="https://docs.google.com/document/d/e/2PACX-1vT6w7ipO3YwUf0n4teed2F432iyQU_ZzcC2JNz0YSpVyKzCcTmDVCfx34Vslzw26Rzgn3hyEhYjMl5u/pub?embedded=true"></iframe>
+		<main>
+			<div class="left-nav">
+				<a href="#general" data-nav-link="general" class="nav-link">General Cohort Info</a>
+
+				<a href="#weekly-session" data-nav-link="weekly-session" class="nav-link sub-nav">Weekly Live Session</a>
+
+				<a href="#weekly-summary" data-nav-link="weekly-summary" class="nav-link sub-nav">Weekly Summary</a>
+
+				<a href="#teams" data-nav-link="teams" class="nav-link sub-nav">Cohort Teams</a>
+
+				<a href="#slack" data-nav-link="slack" class="nav-link">Slack</a>
+				<a href="#slack-channels" data-nav-link="slack-channels" class="nav-link sub-nav">Channels</a>
+
+				<a href="#github" data-nav-link="github" class="nav-link">GitHub</a>
+				<a href="#github-teams" data-nav-link="github-teams" class="nav-link sub-nav">Teams</a>
+			</div>
+
+			<div class="right-body">
+				<article>
+					<section data-nav-link="general" id="general">
+						<!-- <div class="anchor" id="general"></div> -->
+						<h2>General Cohort Info</h2>
+						<div class="section-body">
+							<p>The <strong>xAPI Learning Cohort</strong> is a free, vendor-neutral, 12-week learning-by-doing
+								project-based team learning experience about the Experience API. It’s an opportunity for
+								those
+								who are brand new to xAPI and those who are looking to experiment with it to learn from each other
+								and
+								from the work itself.</p>
+
+							<p>xAPI Learning Cohorts run twice a year in spring and fall “semesters” or "seasons".</p>
+
+							<p>Work and participation happens synchronously in the <a href="#weekly-session">Weekly Live Session</a>,
+								and asynchronously in <a href="#slack">Slack</a> and <a href="#github">GitHub</a>.</p>
+
+						</div>
+					</section>
+
+					<section data-nav-link="weekly-session" class="sub-section" id="weekly-session">
+						<!-- <div class="anchor" id="weekly-session"></div> -->
+						<h3>Weekly Live Session</h3>
+						<div class="section-body">
+							<p>
+								Weekly live sessions are held every <strong>Thursday at 2pm US Eastern</strong> during an active season
+								(spring or fall).
+							</p>
+
+							<p>For <strong>Fall 2020</strong>, our live sessions are held in a <a
+									href="https://smart.newrow.com/#/room/wxj-196" target="_blank"><i
+										class="fas fa-external-link-alt"></i>Kaltura Newrow classroom</a>.</p>
+
+
+
+							<div class="note-link">
+								<a href="https://learning.kaltura.com/Help" target="_blank"><i class="fas fa-external-link-alt"></i>Read
+									Kaltura help articles</a>
+							</div>
+						</div>
+					</section>
+
+
+					<section data-nav-link="weekly-summary" class="sub-section" id="weekly-summary">
+						<!-- <div class="anchor" id="weekly-summary"></div> -->
+						<h3>Weekly Summary</h3>
+						<div class="section-body">
+							<p>
+								After the live sessions, a weekly summary (with links to recordings, etc.) is sent via email.
+							</p>
+
+							<!-- <p>You can view <a href="/weekly-summary" target="_blank">past updates here</a>.</p> -->
+
+
+							<div class="note-link">
+								<a href="/weekly-summary/" target="_blank"><i class="fas fa-external-link-alt"></i>View past updates</a>
+							</div>
+
+
+
+
+
+						</div>
+					</section>
+
+					<section data-nav-link="teams" class="sub-section" id="teams">
+						<!-- <div class="anchor" id="teams"></div> -->
+						<h3>Cohort Teams</h3>
+						<div class="section-body">
+							<p>
+								Each Cohort season, <strong>Teams</strong> will be formed, starting a few weeks into the season.
+								Sometimes
+								a Team will continue work from a previous season, building upon their own efforts or that of a previous
+								group. Other new Teams will form as participants start to narrow down a focus, either by polling the
+								group
+								or creating them on their own and seeing what sticks.
+							</p>
+
+							<p>Often there is an informal (and sometimes formal) Team Leader, though the only representative
+								officially asked for is someone who can give a rundown of their activity in Weekly Updates to the
+								broader Cohort.</p>
+
+							<div class="note-link">
+								<a href="/teams/" target="_blank"><i class="fas fa-external-link-alt"></i>View previous Teams listed in GitHub</a>
+							</div>
+
+						</div>
+					</section>
+				</article>
+
+				<article>
+					<section data-nav-link="slack" id="slack">
+						<!-- <div class="anchor" id="slack"></div> -->
+						<h2>Slack</h2>
+						<div class="section-body">
+							<p>Most of the weekly communication between participants and broad organizer announcements happen in
+								Slack. When you sign up for the Cohort,
+								you should receive an invitation to the Slack workspace.</p>
+
+							<p>You can join as many channels as you want, and feel free to lurk - you are under no obligation to
+								participate if you're just curious.</p>
+
+							<div class="note-link">
+								<a href="https://slack.com/help/articles/205239967-Join-a-channel#join-channels" target="_blank"><i
+										class="fas fa-external-link-alt"></i>Read how to View and Join channels</a>
+
+								<a href="https://slack.com/help/categories/200111606-Using-Slack" target="_blank"><i
+										class="fas fa-external-link-alt"></i>Read articles on How to Use Slack</a>
+							</div>
+
+						</div>
+					</section>
+
+					<section data-nav-link="slack-channels" class="sub-section" id="slack-channels">
+						<h3>Channels</h3>
+
+						<div class="section-body">
+
+
+							<p>There are a few channels that everyone starts with:</p>
+
+							<ul>
+								<li>
+									<div><strong>#main</strong></div>
+									<p>This is where the broadest communication happens between Cohort participants.</p>
+								</li>
+
+								<li>
+									<div><strong>#social</strong></div>
+									<p>Get loose, throw in some GIFs, request recipes, etc.</p>
+								</li>
+
+								<li>
+									<div><strong>#resources</strong></div>
+									<p>Can be links to articles/posts, free trials, etc.</p>
+								</li>
+
+								<li>
+									<div><strong>#xapignome-social-media</strong></div>
+									<p>This is a Twitter feed from the <a href="http://twitter.com/xapignome" target="_blank">xAPI
+											Gnome</a>, the official mascot of the xAPI Cohort.</p>
+								</li>
+							</ul>
+
+							<p>The remaining Cohort communication is broken into various channels by type:</p>
+
+							<ul>
+								<li>
+									<div>
+										<strong>#team</strong>-xxxxxxxxx
+									</div>
+									<p>
+										These are the Team channels that form around project, and where that group activity occurs.
+									</p>
+								</li>
+
+								<li>
+									<div>
+										<strong>#discuss</strong>-xxxxxxxxx
+									</div>
+									<p>
+										This is to gather discussion around a particular topic, but unrelated to any particular Team.
+									</p>
+								</li>
+
+								<li>
+									<div><strong>#z....xxxxxxx</strong></div>
+									<p>These are "archived" Teams.</p>
+									<p>Before every new season, Team Channels are prefixed with <code>[z][year][season]</code> so the contents can
+										still be accessed, but out of the primary channel flow.</p>
+
+									<p>Sometimes, they are pulled out of retirement for another mission or can rest peacefully, just waiting for a visitor. If you'd like to resurrect a sleeping Team, just remove the prefix (and perhaps let the <code>#main</code> channel know).</p>
+								</li>
+
+							</ul>
+
+							<div class="note-link">
+
+							</div>
+
+						</div>
+
+					</section>
+				</article>
+
+				<article>
+					<section data-nav-link="github" id="github">
+						<!-- <div class="anchor" id="github"></div> -->
+						<h2>GitHub</h2>
+						<div class="section-body">
+							<p>
+
+							</p>
+						</div>
+					</section>
+
+					<section data-nav-link="github-teams" class="sub-section" id="github-teams">
+						<h3>Teams</h3>
+
+						<div class="section-body">
+							<p>
+								TBD
+							</p>
+						</div>
+
+					</section>
+				</article>
+
+			</div>
+		</main>
 
 		<script src="../site.js"></script>
+		<script src="./info.js"></script>
 
 	</body>
 

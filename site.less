@@ -4,6 +4,9 @@ body {
 	color : #5a5a5a;
 }
 
+@cohort-lavender     : #7a98ce;
+@cohort-lavender-dark: #405782;
+
 header {
 	position: fixed;
 	z-index : 1;
@@ -12,7 +15,7 @@ header {
 	right   : 0;
 
 	height    : 80px;
-	background: #405782;
+	background: @cohort-lavender-dark;
 }
 
 h1,
@@ -21,13 +24,26 @@ h3,
 h4,
 h5,
 h6 {
-	color: #7a98ce;
+	color: @cohort-lavender-dark;
 }
 
 a {
-	color             : #51a2c9;
+	// color             : #51a2c9;
+	color             : #427dc7;
 	font-weight       : 600;
 	// text-decoration: underline;
+
+	i {
+		// margin-right: 0.5em;
+		margin: 0 0.25em;
+		opacity: 0.7;
+	}
+}
+
+.dotted-header {
+	border-bottom : 3px dotted;
+	padding-bottom: 0.3em;
+	margin-bottom : 0.7em;
 }
 
 .navbar-logo {
@@ -105,7 +121,7 @@ nav.navbar {
 	text-align   : center;
 	font-size    : 1.5em;
 	font-weight  : bold;
-	color        : #7a98ce;
+	color        : @cohort-lavender;
 	margin-bottom: 0.8em;
 }
 
@@ -147,11 +163,11 @@ nav.navbar {
 
 
 .bg-primary {
-	background-color: #405782 !important;
+	background-color: @cohort-lavender-dark  !important;
 }
 
 .btn.bg-primary:hover {
-	background-color: #405782 !important;
+	background-color: @cohort-lavender-dark  !important;
 	opacity         : 0.8;
 }
 
@@ -195,7 +211,7 @@ main.container {
 
 #mc-embedded-subscribe.btn-cohort-reg-submit {
 	text-transform: uppercase;
-	background    : #7a98ce;
+	background    : @cohort-lavender;
 	color         : white;
 	width         : 100%;
 	margin        : 0.5em 0 0;
@@ -222,7 +238,7 @@ main.container {
 }
 
 .sidebar-tabs a:not(.active) {
-	color: #7a98ce;
+	color: @cohort-lavender;
 }
 
 .sidebar-tabs a.disabled {
@@ -237,8 +253,8 @@ main.container {
 .anchor-btn {
 	display              : inline-block;
 	text-decoration      : none;
-	/* background        : #7a98ce; */
-	background           : #405782;
+	/* background        : @cohort-lavender; */
+	background           : @cohort-lavender-dark;
 	color                : white;
 	/* padding           : 0.7em 1.1em; */
 	border-radius        : 6px;
@@ -297,12 +313,12 @@ button:hover,
 }
 
 a.party-registration {
-	color: #7a98ce;
+	color: @cohort-lavender;
 }
 
 .sidebar-panel .date,
 .party-registration .date {
-	/* color        : #7a98ce; */
+	/* color        : @cohort-lavender; */
 	font-weight  : bold;
 	margin-bottom: 0.75em;
 }
@@ -381,9 +397,11 @@ a .button-icon-right {
 
 	h2 {
 		font-size     : 1.5em;
-		border-bottom : 3px dotted;
-		padding-bottom: 0.3em;
-		margin-bottom : 0.7em;
+		.dotted-header();
+
+		// border-bottom : 3px dotted;
+		// padding-bottom: 0.3em;
+		// margin-bottom : 0.7em;
 	}
 
 	h3 {
@@ -393,3 +411,180 @@ a .button-icon-right {
 		margin-bottom : 0.7em;
 	}
 }
+
+// end page-videos
+
+@page-info-margin: calc(80px + 2em);
+
+.page-info {
+	// iframe {
+	// 	width  : 100%;
+	// 	height : calc(100vh - 120px);
+	// 	outline: none;
+	// 	border : none;
+	// }
+
+	main {
+		// margin-top: 80px;
+		margin-top: @page-info-margin;
+		display   : flex;
+		font-size : 15px;
+	}
+
+	.left-nav {
+		position  : fixed;
+		top       : 80px;
+		width     : 300px;
+		height    : calc(100vh - 80px);
+		background: rgb(248, 248, 248);
+		box-shadow: inset -3px 0 10px rgba(0, 0, 0, 0.09);
+
+		display  : flex;
+		flex-flow: column;
+
+		padding: 2em;
+
+		a {
+			margin-bottom: 0.5em;
+			font-weight  : 500;
+			font-size    : 1.2em;
+			color        : @cohort-lavender-dark;
+			padding      : 0.3em 0.6em;
+
+			&.active {
+				font-weight : bold;
+				padding-left: 1em;
+				background  : rgb(245, 245, 245);
+				background  : rgba(122, 151, 206, 0.102);
+				box-shadow  : inset 5px 0px 0 @cohort-lavender-dark;
+			}
+		}
+	}
+
+	.nav-link {
+		&.sub-nav {
+			font-size  : 1em;
+			margin-left: 1em;
+			opacity    : 0.8;
+		}
+	}
+
+	.right-body {
+		margin-left   : calc(300px + 2em);
+		max-width     : 800px;
+		// padding-top: calc(80px + 2em);
+
+		article {
+			margin-bottom: 2.5em;
+
+			&:last-of-type {
+				margin-bottom: calc(100vh - 95px);
+			}
+		}
+
+		section {
+			// height    : 600px;
+			// margin-top: -80px;
+
+			// padding-top: calc(80px + 2em);
+
+			margin-bottom: 2em;
+
+			h2 {
+				border-bottom : 3px dotted;
+				padding-bottom: 0.3em;
+				margin-bottom : 0.5em;
+			}
+
+			&.sub-section {
+				// margin-left: 1.5em;
+
+				margin-left: 14px;
+
+				h3 {
+					display      : inline-block;
+					font-size    : 1.25em;
+					margin-top   : -1em;
+					margin-bottom: 0.5em;
+					opacity      : 0.8;
+
+					font-weight: bold;
+					// border: 2px solid rgba(122, 151, 206, 0.432);
+					// padding: 8px 14px;
+					margin-left: -14px;
+
+					// padding      : 0.3em 0.5em;
+					// font-weight  : normal;
+					// background   : @cohort-lavender;
+					// color        : white;
+				}
+			}
+		}
+
+		ul {
+			font-size: 0.9em;
+		}
+
+	}
+
+	.note-link {
+		display  : flex;
+		flex-flow: column;
+
+		a {
+			font-size    : 0.9em;
+			font-weight  : normal;
+			margin-bottom: 0.35em;
+
+			i {
+				margin-left: 0;
+			}
+		}
+	}
+
+
+	// .anchor {
+	// 	margin-bottom: @page-info-margin;
+	// 	height       : 1px;
+	// }
+
+}
+
+// end page-info
+
+
+.page-weekly-summary {
+	main {
+		margin-top: 80px;
+		padding: 2em;
+
+		
+		h1 {
+			// font-size: 1.5em;
+			.dotted-header();
+		}
+	}
+	
+	article {
+		display: flex;
+		flex-flow: row wrap;
+
+		h2 {
+			font-size: 1.7em;
+		}
+
+		h3 {
+			font-size: 1.2em;
+			margin-top: 1em;
+		}
+	}
+
+	section {
+		margin: 0 1.5em 1.5em;
+		min-width: 400px;
+		// flex: 1 1 auto;
+	}
+
+}
+
+// end .page-weekly-summary

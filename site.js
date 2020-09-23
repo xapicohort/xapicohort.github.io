@@ -9,6 +9,10 @@ var site = {
             href: '/',
         },
         {
+            text: 'How It Works',
+            href: '/info',
+        },
+        {
             text: 'Videos',
             href: '/videos',
         },
@@ -39,8 +43,8 @@ var site = {
     },
     bootstrapScripts: [
         {
-            src: '//code.jquery.com/jquery-3.3.1.slim.min.js',
-            integrity: 'sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo',
+            src: '//code.jquery.com/jquery-3.5.1.min.js',
+            integrity: 'sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=',
         },
         {
             src: '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
@@ -65,6 +69,11 @@ var site = {
         s.onload = function () {
             if (idx < (_this.bootstrapScripts.length - 1)) {
                 _this.loadScriptSync(idx + 1);
+            }
+            else {
+                console.log('scripts loaded');
+                var event_1 = new Event('scripts-loaded');
+                document.dispatchEvent(event_1);
             }
         };
     },

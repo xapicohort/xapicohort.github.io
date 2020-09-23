@@ -11,6 +11,11 @@ const site = {
 		},
 
 		{
+			text: 'How It Works',
+			href: '/info',
+		},
+
+		{
 			text: 'Videos',
 			href: '/videos',
 		},
@@ -69,8 +74,10 @@ const site = {
 
 	bootstrapScripts: [
 		{
-			src: '//code.jquery.com/jquery-3.3.1.slim.min.js',
-			integrity: 'sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo',
+			src: '//code.jquery.com/jquery-3.5.1.min.js',
+			integrity: 'sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=',
+			// src: '//code.jquery.com/jquery-3.3.1.slim.min.js',
+			// integrity: 'sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo',
 		},
 
 		{
@@ -101,6 +108,13 @@ const site = {
 		s.onload = () => {
 			if (idx < (this.bootstrapScripts.length - 1)) {
 				this.loadScriptSync(idx + 1);
+			} else {
+				console.log('scripts loaded');
+
+				const event = new Event('scripts-loaded');
+
+				document.dispatchEvent(event);
+
 			}
 		};
 	},
