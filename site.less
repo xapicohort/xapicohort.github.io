@@ -35,7 +35,7 @@ a {
 
 	i {
 		// margin-right: 0.5em;
-		margin: 0 0.25em;
+		margin : 0 0.25em;
 		opacity: 0.7;
 	}
 }
@@ -68,6 +68,14 @@ nav.navbar {
 
 .navbar-title {
 	font-weight: bold;
+
+	@media (max-width: 1200px) {
+		font-size: 0.8em;
+	}
+
+	@media (min-width: 769px) and (max-width: 930px) {
+		display: none;
+	}
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -77,6 +85,10 @@ nav.navbar {
 	border-bottom: 1px solid transparent;
 	opacity      : 0.8;
 	transition   : all 0.4s ease;
+
+	@media (max-width: 1200px) {
+		font-size: 0.9em;
+	}
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -396,7 +408,7 @@ a .button-icon-right {
 	}
 
 	h2 {
-		font-size     : 1.5em;
+		font-size: 1.5em;
 		.dotted-header();
 
 		// border-bottom : 3px dotted;
@@ -555,18 +567,18 @@ a .button-icon-right {
 
 .page-weekly-updates {
 	main {
-		margin-top: 80px;
-		padding: 2em;
+		margin-top   : 80px;
+		// padding   : 2em;
+		padding      : 3em 4em;
 
-		
 		h1 {
 			// font-size: 1.5em;
 			.dotted-header();
 		}
 	}
-	
+
 	article {
-		display: flex;
+		display  : flex;
 		flex-flow: row wrap;
 
 		h2 {
@@ -574,18 +586,18 @@ a .button-icon-right {
 		}
 
 		h3 {
-			font-size: 1.2em;
+			font-size : 1.2em;
 			margin-top: 1em;
 		}
 	}
 
 	section {
-		margin: 0 1.5em 1.5em;
+		margin   : 0 1.5em 1.5em;
 		min-width: 300px;
-		width: 100%;
+		width    : 100%;
 
 		a {
-			display: inline-block;
+			display      : inline-block;
 			margin-bottom: 0.5em;
 		}
 
@@ -593,11 +605,57 @@ a .button-icon-right {
 	}
 
 	.date-container {
-		max-width: 800px;
-		display: flex;
-		flex-flow: column;
+		// max-width: 800px;
+
+		margin-bottom: 1em;
+
+		h3 {
+			font-size: 1.2em;
+
+			.week {
+				font-weight: 700;
+
+			}
+
+			.date {
+				opacity: 0.7;
+
+			}
+		}
+
+		.link-container {
+			display    : flex;
+			flex-flow  : column;
+			margin-left: 1em;
+			font-size  : 14px;
+
+		}
 	}
 
+	a {
+		font-weight  : 400;
+		margin-bottom: 4px;
+
+		i {
+			width        : 18px;
+			opacity      : 0.9;
+			// text-align: right;
+		}
+
+		// &:hover {
+		// 	.link-type {
+		// 		text-decoration: underline;
+		// 	}
+		// }
+
+		.link-type {
+			font-weight : bold;
+			width       : 48px;
+			display     : inline-block;
+			margin      : 0 10px 0 5px;
+			border-right: 1px solid;
+		}
+	}
 }
 
 // end .page-weekly-updates
