@@ -227,6 +227,35 @@
 							"link": "https://torrancelearning.egnyte.com/dl/E0ImcjkJat/?"
 						}
 					]
+				},
+				{
+					"day": "29",
+					"week": "9",
+					"emails": [
+						{
+							"title": "Data Standards Across the Workforce Experience",
+							"link": "#"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://bit.ly/Fall-2020-Week-9"
+						}
+					],
+					"extras": [
+						{
+							"type": "slides",
+							"title": "T3 Innovation Network",
+							"presenter": "Jason Tyszko",
+							"link": "https://torrancelearning.egnyte.com/dl/pYmxhRiVmW/?"
+						},
+						{
+							"type": "slides",
+							"title": "HR Open Standards",
+							"presenter": "Kim Bartkus",
+							"link": "https://torrancelearning.egnyte.com/dl/3m7D64pAkB/?"
+						}
+					]
 				}
 			]
 		}
