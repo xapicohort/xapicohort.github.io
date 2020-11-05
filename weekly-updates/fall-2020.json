@@ -258,6 +258,35 @@
 					]
 				}
 			]
+		},
+
+		{
+			"name": "November",
+			"dates": [
+				{
+					"day": "5",
+					"week": "10",
+					"emails": [
+						{
+							"title": "Why isn’t the use of xAPI more common across organizations?",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=a97da629b098b75c294dffdc3e463904.121&s=bad97c655476f96a390a72c05a742011"
+						}
+					],
+					"recordings": [
+						{
+							"link": "http://bit.ly/Fall-2020-Week-10"
+						}
+					],
+					"extras": [
+						{
+							"type": "slides",
+							"title": "Strategic Use of xAPI",
+							"presenter": "Wendy Morgan",
+							"link": "https://torrancelearning.egnyte.com/dl/UKYqMp0FyW/?"
+						}
+					]
+				}
+			]
 		}
 	]
 }
