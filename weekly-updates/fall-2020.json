@@ -300,6 +300,22 @@
 						}
 					],
 					"extras": []
+				},
+				{
+					"day": "19",
+					"week": "12",
+					"emails": [
+						{
+							"title": "Team Demos!",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=072b030ba126b2f4b2374f342be9ed44.74"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://bit.ly/Fall-2020-Week-12"
+						}
+					],
+					"extras": []
 				}
 			]
 		}
