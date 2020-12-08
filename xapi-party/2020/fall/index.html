@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>xAPI Party | Fall 2020</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<script src="https://kit.fontawesome.com/05a5461881.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet/less" type="text/css" href="../../../site.less">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
+		<style>
+			.page-party-event main {
+				padding-right: 1em;
+			}
+
+			.page-party-event main h2 {
+				display: inline-block;
+				font-size: 1.25em;
+				margin-bottom: 0.5em;
+				opacity: 0.8;
+				font-weight: bold;
+			}
+
+			.page-party-event section {
+				margin-left: 0;
+			}
+
+			.two-column-with-sidebar {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.session-recording-names {
+				margin-bottom: 1em;
+				font-weight: bold;
+				font-size: 0.9em;
+				line-height: 1.2em;
+				opacity: 0.7;
+			}
+
+			.embed-container {
+				display: flex;
+				flex-flow: column;
+				justify-content: space-between;
+
+				margin-bottom: 2em;
+				margin-right: 2em;
+				background: #e6e6e6;
+				padding: 0.5em 2em 2em;
+				border-radius: 4px;
+				width: calc(360px + 4em);
+				box-shadow: 0px 0px 11px 6px rgba(0, 0, 0, 0.2);
+			}
+
+			.embed-container iframe {
+				width: 100%;
+				height: calc(360px * 0.7);
+			}
+
+			.session-recording-title em {
+				opacity: 0.8;
+				font-weight: normal;
+				font-size: 0.8em;
+				margin-top: 0.25em;
+				display: inline-block;
+			}
+
+			@media screen and (max-width: 1024px) {
+				.embed-container {
+					width: calc(280px + 4em);
+				}
+
+				.embed-container iframe {
+					height: calc(280px * 0.7);
+				}
+			}
+
+			@media screen and (max-width: 768px) {
+				.embed-container {
+					width: calc(50% - 2em);
+				}
+			}
+
+			@media screen and (max-width: 640px) {
+				.page-party-event main {
+					padding: 2em;
+				}
+
+				.embed-container {
+					width: 100%;
+					margin-right: 0;
+				}
+
+				/* 
+				.embed-container iframe {
+					height: calc(280px * 0.7);
+				} */
+			}
+
+			.page-party-event section a {
+				margin: 0;
+			}
+
+			.page-party-event .links section>div {
+				margin-bottom: 0.5em;
+			}
+
+			.page-party-event .links a:not(:last-of-type) {
+				margin-bottom: 0.75em;
+			}
+
+			.twitter-feed {
+				max-width: 450px;
+			}
+		</style>
+
+	</head>
+
+	<body class="page-party-event">
+		<header></header>
+		<main>
+
+			<h1 style="font-size: 2rem;">xAPI Party | Fall 2020</h1>
+			<div class="two-column-with-sidebar">
+
+				<div>
+					<div>
+						<p style="font-size: 1.1em; margin-bottom: 0.5em;"><strong>Friday, December 11</strong></p>
+						<p style="font-size: 0.9em;">
+							<a href="https://xapicohort.com/xapi-party" target="_blank" rel="noopener noreferrer">
+								<i class="fas fa-external-link-alt" aria-hidden="true"></i>
+								<span><strong>Register</strong> or <strong>learn more</strong> about the xAPI Party</span>
+							</a>
+						</p>
+					</div>
+
+
+					<article class="links">
+						<h2>Links</h2>
+						<section>
+							<div>
+								<a target="_blank" href="https://torrancelearning.com/conference/schedule/xapi-party">
+									<i class="fas fa-external-link-alt" aria-hidden="true"></i>
+									<span>Schedule</span>
+								</a>
+							</div>
+
+							<div>
+								<a target="_blank" href="http://xapicohort.com/xapi-party/live">
+									<i class="fas fa-external-link-alt" aria-hidden="true"></i>
+									<span>Live Session</span>
+								</a>
+							</div>
+
+							<div>
+								<a href="#session-recordings">Session Recordings</a>
+							</div>
+
+						</section>
+					</article>
+
+					<article class="watershed-data">
+
+					</article>
+				</div>
+
+				<article class="twitter-feed">
+					<section class="sidebar-info bg-gray mt-3 sidebar-panel pb-3">
+						<div>
+							Join the conversation with hashtags <a target="_blank"
+								href="https://twitter.com/search?q=xapiparty">#xAPIParty</a> and <a target="_blank"
+								href="https://twitter.com/search?q=xapicohort">#xAPICohort</a>
+						</div>
+
+						<div class="mt-2">
+							<a href="https://twitter.com/intent/tweet?button_hashtag=xAPIParty&ref_src=twsrc%5Etfw"
+								class="twitter-hashtag-button" data-size="large" data-url="https://xapicohort.com/xapi-party"
+								data-related="xapignome" data-show-count="false">Tweet #xAPIParty</a>
+								<a href="https://twitter.com/intent/tweet?button_hashtag=xAPICohort&ref_src=twsrc%5Etfw"
+								class="twitter-hashtag-button" data-size="large" data-url="https://xapicohort.com"
+								data-related="xapignome" data-show-count="false">Tweet #xAPICohort</a>
+
+							<!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+						</div>
+
+						<!-- <div class="mt-2">
+							<a href="https://twitter.com/intent/tweet?button_hashtag=xAPICohort&ref_src=twsrc%5Etfw"
+								class="twitter-hashtag-button" data-size="large" data-url="https://xapicohort.com"
+								data-related="xapignome" data-show-count="false">Tweet #xAPICohort</a>
+						</div> -->
+
+					</section>
+
+					<section class="sidebar-info bg-gray mt-3 sidebar-panel">
+						<!-- <div>Follow the <a target="_blank" href="https://twitter.com/xapignome">xAPI Gnome</a> on Twitter for
+							updates
+							about the xAPI Cohort and resources throughout the semester.</div> -->
+
+						<div class="twitter-container">
+							<a class="twitter-timeline" href="https://twitter.com/xAPIGnome?ref_src=twsrc%5Etfw">Tweets by
+								xAPIGnome</a>
+							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+
+
+					</section>
+
+
+				</article>
+			</div>
+
+			<article id="session-recordings">
+				<h2>Session Recordings</h2>
+				<section class="session-recordings-container"></section>
+			</article>
+
+		</main>
+
+		<script src="index.js"></script>
+		<script src="../../../site.js"></script>
+
+	</body>
+
+</html>
