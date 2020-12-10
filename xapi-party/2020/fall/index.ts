@@ -19,40 +19,65 @@ const app = {
 		return data;
 	},
 
-	getRecordingUrl(session: any, type: string): string {
+	getRecordingUrlOrEmbed(session: any, type: string): any {
 		const displayKey = type + '.display';
 		const urlKey = type + '.url';
+		const embedKey = type + '.embed';
 
-		// TODO: turn off fallback for real sessions
-		const display = session[displayKey] || 'Session Recording';
-		const url = session[urlKey] || 'https://www.youtube.com/embed/ScMzIvxBSi4';
+		const display = session[displayKey];
 
-		const isSessionRecording = display === 'Session Recording';
+		const noLinkData = !(display || urlKey || embedKey);
+		
+		if (noLinkData) { return null; }
 
-		const random = Math.random();
+		const url = session[urlKey];
+		const embed = session[embedKey];
 
-		if (random > 0.25) {
-			return '';
+		const isSessionRecording = url && display === 'Session Recording';
+		const isEmbed = embed && display === 'Embed';
+
+		// const random = Math.random();
+
+		// if (random > 0.15) {
+		// 	return null;
+		// }
+
+		if (!isSessionRecording && !isEmbed) {
+			return null;
 		}
 
-		if (isSessionRecording && url) {
-			return url;
-		} else {
-			return '';
+		// NOTE: Direct URLs turned off for Fall 2020, since all recordings are existing Kaltura iframe embeds
+		if (isSessionRecording) {
+			return null;
 		}
+
+		return {
+			type: isSessionRecording ? 'url' : isEmbed ? 'embed' : '',
+			src: isSessionRecording ? url : isEmbed ? embed : '',
+		};
 	},
 
-	getRecordingEmbedHtml(url: string, title: string = '', names: string = ''): string {
+	getRecordingEmbedHtml(urlOrEmbed: any, title: string = '', names: string = ''): string {
+		const { type, src } = urlOrEmbed;
+
+		let iframeHtml = '';
+
+		if (type === 'url') {
+			iframeHtml = `<iframe src="${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+		} else if (type === 'embed') {
+			iframeHtml = src;
+		}
+
 		const embedHtml = `
 			<div class="embed-container">
 				<div>
 					<h3 class="session-recording-title">${title}</h3>
 					<div class="session-recording-names">${names}</div>
 				</div>
-				<iframe src="${url}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				${iframeHtml}
 			</div>
 		`;
-// width="360" height="240"
+
 		return embedHtml;
 	},
 
@@ -67,14 +92,14 @@ const app = {
 
 				const recordings: string[] = [];
 
-				for (let i = 1; i <= 2; i++) {
-					const thisLink = this.getRecordingUrl(session, `link${i}`);
+				for (let i = 1; i <= 3; i++) {
+					const urlOrEmbed = this.getRecordingUrlOrEmbed(session, `link${i}`);
 
-					if (thisLink) {
-						recordings.push(thisLink);
+					if (urlOrEmbed) {
+						recordings.push(urlOrEmbed);
 					}
 				}
-				
+
 				if (recordings.length) {
 					session[0].recordings = recordings;
 					return true;
@@ -87,9 +112,9 @@ const app = {
 				const { title, names, recordings } = sessionData;
 
 				return recordings
-					.map((url: string) => {
-						if (url) {
-							return this.getRecordingEmbedHtml(url, title, names);
+					.map((urlOrEmbed: any) => {
+						if (urlOrEmbed) {
+							return this.getRecordingEmbedHtml(urlOrEmbed, title, names);
 						}
 					})
 					.filter((rec: any) => { return rec; })

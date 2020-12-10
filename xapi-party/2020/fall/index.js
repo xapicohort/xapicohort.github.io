@@ -62,40 +62,55 @@ var app = {
             });
         });
     },
-    getRecordingUrl: function (session, type) {
+    getRecordingUrlOrEmbed: function (session, type) {
         var displayKey = type + '.display';
         var urlKey = type + '.url';
-        // TODO: turn off fallback for real sessions
-        var display = session[displayKey] || 'Session Recording';
-        var url = session[urlKey] || 'https://www.youtube.com/embed/ScMzIvxBSi4';
-        var isSessionRecording = display === 'Session Recording';
-        var random = Math.random();
-        if (random > 0.25) {
-            return '';
+        var embedKey = type + '.embed';
+        var display = session[displayKey];
+        var url = session[urlKey];
+        var embed = session[embedKey];
+        var isSessionRecording = url && display === 'Session Recording';
+        var isEmbed = embed && display === 'Embed';
+        // const random = Math.random();
+        // if (random > 0.15) {
+        // 	return null;
+        // }
+        if (!isSessionRecording && !isEmbed) {
+            return null;
         }
-        if (isSessionRecording && url) {
-            return url;
+        // NOTE: Direct URLs turned off for Fall 2020, since all recordings are existing Kaltura iframe embeds
+        if (isSessionRecording) {
+            return null;
         }
-        else {
-            return '';
-        }
+        return {
+            type: isSessionRecording ? 'url' : isEmbed ? 'embed' : '',
+            src: isSessionRecording ? url : isEmbed ? embed : '',
+        };
     },
-    getRecordingEmbedHtml: function (url, title, names) {
+    getRecordingEmbedHtml: function (urlOrEmbed, title, names) {
         if (title === void 0) { title = ''; }
         if (names === void 0) { names = ''; }
-        var embedHtml = "\n\t\t\t<div class=\"embed-container\">\n\t\t\t\t<div>\n\t\t\t\t\t<h3 class=\"session-recording-title\">" + title + "</h3>\n\t\t\t\t\t<div class=\"session-recording-names\">" + names + "</div>\n\t\t\t\t</div>\n\t\t\t\t<iframe src=\"" + url + "\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n\t\t\t</div>\n\t\t";
-        // width="360" height="240"
+        var type = urlOrEmbed.type, src = urlOrEmbed.src;
+        var iframeHtml = '';
+        if (type === 'url') {
+            iframeHtml = "<iframe src=\"" + src + "\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+        }
+        else if (type === 'embed') {
+            iframeHtml = src;
+        }
+        var embedHtml = "\n\t\t\t<div class=\"embed-container\">\n\t\t\t\t<div>\n\t\t\t\t\t<h3 class=\"session-recording-title\">" + title + "</h3>\n\t\t\t\t\t<div class=\"session-recording-names\">" + names + "</div>\n\t\t\t\t</div>\n\t\t\t\t" + iframeHtml + "\n\t\t\t</div>\n\t\t";
         return embedHtml;
     },
     populateSessionRecordings: function () {
+        var _a;
         return __awaiter(this, void 0, void 0, function () {
             var sessionData, recordingsHtml, recordingsEl;
             var _this = this;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
+            return __generator(this, function (_b) {
+                switch (_b.label) {
                     case 0: return [4 /*yield*/, this.getData()];
                     case 1:
-                        sessionData = _a.sent();
+                        sessionData = _b.sent();
                         if (!sessionData) {
                             return [2 /*return*/];
                         }
@@ -103,10 +118,10 @@ var app = {
                             .filter(function (sessionBlock) {
                             var session = sessionBlock.data;
                             var recordings = [];
-                            for (var i = 1; i <= 2; i++) {
-                                var thisLink = _this.getRecordingUrl(session, "link" + i);
-                                if (thisLink) {
-                                    recordings.push(thisLink);
+                            for (var i = 1; i <= 3; i++) {
+                                var urlOrEmbed = _this.getRecordingUrlOrEmbed(session, "link" + i);
+                                if (urlOrEmbed) {
+                                    recordings.push(urlOrEmbed);
                                 }
                             }
                             if (recordings.length) {
@@ -119,9 +134,9 @@ var app = {
                             var sessionData = session[0] || [];
                             var title = sessionData.title, names = sessionData.names, recordings = sessionData.recordings;
                             return recordings
-                                .map(function (url) {
-                                if (url) {
-                                    return _this.getRecordingEmbedHtml(url, title, names);
+                                .map(function (urlOrEmbed) {
+                                if (urlOrEmbed) {
+                                    return _this.getRecordingEmbedHtml(urlOrEmbed, title, names);
                                 }
                             })
                                 .filter(function (rec) { return rec; })
@@ -129,7 +144,7 @@ var app = {
                         })
                             .join('') || 'Recordings will be added as they are generated.';
                         recordingsEl = document.querySelector('.session-recordings-container');
-                        recordingsEl === null || recordingsEl === void 0 ? void 0 : recordingsEl.insertAdjacentHTML('afterend', recordingsHtml);
+                        (_a = recordingsEl) === null || _a === void 0 ? void 0 : _a.insertAdjacentHTML('afterend', recordingsHtml);
                         return [2 /*return*/];
                 }
             });

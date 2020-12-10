@@ -27,13 +27,23 @@
 				font-weight: bold;
 			}
 
+			#session-recordings {
+				flex-flow: column;
+				margin-bottom: 2em;
+			}
+
 			.page-party-event section {
 				margin-left: 0;
 			}
 
-			.two-column-with-sidebar {
+			.main-columns {
+				margin-top: 2em;
 				display: flex;
-				justify-content: space-between;
+				/* justify-content: space-between; */
+			}
+
+			.main-columns>* {
+				margin-right: 1.5em;
 			}
 
 			.session-recording-names {
@@ -43,6 +53,10 @@
 				line-height: 1.2em;
 				opacity: 0.7;
 			}
+
+			/* .sidebar-info .twitter-container {
+				max-height: 350px;
+			} */
 
 			.embed-container {
 				display: flex;
@@ -118,6 +132,18 @@
 			.twitter-feed {
 				max-width: 450px;
 			}
+
+			@media (max-width: 1024px) {
+				.column-right-block {
+					flex-flow: column;
+				}
+			}
+
+			@media (max-width: 767px) {
+				.main-columns {
+					flex-flow: column-reverse;
+				}
+			}
 		</style>
 
 	</head>
@@ -127,62 +153,22 @@
 		<main>
 
 			<h1 style="font-size: 2rem;">xAPI Party | Fall 2020</h1>
-			<div class="two-column-with-sidebar">
-
-				<div>
-					<div>
-						<p style="font-size: 1.1em; margin-bottom: 0.5em;"><strong>Friday, December 11</strong></p>
-						<p style="font-size: 0.9em;">
-							<a href="https://xapicohort.com/xapi-party" target="_blank" rel="noopener noreferrer">
-								<i class="fas fa-external-link-alt" aria-hidden="true"></i>
-								<span><strong>Register</strong> or <strong>learn more</strong> about the xAPI Party</span>
-							</a>
-						</p>
-					</div>
-
-
-					<article class="links">
-						<h2>Links</h2>
-						<section>
-							<div>
-								<a target="_blank" href="https://torrancelearning.com/conference/schedule/xapi-party">
-									<i class="fas fa-external-link-alt" aria-hidden="true"></i>
-									<span>Schedule</span>
-								</a>
-							</div>
-
-							<div>
-								<a target="_blank" href="http://xapicohort.com/xapi-party/live">
-									<i class="fas fa-external-link-alt" aria-hidden="true"></i>
-									<span>Live Session</span>
-								</a>
-							</div>
-
-							<div>
-								<a href="#session-recordings">Session Recordings</a>
-							</div>
-
-						</section>
-					</article>
-
-					<article class="watershed-data">
-
-					</article>
-				</div>
+			<div class="main-columns">
 
 				<article class="twitter-feed">
-					<section class="sidebar-info bg-gray mt-3 sidebar-panel pb-3">
+					<section class="sidebar-info bg-gray sidebar-panel pb-3">
 						<div>
-							Join the conversation with hashtags <a target="_blank"
-								href="https://twitter.com/search?q=xapiparty">#xAPIParty</a> and <a target="_blank"
+							<div>Join the conversation with hashtags:</div>
+							<a style="font-weight: bold;" target="_blank" href="https://twitter.com/search?q=xapiparty">#xAPIParty</a>
+							and <a style="font-weight: bold;" target="_blank"
 								href="https://twitter.com/search?q=xapicohort">#xAPICohort</a>
 						</div>
 
-						<div class="mt-2">
+						<div class="mt-3">
 							<a href="https://twitter.com/intent/tweet?button_hashtag=xAPIParty&ref_src=twsrc%5Etfw"
 								class="twitter-hashtag-button" data-size="large" data-url="https://xapicohort.com/xapi-party"
 								data-related="xapignome" data-show-count="false">Tweet #xAPIParty</a>
-								<a href="https://twitter.com/intent/tweet?button_hashtag=xAPICohort&ref_src=twsrc%5Etfw"
+							<a href="https://twitter.com/intent/tweet?button_hashtag=xAPICohort&ref_src=twsrc%5Etfw"
 								class="twitter-hashtag-button" data-size="large" data-url="https://xapicohort.com"
 								data-related="xapignome" data-show-count="false">Tweet #xAPICohort</a>
 
@@ -213,12 +199,71 @@
 
 
 				</article>
-			</div>
 
-			<article id="session-recordings">
-				<h2>Session Recordings</h2>
-				<section class="session-recordings-container"></section>
-			</article>
+				<div class="d-flex column-right-block">
+					<div class="index-container">
+						<div>
+							<h2>Friday, December 11</h2>
+
+							<p style="font-size: 0.8em;">
+								<a href="https://xapicohort.com/xapi-party" target="_blank" rel="noopener noreferrer">
+									<i class="fas fa-external-link-alt" aria-hidden="true"></i>
+									<span><strong>Register</strong> or <strong>learn more</strong> about the xAPI Party</span>
+								</a>
+							</p>
+
+							<!-- <div style="font-size: 0.9em; opacity: 0.9; margin-top: 0.5em;">
+								<ul>
+									<li>
+										Starts <strong>Thurs 9pm ET</strong>
+									</li>
+									<li>
+										See <a target="_blank" href="https://torrancelearning.com/conference/schedule/xapi-party">
+											<span>schedule</span></a> for details
+									</li>
+								</ul>
+							</div> -->
+
+
+
+						</div>
+
+						<article class="links">
+							<h2>Links</h2>
+							<section>
+								<div>
+									<a target="_blank" href="https://torrancelearning.com/conference/schedule/xapi-party">
+										<i class="fas fa-external-link-alt" aria-hidden="true"></i>
+										<span>Schedule</span>
+									</a>
+								</div>
+
+								<div>
+									<a target="_blank" href="http://xapicohort.com/xapi-party/live">
+										<i class="fas fa-external-link-alt" aria-hidden="true"></i>
+										<span>Live Session</span>
+									</a>
+
+
+
+								</div>
+
+							</section>
+						</article>
+
+						<article class="watershed-data">
+
+						</article>
+					</div>
+
+					<article id="session-recordings">
+						<h2>Session Recordings</h2>
+						<section class="session-recordings-container"></section>
+					</article>
+				</div>
+
+
+			</div>
 
 		</main>
 
