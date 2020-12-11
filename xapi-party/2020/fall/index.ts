@@ -27,7 +27,7 @@ const app = {
 		const display = session[displayKey];
 
 		const noLinkData = !(display || urlKey || embedKey);
-		
+
 		if (noLinkData) { return null; }
 
 		const url = session[urlKey];
@@ -35,12 +35,6 @@ const app = {
 
 		const isSessionRecording = url && display === 'Session Recording';
 		const isEmbed = embed && display === 'Embed';
-
-		// const random = Math.random();
-
-		// if (random > 0.15) {
-		// 	return null;
-		// }
 
 		if (!isSessionRecording && !isEmbed) {
 			return null;
@@ -93,7 +87,7 @@ const app = {
 				const recordings: string[] = [];
 
 				for (let i = 1; i <= 3; i++) {
-					const urlOrEmbed = this.getRecordingUrlOrEmbed(session, `link${i}`);
+					const urlOrEmbed = this.getRecordingUrlOrEmbed(session[0], `link${i}`);
 
 					if (urlOrEmbed) {
 						recordings.push(urlOrEmbed);
@@ -125,7 +119,7 @@ const app = {
 
 		const recordingsEl = document.querySelector('.session-recordings-container');
 
-		recordingsEl?.insertAdjacentHTML('afterend', recordingsHtml);
+		recordingsEl?.insertAdjacentHTML('beforeend', recordingsHtml);
 
 	},
 

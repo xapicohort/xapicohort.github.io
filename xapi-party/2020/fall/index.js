@@ -67,14 +67,14 @@ var app = {
         var urlKey = type + '.url';
         var embedKey = type + '.embed';
         var display = session[displayKey];
+        var noLinkData = !(display || urlKey || embedKey);
+        if (noLinkData) {
+            return null;
+        }
         var url = session[urlKey];
         var embed = session[embedKey];
         var isSessionRecording = url && display === 'Session Recording';
         var isEmbed = embed && display === 'Embed';
-        // const random = Math.random();
-        // if (random > 0.15) {
-        // 	return null;
-        // }
         if (!isSessionRecording && !isEmbed) {
             return null;
         }
@@ -119,7 +119,7 @@ var app = {
                             var session = sessionBlock.data;
                             var recordings = [];
                             for (var i = 1; i <= 3; i++) {
-                                var urlOrEmbed = _this.getRecordingUrlOrEmbed(session, "link" + i);
+                                var urlOrEmbed = _this.getRecordingUrlOrEmbed(session[0], "link" + i);
                                 if (urlOrEmbed) {
                                     recordings.push(urlOrEmbed);
                                 }
@@ -144,7 +144,7 @@ var app = {
                         })
                             .join('') || 'Recordings will be added as they are generated.';
                         recordingsEl = document.querySelector('.session-recordings-container');
-                        (_a = recordingsEl) === null || _a === void 0 ? void 0 : _a.insertAdjacentHTML('afterend', recordingsHtml);
+                        (_a = recordingsEl) === null || _a === void 0 ? void 0 : _a.insertAdjacentHTML('beforeend', recordingsHtml);
                         return [2 /*return*/];
                 }
             });

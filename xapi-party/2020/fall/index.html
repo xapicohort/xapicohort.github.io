@@ -27,9 +27,17 @@
 				font-weight: bold;
 			}
 
+
+
 			#session-recordings {
-				flex-flow: column;
+				/* flex-flow: column; */
 				margin-bottom: 2em;
+			}
+
+			section.session-recordings-container {
+				margin-top: 1em;
+				display: flex;
+				flex-flow: row wrap;
 			}
 
 			.page-party-event section {
@@ -43,7 +51,7 @@
 			}
 
 			.main-columns>* {
-				margin-right: 1.5em;
+				margin-right: 2em;
 			}
 
 			.session-recording-names {
@@ -87,7 +95,8 @@
 
 			@media screen and (max-width: 1024px) {
 				.embed-container {
-					width: calc(280px + 4em);
+					/* width: calc(280px + 4em); */
+					width: 100%;
 				}
 
 				.embed-container iframe {
@@ -95,27 +104,12 @@
 				}
 			}
 
-			@media screen and (max-width: 768px) {
+			/* @media screen and (max-width: 768px) {
 				.embed-container {
 					width: calc(50% - 2em);
 				}
-			}
+			} */
 
-			@media screen and (max-width: 640px) {
-				.page-party-event main {
-					padding: 2em;
-				}
-
-				.embed-container {
-					width: 100%;
-					margin-right: 0;
-				}
-
-				/* 
-				.embed-container iframe {
-					height: calc(280px * 0.7);
-				} */
-			}
 
 			.page-party-event section a {
 				margin: 0;
@@ -131,10 +125,15 @@
 
 			.twitter-feed {
 				max-width: 450px;
+				flex-flow: column !important;
 			}
 
 			@media (max-width: 1024px) {
 				.column-right-block {
+					flex-flow: column;
+				}
+
+				.session-recordings-container {
 					flex-flow: column;
 				}
 			}
@@ -143,6 +142,29 @@
 				.main-columns {
 					flex-flow: column-reverse;
 				}
+			}
+
+			@media screen and (max-width: 640px) {
+				.page-party-event main {
+					padding: 2em;
+				}
+
+				.embed-container,
+				.session-recordings-container,
+				.main-columns > * {
+					margin-right: 0!important;
+				}
+
+
+
+				.embed-container {
+					width: 100%;
+				}
+
+				/* 
+				.embed-container iframe {
+					height: calc(280px * 0.7);
+				} */
 			}
 		</style>
 
