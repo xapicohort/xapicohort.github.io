@@ -37,7 +37,12 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var updates = {
     seasons: [
         'fall-2020',
+        'spring-2021',
     ],
+    current: {
+        season: 'Spring',
+        year: '2021'
+    },
     allSeasonData: [],
     init: function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -70,7 +75,7 @@ var updates = {
             var updateData;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, fetch(filename + ".json")];
+                    case 0: return [4 /*yield*/, fetch("data/" + filename + ".json")];
                     case 1:
                         updateData = _a.sent();
                         return [2 /*return*/, updateData.json()];
@@ -78,28 +83,63 @@ var updates = {
             });
         });
     },
+    generateSeasonHtml: function (seasonBlock) {
+        var _this = this;
+        var season = seasonBlock.season, year = seasonBlock.year, months = seasonBlock.months;
+        var seasonName = season + " " + year;
+        var monthHmtl = months.map(function (month) {
+            var monthName = month.name, dates = month.dates;
+            var dateHtml = dates.map(function (date) {
+                var day = date.day, _a = date.week, week = _a === void 0 ? '' : _a, emails = date.emails, recordings = date.recordings, extras = date.extras;
+                var emailHtml = _this.createEmailsHtml(emails);
+                var recordingsHtml = _this.createRecordingsHtml(recordings);
+                var extrasHtml = _this.createExtrasHtml(extras);
+                var dayHtml = "\n\t\t\t\t\t<div class=\"date-container\">\n\t\t\t\t\t\t<h3>\n\t\t\t\t\t\t\t" + (week ? '<span class="week">Week ' + week + '</span> | ' : '') + "\n\t\t\t\t\t\t\t<span class=\"date\">" + monthName + " " + day + "</span>\n\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t<div class=\"link-container\">\n\t\t\t\t\t\t\t" + emailHtml + "\n\t\t\t\t\t\t\t" + recordingsHtml + "\n\t\t\t\t\t\t\t" + extrasHtml + "\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t";
+                return dayHtml;
+            }).join('');
+            return dateHtml;
+        }).join('');
+        return "\n\t\t\t<h4 style=\"margin-bottom: 1em;\">" + seasonName + "</h4>\n\t\t\t<div>" + monthHmtl + "</div>\n\t\t";
+    },
     createAllHtml: function () {
         var _this = this;
         console.log('this.allSeasonData:', this.allSeasonData);
-        var allSeasonsHtml = this.allSeasonData.map(function (seasonBlock) {
-            var season = seasonBlock.season, year = seasonBlock.year, months = seasonBlock.months;
-            var seasonName = season + " " + year;
-            var monthHmtl = months.map(function (month) {
-                var monthName = month.name, dates = month.dates;
-                var dateHtml = dates.map(function (date) {
-                    var day = date.day, _a = date.week, week = _a === void 0 ? '' : _a, emails = date.emails, recordings = date.recordings, extras = date.extras;
-                    var emailHtml = _this.createEmailsHtml(emails);
-                    var recordingsHtml = _this.createRecordingsHtml(recordings);
-                    var extrasHtml = _this.createExtrasHtml(extras);
-                    var dayHtml = "\n\t\t\t\t\t\t<div class=\"date-container\">\n\t\t\t\t\t\t\t<h3>\n\t\t\t\t\t\t\t\t" + (week ? '<span class="week">Week ' + week + '</span> | ' : '') + "\n\t\t\t\t\t\t\t\t<span class=\"date\">" + monthName + " " + day + "</span>\n\t\t\t\t\t\t\t</h3>\n\t\t\t\t\t\t\t<div class=\"link-container\">\n\t\t\t\t\t\t\t\t" + emailHtml + "\n\t\t\t\t\t\t\t\t" + recordingsHtml + "\n\t\t\t\t\t\t\t\t" + extrasHtml + "\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t";
-                    return dayHtml;
-                }).join('');
-                return dateHtml;
-            }).join('');
-            return monthHmtl;
-        }).join('');
+        var currentSeasonData = this.allSeasonData.filter(function (seasonBlock) {
+            var _a = _this.current, season = _a.season, year = _a.year;
+            return (seasonBlock.season === season) && (seasonBlock.year === year);
+        })[0];
+        // const allSeasonsHtml = this.allSeasonData.map((seasonBlock: any) => {
+        // 	const { season, year, months } = seasonBlock;
+        // 	const seasonName = `${season} ${year}`;
+        // 	const monthHmtl = months.map((month: any) => {
+        // 		const { name: monthName, dates } = month;
+        // 		const dateHtml = dates.map((date: any) => {
+        // 			const { day, week = '', emails, recordings, extras } = date;
+        // 			const emailHtml = this.createEmailsHtml(emails);
+        // 			const recordingsHtml = this.createRecordingsHtml(recordings);
+        // 			const extrasHtml = this.createExtrasHtml(extras);
+        // 			const dayHtml = `
+        // 				<div class="date-container">
+        // 					<h3>
+        // 						${week ? '<span class="week">Week ' + week + '</span> | ' : ''}
+        // 						<span class="date">${monthName} ${day}</span>
+        // 					</h3>
+        // 					<div class="link-container">
+        // 						${emailHtml}
+        // 						${recordingsHtml}
+        // 						${extrasHtml}
+        // 					</div>
+        // 				</div>
+        // 			`;
+        // 			return dayHtml;
+        // 		}).join('');
+        // 		return dateHtml;
+        // 	}).join('');
+        // 	return monthHmtl;
+        // }).join('');
+        var currentSeasonHtml = this.generateSeasonHtml(currentSeasonData);
         var containerEl = document.querySelector('.seasons-container');
-        containerEl === null || containerEl === void 0 ? void 0 : containerEl.insertAdjacentHTML('afterbegin', allSeasonsHtml);
+        containerEl === null || containerEl === void 0 ? void 0 : containerEl.insertAdjacentHTML('afterbegin', currentSeasonHtml);
     },
     createEmailsHtml: function (emails) {
         var _this = this;

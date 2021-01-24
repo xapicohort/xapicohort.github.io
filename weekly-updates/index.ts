@@ -1,7 +1,13 @@
 const updates = {
 	seasons: [
 		'fall-2020',
+		'spring-2021',
 	],
+
+	current: {
+		season: 'Spring',
+		year: '2021'
+	},
 
 	allSeasonData: [],
 
@@ -20,57 +26,68 @@ const updates = {
 	},
 
 	async getData(filename: string): Promise<any> {
-		const updateData = await fetch(`${filename}.json`);
+		const updateData = await fetch(`data/${filename}.json`);
 
 		return updateData.json();
+	},
+
+	generateSeasonHtml(seasonBlock) {
+		const { season, year, months } = seasonBlock;
+
+		const seasonName = `${season} ${year}`;
+
+		const monthHmtl = months.map((month: any) => {
+			const { name: monthName, dates } = month;
+
+			const dateHtml = dates.map((date: any) => {
+				const { day, week = '', emails, recordings, extras } = date;
+
+				const emailHtml = this.createEmailsHtml(emails);
+				const recordingsHtml = this.createRecordingsHtml(recordings);
+				const extrasHtml = this.createExtrasHtml(extras);
+
+				const dayHtml = `
+					<div class="date-container">
+						<h3>
+							${week ? '<span class="week">Week ' + week + '</span> | ' : ''}
+							<span class="date">${monthName} ${day}</span>
+						</h3>
+						<div class="link-container">
+							${emailHtml}
+							${recordingsHtml}
+							${extrasHtml}
+						</div>
+					</div>
+				`;
+
+				return dayHtml;
+			}).join('');
+
+			return dateHtml;
+		}).join('');
+
+
+		return `
+			<h4 style="margin-bottom: 1em;">${seasonName}</h4>
+			<div>${monthHmtl}</div>
+		`;
 	},
 
 	createAllHtml() {
 		console.log('this.allSeasonData:', this.allSeasonData);
 
-		const allSeasonsHtml = this.allSeasonData.map((seasonBlock: any) => {
-			const { season, year, months } = seasonBlock;
+		// TODO: display archived seasons?
 
-			const seasonName = `${season} ${year}`;
+		const currentSeasonData = this.allSeasonData.filter((seasonBlock: any) => {
+			const { season, year } = this.current;
+			return (seasonBlock.season === season) && (seasonBlock.year === year);
+		})[0];
 
-			const monthHmtl = months.map((month: any) => {
-				const { name: monthName, dates } = month;
-
-				const dateHtml = dates.map((date: any) => {
-					const { day, week = '', emails, recordings, extras } = date;
-
-					const emailHtml = this.createEmailsHtml(emails);
-					const recordingsHtml = this.createRecordingsHtml(recordings);
-					const extrasHtml = this.createExtrasHtml(extras);
-
-					const dayHtml = `
-						<div class="date-container">
-							<h3>
-								${week ? '<span class="week">Week ' + week + '</span> | ' : ''}
-								<span class="date">${monthName} ${day}</span>
-							</h3>
-							<div class="link-container">
-								${emailHtml}
-								${recordingsHtml}
-								${extrasHtml}
-							</div>
-						</div>
-					`;
-
-					return dayHtml;
-				}).join('');
-
-				return dateHtml;
-			}).join('');
-
-			return monthHmtl;
-		}).join('');
-
-
+		const currentSeasonHtml = this.generateSeasonHtml(currentSeasonData);
 
 		const containerEl = document.querySelector('.seasons-container');
 
-		containerEl?.insertAdjacentHTML('afterbegin', allSeasonsHtml);
+		containerEl?.insertAdjacentHTML('afterbegin', currentSeasonHtml);
 
 	},
 

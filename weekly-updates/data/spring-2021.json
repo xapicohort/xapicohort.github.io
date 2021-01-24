@@ -1,0 +1,36 @@
+{
+	"season": "Spring",
+	"year": "2021",
+	"months": [
+		{
+			"name": "January",
+			"dates": [
+				{
+					"day": "19",
+					"emails": [
+						{
+							"title": "Welcome to the xAPI Cohort Community!",
+							"subtitle": "Spring 2021 xAPI Cohort kicks off February 4th",
+							"link": "https: //torrancelearning.activehosted.com/index.php?action=social&chash=54229abfcfa5649e7003b83dd4755294.106"
+						},
+						{
+							"title": "Alumni Invite",
+							"subtitle": "Rejoin the xAPI Cohort community",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=47d1e990583c9c67424d369f3414728e.161&s=bad97c655476f96a390a72c05a742011"
+						}
+					]
+				},
+				{
+					"day": "21",
+					"emails": [
+						{
+							"title": "Pre-reading Email 1",
+							"subtitle": "Get a jump start on the Spring 2021 semester",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=f2217062e9a397a1dca429e7d70bc6ca.162&s=6336ce51243516843e4c1c87f1d2d5ba"
+						}
+					]
+				}
+			]
+		}
+	]
+}
