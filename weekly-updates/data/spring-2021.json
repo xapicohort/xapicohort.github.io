@@ -61,6 +61,21 @@
 							"link": "http://bit.ly/Spring-2021-Week-1"
 						}
 					]
+				},
+				{
+					"day": "11",
+					"emails": [
+						{
+							"title": "Week 2 Update",
+							"subtitle": "How to: Send Data - from Elearning Tools",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=149e9677a5989fd342ae44213df68868.183&s=bad97c655476f96a390a72c05a742011"
+						}
+					],
+					"recordings": [
+						{
+							"link": "http://bit.ly/Spring-2021-Week-2"
+						}
+					]
 				}
 			]
 		}
