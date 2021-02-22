@@ -76,6 +76,21 @@
 							"link": "http://bit.ly/Spring-2021-Week-2"
 						}
 					]
+				},
+				{
+					"day": "18",
+					"emails": [
+						{
+							"title": "Week 3 Update",
+							"subtitle": "How to: Send Data - from Something That’s Not Elearning",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=a4a042cf4fd6bfb47701cbc8a1653ada.184"
+						}
+					],
+					"recordings": [
+						{
+							"link": "http://bit.ly/Spring-2021-Week-3"
+						}
+					]
 				}
 			]
 		}
