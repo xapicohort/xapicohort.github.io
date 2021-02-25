@@ -40,10 +40,8 @@
 						}
 					]
 				}
-
 			]
 		},
-
 		{
 			"name": "February",
 			"dates": [
@@ -89,6 +87,21 @@
 					"recordings": [
 						{
 							"link": "http://bit.ly/Spring-2021-Week-3"
+						}
+					]
+				},
+				{
+					"day": "25",
+					"emails": [
+						{
+							"title": "Week 4 Update",
+							"subtitle": "What’s a Learning Record Store & How Does It Fit Into My Ecosystem",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=1ff8a7b5dc7a7d1f0ed65aaa29c04b1e.185"
+						}
+					],
+					"recordings": [
+						{
+							"link": "http://bit.ly/Spring-2021-Week-4"
 						}
 					]
 				}
