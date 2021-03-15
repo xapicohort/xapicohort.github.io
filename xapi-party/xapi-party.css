@@ -75,13 +75,16 @@ header {
 	background      : rgba(0, 0, 0, 0.07);
 	/* border       : 1px solid lightgray; */
 	border-radius   : 6px;
-	margin          : 1rem 0;
-	padding         : 1.25em 1.5em;
+	margin          : 2rem 0;
+	padding         : 1.5em 1.5em 1.75em;
+	line-height     : 1.2em;
+	box-shadow      : 0px 4px 2px #0000002e;
 }
 
 .party-registration .title {
-	margin-bottom: 0.25em;
-	font-weight  : 300;
+	margin-bottom   : 0.25em;
+	font-size       : 1.5em;
+	/* font-weight  : 300; */
 }
 
 
