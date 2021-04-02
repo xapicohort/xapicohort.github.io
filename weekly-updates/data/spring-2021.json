@@ -171,6 +171,26 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "April",
+			"dates": [
+				{
+					"day": "1",
+					"emails": [
+						{
+							"title": "Week 9 Update",
+							"subtitle": "Now What Do I Do With All This Data?",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=a2557a7b2e94197ff767970b67041697.202"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://bit.ly/Spring-2021-Week-9"
+						}
+					]
+				}
+			]
 		}
 	]
 }
