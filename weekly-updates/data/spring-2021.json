@@ -189,6 +189,21 @@
 							"link": "https://bit.ly/Spring-2021-Week-9"
 						}
 					]
+				},
+				{
+					"day": "8",
+					"emails": [
+						{
+							"title": "Week 10 Update",
+							"subtitle": "Case Studies: xAPI in the Wild",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=cfecdb276f634854f3ef915e2e980c31.203"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://bit.ly/Spring-2021-Week-10"
+						}
+					]
 				}
 			]
 		}
