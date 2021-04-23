@@ -220,6 +220,22 @@
 							"link": "https://bit.ly/Spring-2021-Week-11"
 						}
 					]
+				},
+
+				{
+					"day": "22",
+					"emails": [
+						{
+							"title": "Week 12 Update",
+							"subtitle": "Team Demos",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=a597e50502f5ff68e3e25b9114205d4a.207"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://bit.ly/Spring-2021-Week-12"
+						}
+					]
 				}
 			]
 		}
