@@ -1,0 +1,21 @@
+{
+	"season": "Fall",
+	"year": "2021",
+	"months": [
+		{
+			"name": "August",
+			"dates": [
+				{
+					"day": "xx",
+					"emails": [
+						{
+							"title": "xxxxxxxxxxxxxxxxx",
+							"subtitle": "xxxxxxxxxxxxxxxxx",
+							"link": "xxxxxxxxxxxxxxxxxxx"
+						}
+					]
+				}
+			]
+		}
+	]
+}

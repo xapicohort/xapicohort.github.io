@@ -2,10 +2,11 @@ const updates = {
 	seasons: [
 		'fall-2020',
 		'spring-2021',
+		'fall-2021',
 	],
 
 	current: {
-		season: 'Spring',
+		season: 'Fall',
 		year: '2021'
 	},
 

@@ -1,0 +1,53 @@
+{
+	"season": "Fall",
+	"year": "2021",
+	"months": [
+		{
+			"name": "August",
+			"dates": [
+				{
+					"day": "6",
+					"emails": [
+						{
+							"title": "Welcome to the xAPI Cohort Community!",
+							"subtitle": "Fall 2021 xAPI Learning Cohort kicks off September 2nd",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=85d8ce590ad8981ca2c8286f79f59954.210&s=bad97c655476f96a390a72c05a742011"
+						},
+						{
+							"title": "Alumni Invite",
+							"subtitle": "Rejoin the xAPI Cohort community",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=3644a684f98ea8fe223c713b77189a77.213&s=bad97c655476f96a390a72c05a742011"
+						}
+					]
+				},
+				{
+					"day": "19",
+					"emails": [
+						{
+							"title": "Pre-reading Email 1",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=757b505cfd34c64c85ca5b5690ee5293.214&s=bad97c655476f96a390a72c05a742011"
+						}
+					]
+				},
+				{
+					"day": "26",
+					"emails": [
+						{
+							"title": "Pre-reading Email 2",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=854d6fae5ee42911677c739ee1734486.215&s=bad97c655476f96a390a72c05a742011"
+						}
+					]
+				},
+				{
+					"day": "31",
+					"emails": [
+						{
+							"title": "Airmeet Classroom Info",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=eae27d77ca20db309e056e3d2dcd7d69.218&s=bad97c655476f96a390a72c05a742011"
+						}
+					]
+				}
+			]
+		}
+	]
+}

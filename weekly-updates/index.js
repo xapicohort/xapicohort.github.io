@@ -38,9 +38,10 @@ var updates = {
     seasons: [
         'fall-2020',
         'spring-2021',
+        'fall-2021',
     ],
     current: {
-        season: 'Spring',
+        season: 'Fall',
         year: '2021'
     },
     allSeasonData: [],
@@ -104,39 +105,11 @@ var updates = {
     createAllHtml: function () {
         var _this = this;
         console.log('this.allSeasonData:', this.allSeasonData);
+        // TODO: display archived seasons?
         var currentSeasonData = this.allSeasonData.filter(function (seasonBlock) {
             var _a = _this.current, season = _a.season, year = _a.year;
             return (seasonBlock.season === season) && (seasonBlock.year === year);
         })[0];
-        // const allSeasonsHtml = this.allSeasonData.map((seasonBlock: any) => {
-        // 	const { season, year, months } = seasonBlock;
-        // 	const seasonName = `${season} ${year}`;
-        // 	const monthHmtl = months.map((month: any) => {
-        // 		const { name: monthName, dates } = month;
-        // 		const dateHtml = dates.map((date: any) => {
-        // 			const { day, week = '', emails, recordings, extras } = date;
-        // 			const emailHtml = this.createEmailsHtml(emails);
-        // 			const recordingsHtml = this.createRecordingsHtml(recordings);
-        // 			const extrasHtml = this.createExtrasHtml(extras);
-        // 			const dayHtml = `
-        // 				<div class="date-container">
-        // 					<h3>
-        // 						${week ? '<span class="week">Week ' + week + '</span> | ' : ''}
-        // 						<span class="date">${monthName} ${day}</span>
-        // 					</h3>
-        // 					<div class="link-container">
-        // 						${emailHtml}
-        // 						${recordingsHtml}
-        // 						${extrasHtml}
-        // 					</div>
-        // 				</div>
-        // 			`;
-        // 			return dayHtml;
-        // 		}).join('');
-        // 		return dateHtml;
-        // 	}).join('');
-        // 	return monthHmtl;
-        // }).join('');
         var currentSeasonHtml = this.generateSeasonHtml(currentSeasonData);
         var containerEl = document.querySelector('.seasons-container');
         containerEl === null || containerEl === void 0 ? void 0 : containerEl.insertAdjacentHTML('afterbegin', currentSeasonHtml);
