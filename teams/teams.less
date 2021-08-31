@@ -33,6 +33,12 @@ main,
 	// > article {
 	// 	padding: 0 3em;
 	// }
+
+	h3 {
+		@media screen and (max-width: 768px) {
+			font-size: 1.1em;
+		}
+	}
 }
 
 
@@ -93,15 +99,21 @@ h1,
 	border-radius: 3px;
 
 	&:focus {
-		outline: none;
+		outline     : none;
 		border-width: 2px;
 	}
 }
 
+.github-team-logo {
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
 .metrics {
-	border     : 1px solid lightgray;
-	padding    : 0.5em 1em;
-	background : white;
+	border    : 1px solid lightgray;
+	padding   : 0.5em 1em;
+	background: white;
 	background: rgba(255, 255, 255, 0.71);
 
 	margin-left: 1em;
@@ -127,16 +139,20 @@ h1,
 			margin: 0;
 		}
 	}
+
+	@media screen and (max-width: 1200px) {
+		display: none;
+	}
 }
 
 .view-switcher {
 	// margin-left    : 1em;
-	text-decoration   : underline;
-	color             : steelblue;
-	cursor            : pointer;
-	opacity           : 0.7;
-	text-transform    : uppercase;
-	font-size         : 0.8em;
+	text-decoration: underline;
+	color          : steelblue;
+	cursor         : pointer;
+	opacity        : 0.7;
+	text-transform : uppercase;
+	font-size      : 0.8em;
 
 	.master-detail-switch {
 		display: none;
@@ -155,6 +171,12 @@ h1,
 			display: none;
 		}
 	}
+
+
+	@media screen and (max-width: 1000px) {
+		display: none;
+	}
+
 }
 
 h3 {
@@ -320,6 +342,10 @@ a:visited {
 				.long-list-display & {
 					display: none;
 				}
+
+				@media screen and (max-width: 768px) {
+					min-width: 175px;
+				}
 			}
 		}
 	}
@@ -342,6 +368,11 @@ a:visited {
 
 		.long-list-display & {
 			max-width: none;
+		}
+
+
+		@media screen and (max-width: 768px) {
+			font-size: 0.8em;
 		}
 
 		section {

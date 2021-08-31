@@ -52,7 +52,7 @@ var app = {
                 cb(data);
             }
         });
-        xhr.open("GET", "https://slack-github-teambot.now.sh/api/public/github?endpoint=teams&season=" + this.season);
+        xhr.open("GET", "https://slack-github-teambot.vercel.app/api/public/github?endpoint=teams&season=" + this.season);
         // xhr.open("GET", "http://localhost:3000/api/public/github?endpoint=teams&season=" + this.season);
         xhr.send();
     },
