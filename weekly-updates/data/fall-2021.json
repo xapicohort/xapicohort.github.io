@@ -48,6 +48,22 @@
 					]
 				}
 			]
+		},
+
+		{
+			"name": "September",
+			"dates": [
+				{
+					"day": "3",
+					"emails": [
+						{
+							"title": "What is xAPI? What is xAPICohort?",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=7eabe3a1649ffa2b3ff8c02ebfd5659f.219&s=bad97c655476f96a390a72c05a742011"
+						}
+					]
+				}
+			]
+			
 		}
 	]
 }
