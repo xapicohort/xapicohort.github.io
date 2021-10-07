@@ -123,6 +123,25 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "October",
+			"dates": [
+				{
+					"day": "7",
+					"emails": [
+						{
+							"title": "How to bridge the SCORM and xAPI divide with cmi5",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=eb163727917cbba1eea208541a643e74.224&s=bad97c655476f96a390a72c05a742011"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://youtu.be/mU_-vMVOYs4"
+						}
+					]
+				}
+			]
 		}
 	]
 }
