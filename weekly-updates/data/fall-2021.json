@@ -184,6 +184,39 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "November",
+			"dates": [
+				{
+					"day": "4",
+					"emails": [
+						{
+							"title": "xAPI & Your Data Governance",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=ec8ce6abb3e952a85b8551ba726a1227.233"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://youtu.be/Ubgp1zqbRJA"
+						}
+					]
+				},
+				{
+					"day": "11",
+					"emails": [
+						{
+							"title": "Case Studies: xAPI in the Wild",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=6da9003b743b65f4c0ccd295cc484e57.243"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://youtu.be/_ILQ5c8c8Ig"
+						}
+					]
+				}
+			]
 		}
 	]
 }
