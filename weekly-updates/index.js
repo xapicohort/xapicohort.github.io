@@ -39,10 +39,11 @@ var updates = {
         'fall-2020',
         'spring-2021',
         'fall-2021',
+        'spring-2022',
     ],
     current: {
-        season: 'Fall',
-        year: '2021'
+        season: 'Spring',
+        year: '2022'
     },
     allSeasonData: [],
     init: function () {
@@ -104,6 +105,7 @@ var updates = {
     },
     createAllHtml: function () {
         var _this = this;
+        var _a;
         console.log('this.allSeasonData:', this.allSeasonData);
         // TODO: display archived seasons?
         var currentSeasonData = this.allSeasonData.filter(function (seasonBlock) {
@@ -112,7 +114,7 @@ var updates = {
         })[0];
         var currentSeasonHtml = this.generateSeasonHtml(currentSeasonData);
         var containerEl = document.querySelector('.seasons-container');
-        containerEl === null || containerEl === void 0 ? void 0 : containerEl.insertAdjacentHTML('afterbegin', currentSeasonHtml);
+        (_a = containerEl) === null || _a === void 0 ? void 0 : _a.insertAdjacentHTML('afterbegin', currentSeasonHtml);
     },
     createEmailsHtml: function (emails) {
         var _this = this;

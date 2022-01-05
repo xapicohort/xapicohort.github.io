@@ -27,7 +27,7 @@
 
 				<article>
 					<h2>Current Weekly Session</h2>
-					
+
 					<!-- <em>(Check back at the end of the week - 1st session will be posted after <strong>Thursday, Sept 2</strong>)</em> -->
 
 					<div class="current-playlist video-container">
@@ -49,6 +49,13 @@
 					<h2>Past xAPI Party Schedules + Session Recordings</h2>
 
 					<ul>
+						<li>
+							<a target="_blank"
+								href="https://torrancelearning.com/conference/schedule/?event=xapi&year=2021&season=fall">2022 -
+								Fall
+								(Virtual)</a>
+						</li>
+
 						<li>
 							<a target="_blank"
 								href="https://torrancelearning.com/conference/schedule/?event=xapi&year=2021&season=spring">2021 -
@@ -92,11 +99,15 @@
 
 		<script>
 			const currentPlaylist = {
-				season: 'Fall 2021',
-				id: 'PL5QuM14t5NNwTc9yv5AqgPLJOyVYrxkHw',
+				// season: 'Spring 2022',
+				// id: 'xxxxxxxxxxxxxxxxxxxxxxx',
 			};
 
 			const pastPlaylists = [
+				{
+					season: 'Fall 2021',
+					id: 'PL5QuM14t5NNwTc9yv5AqgPLJOyVYrxkHw',
+				},
 				{
 					season: 'Spring 2021',
 					id: 'PL5QuM14t5NNyWykR36P7z7EvABB8-SAx1',
@@ -117,6 +128,14 @@
 
 			function createPlaylistHtml(playlist) {
 				const { season, id } = playlist;
+
+				if (!season && !id) {
+					return `
+						<section>
+							<em>Coming Spring 2022</em>
+						</section>
+					`;
+				}
 
 				return `
 					<section class="iframe-video-container">
