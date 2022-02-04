@@ -55,6 +55,25 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "February",
+			"dates": [
+				{
+					"day": "3",
+					"emails": [
+						{
+							"title": "How to send xAPI data from non-elearning sources",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=c24cd76e1ce41366a4bbe8a49b02a028.268"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://youtu.be/w_nuCU0IL-k"
+						}
+					]
+				}
+			]
 		}
 	]
 }
