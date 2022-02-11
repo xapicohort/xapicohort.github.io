@@ -72,6 +72,20 @@
 							"link": "https://youtu.be/w_nuCU0IL-k"
 						}
 					]
+				},
+				{
+					"day": "10",
+					"emails": [
+						{
+							"title": "Flavors of xAPI — How to use xAPI Profiles",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=c52f1bd66cc19d05628bd8bf27af3ad6.269"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://youtu.be/2BSfPjmcMfM"
+						}
+					]
 				}
 			]
 		}
