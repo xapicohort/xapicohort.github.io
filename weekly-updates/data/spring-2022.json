@@ -101,6 +101,21 @@
 							"link": "https://youtu.be/JwxMumuZDr0"
 						}
 					]
+				},
+
+				{
+					"day": "24",
+					"emails": [
+						{
+							"title": "Learning Analytics & Designing for Data",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=d96409bf894217686ba124d7356686c9.272"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://youtu.be/6w0cbPHMvAg"
+						}
+					]
 				}
 			]
 		}
