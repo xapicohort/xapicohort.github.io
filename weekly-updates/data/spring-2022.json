@@ -118,6 +118,26 @@
 					]
 				}
 			]
+		},
+
+		{
+			"name": "March",
+			"dates": [
+				{
+					"day": "3",
+					"emails": [
+						{
+							"title": "Resources for Planning Your xAPI Data Collection Requirements",
+							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=cfa0860e83a4c3a763a7e62d825349f7.274"
+						}
+					],
+					"recordings": [
+						{
+							"link": "https://youtu.be/C_970aVOXKU"
+						}
+					]
+				}
+			]
 		}
 	]
 }
