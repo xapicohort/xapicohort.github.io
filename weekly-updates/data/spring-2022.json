@@ -1,182 +1,215 @@
 {
-	"season": "Spring",
-	"year": "2022",
-	"months": [
-		{
-			"name": "January",
-			"dates": [
-				{
-					"day": "1",
-					"emails": [
-						{
-							"title": "xAPI Cohort Alum + xAPI Party Go-ers Invite",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=ac1dd209cbcc5e5d1c6e28598e8cbbe8.253&s=bad97c655476f96a390a72c05a742011"
-						},
-						{
-							"title": "Welcome to the xAPI Cohort Community",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=d1c38a09acc34845c6be3a127a5aacaf.238&s=6336ce51243516843e4c1c87f1d2d5ba"
-						},
-						{
-							"title": "xAPI Cohort Starts in 2 Weeks: Pre-reading Email 1",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=555d6702c950ecb729a966504af0a635.254&s=bad97c655476f96a390a72c05a742011"
-						},
-						{
-							"title": "xAPI Cohort Starts in 1 Week: Pre-reading Email 2",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=335f5352088d7d9bf74191e006d8e24c.255&s=bad97c655476f96a390a72c05a742011"
-						}
-					]
-				},
-				{
-					"day": "20",
-					"emails": [
-						{
-							"title": "Intro to xAPI & Intro to xAPI Cohort",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=19f3cd308f1455b3fa09a282e0d496f4.266"
-						}
-					],
-					"recordings": [
-						{
-							"link": "https://youtu.be/QF7OHarOJqk"
-						}
-					]
-				},
-				{
-					"day": "27",
-					"emails": [
-						{
-							"title": "How to send xAPI data from elearning",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=03c6b06952c750899bb03d998e631860.267&s=a8b10022c6605d77235e76e7b870cad4"
-						}
-					],
-					"recordings": [
-						{
-							"link": "https://youtu.be/NnLaUJFVqp8"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "February",
-			"dates": [
-				{
-					"day": "3",
-					"emails": [
-						{
-							"title": "How to send xAPI data from non-elearning sources",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=c24cd76e1ce41366a4bbe8a49b02a028.268"
-						}
-					],
-					"recordings": [
-						{
-							"link": "https://youtu.be/w_nuCU0IL-k"
-						}
-					]
-				},
-				{
-					"day": "10",
-					"emails": [
-						{
-							"title": "Flavors of xAPI — How to use xAPI Profiles",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=c52f1bd66cc19d05628bd8bf27af3ad6.269"
-						}
-					],
-					"recordings": [
-						{
-							"link": "https://youtu.be/2BSfPjmcMfM"
-						}
-					]
-				},
-				{
-					"day": "17",
-					"emails": [
-						{
-							"title": "How do I choose an LRS and make the most of it?",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=f718499c1c8cef6730f9fd03c8125cab.271"
-						}
-					],
-					"recordings": [
-						{
-							"link": "https://youtu.be/JwxMumuZDr0"
-						}
-					]
-				},
-				{
-					"day": "24",
-					"emails": [
-						{
-							"title": "Learning Analytics & Designing for Data",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=d96409bf894217686ba124d7356686c9.272"
-						}
-					],
-					"recordings": [
-						{
-							"link": "https://youtu.be/6w0cbPHMvAg"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "March",
-			"dates": [
-				{
-					"day": "3",
-					"emails": [
-						{
-							"title": "Resources for Planning Your xAPI Data Collection Requirements",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=cfa0860e83a4c3a763a7e62d825349f7.274"
-						}
-					],
-					"recordings": [
-						{
-							"link": "https://youtu.be/C_970aVOXKU"
-						}
-					]
-				},
-				{
-					"day": "10",
-					"emails": [
-						{
-							"title": "Data Ethics",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=502e4a16930e414107ee22b6198c578f.273"
-						}
-					],
-					"recordings": [
-						{
-							"link": "https://youtu.be/l9WZUWeeFDA"
-						}
-					]
-				},
-				{
-					"day": "17",
-					"emails": [
-						{
-							"title": "Telling the Story with Data at Salience Learning",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=b1a59b315fc9a3002ce38bbe070ec3f5.276"
-						}
-					],
-					"recordings": [
-						{
-							"link": "https://youtu.be/Xj0E_MY9y0I"
-						}
-					]
-				},
-				{
-					"day": "24",
-					"emails": [
-						{
-							"title": "Gathering learners’ engagement across tens of divers LMSs",
-							"link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=36660e59856b4de58a219bcf4e27eba3.277"
-						}
-					],
-					"recordings": [
-						{
-							"link": "https://youtu.be/K9of5A4Xt9k"
-						}
-					]
-				}
-			]
-		}
-	]
+  "season": "Spring",
+  "year": "2022",
+  "months": [
+    {
+      "name": "January",
+      "dates": [
+        {
+          "day": "1",
+          "emails": [
+            {
+              "title": "xAPI Cohort Alum + xAPI Party Go-ers Invite",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=ac1dd209cbcc5e5d1c6e28598e8cbbe8.253&s=bad97c655476f96a390a72c05a742011"
+            },
+            {
+              "title": "Welcome to the xAPI Cohort Community",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=d1c38a09acc34845c6be3a127a5aacaf.238&s=6336ce51243516843e4c1c87f1d2d5ba"
+            },
+            {
+              "title": "xAPI Cohort Starts in 2 Weeks: Pre-reading Email 1",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=555d6702c950ecb729a966504af0a635.254&s=bad97c655476f96a390a72c05a742011"
+            },
+            {
+              "title": "xAPI Cohort Starts in 1 Week: Pre-reading Email 2",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=335f5352088d7d9bf74191e006d8e24c.255&s=bad97c655476f96a390a72c05a742011"
+            }
+          ]
+        },
+        {
+          "day": "20",
+          "emails": [
+            {
+              "title": "Intro to xAPI & Intro to xAPI Cohort",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=19f3cd308f1455b3fa09a282e0d496f4.266"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/QF7OHarOJqk"
+            }
+          ]
+        },
+        {
+          "day": "27",
+          "emails": [
+            {
+              "title": "How to send xAPI data from elearning",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=03c6b06952c750899bb03d998e631860.267&s=a8b10022c6605d77235e76e7b870cad4"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/NnLaUJFVqp8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "February",
+      "dates": [
+        {
+          "day": "3",
+          "emails": [
+            {
+              "title": "How to send xAPI data from non-elearning sources",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=c24cd76e1ce41366a4bbe8a49b02a028.268"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/w_nuCU0IL-k"
+            }
+          ]
+        },
+        {
+          "day": "10",
+          "emails": [
+            {
+              "title": "Flavors of xAPI — How to use xAPI Profiles",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=c52f1bd66cc19d05628bd8bf27af3ad6.269"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/2BSfPjmcMfM"
+            }
+          ]
+        },
+        {
+          "day": "17",
+          "emails": [
+            {
+              "title": "How do I choose an LRS and make the most of it?",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=f718499c1c8cef6730f9fd03c8125cab.271"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/JwxMumuZDr0"
+            }
+          ]
+        },
+        {
+          "day": "24",
+          "emails": [
+            {
+              "title": "Learning Analytics & Designing for Data",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=d96409bf894217686ba124d7356686c9.272"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/6w0cbPHMvAg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "March",
+      "dates": [
+        {
+          "day": "3",
+          "emails": [
+            {
+              "title": "Resources for Planning Your xAPI Data Collection Requirements",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=cfa0860e83a4c3a763a7e62d825349f7.274"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/C_970aVOXKU"
+            }
+          ]
+        },
+        {
+          "day": "10",
+          "emails": [
+            {
+              "title": "Data Ethics",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=502e4a16930e414107ee22b6198c578f.273"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/l9WZUWeeFDA"
+            }
+          ]
+        },
+        {
+          "day": "17",
+          "emails": [
+            {
+              "title": "Telling the Story with Data at Salience Learning",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=b1a59b315fc9a3002ce38bbe070ec3f5.276"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/Xj0E_MY9y0I"
+            }
+          ]
+        },
+        {
+          "day": "24",
+          "emails": [
+            {
+              "title": "Gathering learners’ engagement across tens of divers LMSs",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=36660e59856b4de58a219bcf4e27eba3.277"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/K9of5A4Xt9k"
+            }
+          ]
+        },
+        {
+          "day": "31",
+          "emails": [
+            {
+              "title": "Team Demos",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=8c19f571e251e61cb8dd3612f26d5ecf.278"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/asNPlB_w2n8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "April",
+      "dates": [
+        {
+          "day": "7",
+          "emails": [
+            {
+              "title": "Team Demos",
+              "link": "https://torrancelearning.activehosted.com/index.php?action=social&chash=d6baf65e0b240ce177cf70da146c8dc8.279"
+            }
+          ],
+          "recordings": [
+            {
+              "link": "https://youtu.be/1a1Mbo2Tu-0"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
